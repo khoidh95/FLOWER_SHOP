@@ -1,0 +1,11 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <app>
+    <tool-version>2.4.1.0</tool-version>
+    <code>FlowerShop</code>
+    <name>花束問題</name>
+    <type>web</type>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2021-02-26 12:25:21.152</create-time>
+    <app-io-list/>
+  </app>
