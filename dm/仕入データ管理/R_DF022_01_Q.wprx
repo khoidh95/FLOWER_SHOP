@@ -1,0 +1,242 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <dm>
+    <tool-version>2.3.1.0</tool-version>
+    <code>R_DF022_01_Q</code>
+    <name>発注書</name>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2019-11-20 13:06:55.0</create-time>
+    <updator>eclipse</updator>
+    <update-time>2019-11-28 17:21:51.0</update-time>
+    <dm-item-list>
+      <dm-item>
+        <dm-code>R_DF022_01_Q</dm-code>
+        <code>TXSIIRESAKI</code>
+        <name>仕入先名</name>
+        <order>10</order>
+        <length>20</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>TEXT</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-20 13:39:16.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-20 13:52:14.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>R_DF022_01_Q</dm-code>
+        <code>NRHATTYU</code>
+        <name>発注NO</name>
+        <order>20</order>
+        <length>7</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-20 13:39:16.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-20 14:27:25.0</update-time>
+        <dm-item-prop-list>
+          <dm-item-prop>
+            <dm-code>R_DF022_01_Q</dm-code>
+            <dm-item-code>NRHATTYU</dm-item-code>
+            <key>dbColumn</key>
+            <value>T1.NRHATTYU</value>
+            <is-disable>false</is-disable>
+          </dm-item-prop>
+        </dm-item-prop-list>
+      </dm-item>
+      <dm-item>
+        <dm-code>R_DF022_01_Q</dm-code>
+        <code>DTHATTYU</code>
+        <name>発注日</name>
+        <order>30</order>
+        <length>0</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>DATE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-20 13:39:16.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-20 13:52:14.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>R_DF022_01_Q</dm-code>
+        <code>NRPHONE</code>
+        <name>電話番号</name>
+        <order>40</order>
+        <length>14</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>TEXT</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-20 13:39:16.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-20 13:52:14.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>R_DF022_01_Q</dm-code>
+        <code>SQHATTYU</code>
+        <name>発行行番</name>
+        <order>50</order>
+        <length>3</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-20 13:39:16.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-20 13:55:21.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>R_DF022_01_Q</dm-code>
+        <code>TXTANPIN</code>
+        <name>単品名</name>
+        <order>60</order>
+        <length>20</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>TEXT</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-20 13:39:16.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-20 13:52:14.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>R_DF022_01_Q</dm-code>
+        <code>QTHATTYU</code>
+        <name>発注数</name>
+        <order>70</order>
+        <length>3</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-20 13:39:16.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-20 13:52:14.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>R_DF022_01_Q</dm-code>
+        <code>KBUNIT</code>
+        <name>購入単位</name>
+        <order>80</order>
+        <length>2</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-20 13:39:16.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-20 13:52:14.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>R_DF022_01_Q</dm-code>
+        <code>PRKOUNYU</code>
+        <name>購入単価</name>
+        <order>90</order>
+        <length>7</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-20 13:39:16.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-20 13:52:14.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>R_DF022_01_Q</dm-code>
+        <code>DTNYUKAYOTEI</code>
+        <name>入荷予定日</name>
+        <order>100</order>
+        <length>0</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>DATE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-20 13:39:16.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-20 13:52:14.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+    </dm-item-list>
+    <dm-ope-list>
+      <dm-ope>
+        <code>SELECT</code>
+        <dm-code>R_DF022_01_Q</dm-code>
+        <name>Select</name>
+        <type>SELECT</type>
+        <condition>NRHATTYU = CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-20 13:55:11.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+    </dm-ope-list>
+    <dm-prop-list>
+      <dm-prop>
+        <key>dbQuery</key>
+        <value>SELECT T3.TXSIIRESAKI
+	, T1.NRHATTYU
+	, T2.DTHATTYU
+	, T3.NRPHONE
+	, T1.SQHATTYU
+	, T4.TXTANPIN
+	, T1.QTHATTYU
+	, T4.KBUNIT
+	, T1.PRKOUNYU
+	, T1.DTNYUKAYOTEI
+FROM DT021 T1
+LEFT JOIN DT020 T2
+	ON T1.NRHATTYU = T2.NRHATTYU
+LEFT JOIN DT010 T3
+	ON T1.CDSIIRESAKI = T3.CDSIIRESAKI
+LEFT JOIN BT020 T4
+	ON T1.NRTANPIN = T4.NRTANPIN
+WHERE 
+	@WP_CONDITION
+ORDER BY
+	T1.SQHATTYU</value>
+        <is-disable>false</is-disable>
+      </dm-prop>
+    </dm-prop-list>
+  </dm>
