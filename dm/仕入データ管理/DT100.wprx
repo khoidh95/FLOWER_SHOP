@@ -1,74 +1,20 @@
 <?xml version = "1.0"  encoding = "UTF-8" ?>
   <dm>
     <tool-version>2.3.1.0</tool-version>
-    <code>DT040</code>
-    <name>一般仕入</name>
+    <code>DT100</code>
+    <name>仕入実績</name>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
-    <create-time>2021-03-01 13:16:03.0</create-time>
+    <create-time>2021-03-01 16:37:33.0</create-time>
     <updator>eclipse</updator>
-    <update-time>2021-03-01 16:31:43.0</update-time>
+    <update-time>2021-03-01 16:47:04.0</update-time>
     <dm-item-list>
       <dm-item>
-        <dm-code>DT040</dm-code>
-        <code>NRIPPANSIIRE</code>
-        <name>一般仕入NO</name>
+        <dm-code>DT100</dm-code>
+        <code>NRSIIRE</code>
+        <name>仕入NO</name>
         <order>10</order>
         <length>7</length>
-        <byteSize>0</byteSize>
-        <scale>0</scale>
-        <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
-        <data-type>CODE</data-type>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-01 15:23:59.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-01 16:31:43.0</update-time>
-        <dm-item-prop-list/>
-      </dm-item>
-      <dm-item>
-        <dm-code>DT040</dm-code>
-        <code>CDSIIRESAKI</code>
-        <name>仕入先C</name>
-        <order>20</order>
-        <length>7</length>
-        <byteSize>0</byteSize>
-        <scale>0</scale>
-        <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
-        <data-type>TEXT</data-type>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-01 15:23:59.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-01 16:31:43.0</update-time>
-        <dm-item-prop-list/>
-      </dm-item>
-      <dm-item>
-        <dm-code>DT040</dm-code>
-        <code>DTTORIHIKI</code>
-        <name>取引日</name>
-        <order>30</order>
-        <length>0</length>
-        <byteSize>0</byteSize>
-        <scale>0</scale>
-        <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
-        <data-type>DATE</data-type>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-01 15:23:59.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-01 16:31:43.0</update-time>
-        <dm-item-prop-list/>
-      </dm-item>
-      <dm-item>
-        <dm-code>DT040</dm-code>
-        <code>KBIPPANSIIRE</code>
-        <name>一般仕入区分</name>
-        <order>40</order>
-        <length>2</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>false</is-nullable>
@@ -76,15 +22,61 @@
         <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 15:23:59.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-01 16:31:43.0</update-time>
+        <create-time>2021-03-01 16:47:04.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
-        <dm-code>DT040</dm-code>
-        <code>NRTANPIN</code>
-        <name>単品NO</name>
+        <dm-code>DT100</dm-code>
+        <code>KBDENPYO</code>
+        <name>伝票区分</name>
+        <order>20</order>
+        <length>1</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>TEXT</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 16:47:04.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT100</dm-code>
+        <code>FGVALID</code>
+        <name>有効区分</name>
+        <order>30</order>
+        <length>1</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>TEXT</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 16:47:04.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT100</dm-code>
+        <code>KBKAITORI</code>
+        <name>取引区分</name>
+        <order>40</order>
+        <length>2</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>TEXT</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 16:47:04.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT100</dm-code>
+        <code>CDSIIRESAKI</code>
+        <name>仕入先C</name>
         <order>50</order>
         <length>7</length>
         <byteSize>0</byteSize>
@@ -94,61 +86,61 @@
         <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 16:31:43.0</create-time>
+        <create-time>2021-03-01 16:47:04.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
-        <dm-code>DT040</dm-code>
-        <code>SQLOT</code>
-        <name>ロットNO</name>
+        <dm-code>DT100</dm-code>
+        <code>TXNAME</code>
+        <name>仕入先名</name>
         <order>60</order>
-        <length>4</length>
+        <length>20</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
-        <data-type>NUM</data-type>
+        <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 16:31:43.0</create-time>
+        <create-time>2021-03-01 16:47:04.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
-        <dm-code>DT040</dm-code>
-        <code>QTTORIHIKI</code>
-        <name>取引数</name>
+        <dm-code>DT100</dm-code>
+        <code>TXTEKIYO</code>
+        <name>摘要</name>
         <order>70</order>
-        <length>3</length>
+        <length>50</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
-        <data-type>NUM</data-type>
+        <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 16:31:43.0</create-time>
+        <create-time>2021-03-01 16:47:04.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
-        <dm-code>DT040</dm-code>
-        <code>PRTORIHIKI</code>
-        <name>取引単価</name>
+        <dm-code>DT100</dm-code>
+        <code>DTTORIHIKI</code>
+        <name>取引日</name>
         <order>80</order>
-        <length>7</length>
+        <length>0</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
-        <data-type>NUM</data-type>
+        <data-type>DATE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 16:31:43.0</create-time>
+        <create-time>2021-03-01 16:47:04.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
-        <dm-code>DT040</dm-code>
+        <dm-code>DT100</dm-code>
         <code>AMTORIHIKI</code>
-        <name>取引金額</name>
+        <name>取引額</name>
         <order>90</order>
         <length>7</length>
         <byteSize>0</byteSize>
@@ -158,11 +150,11 @@
         <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 16:31:43.0</create-time>
+        <create-time>2021-03-01 16:47:04.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
-        <dm-code>DT040</dm-code>
+        <dm-code>DT100</dm-code>
         <code>AMTAX</code>
         <name>消費税額</name>
         <order>100</order>
@@ -174,31 +166,15 @@
         <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 16:31:43.0</create-time>
+        <create-time>2021-03-01 16:47:04.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
-        <dm-code>DT040</dm-code>
-        <code>QTZAIKO</code>
-        <name>在庫取引数</name>
+        <dm-code>DT100</dm-code>
+        <code>NRSIHARAI</code>
+        <name>支払NO</name>
         <order>110</order>
-        <length>4</length>
-        <byteSize>0</byteSize>
-        <scale>0</scale>
-        <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
-        <data-type>NUM</data-type>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-01 16:31:43.0</create-time>
-        <dm-item-prop-list/>
-      </dm-item>
-      <dm-item>
-        <dm-code>DT040</dm-code>
-        <code>TXTEKIYO</code>
-        <name>摘要</name>
-        <order>120</order>
-        <length>50</length>
+        <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>true</is-nullable>
@@ -206,13 +182,29 @@
         <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 16:31:43.0</create-time>
+        <create-time>2021-03-01 16:47:04.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
-        <dm-code>DT040</dm-code>
+        <dm-code>DT100</dm-code>
         <code>NRTORIHIKI</code>
         <name>取引管理NO</name>
+        <order>120</order>
+        <length>15</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>TEXT</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 16:47:04.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT100</dm-code>
+        <code>NRSANSYO</code>
+        <name>参照NO</name>
         <order>130</order>
         <length>7</length>
         <byteSize>0</byteSize>
@@ -222,7 +214,39 @@
         <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 16:31:43.0</create-time>
+        <create-time>2021-03-01 16:47:04.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT100</dm-code>
+        <code>DTFYEAR</code>
+        <name>取引年度</name>
+        <order>140</order>
+        <length>4</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 16:47:04.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT100</dm-code>
+        <code>DTMSEQ</code>
+        <name>取引月度</name>
+        <order>150</order>
+        <length>2</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 16:47:04.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
     </dm-item-list>
