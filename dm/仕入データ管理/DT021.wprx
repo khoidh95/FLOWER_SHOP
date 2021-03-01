@@ -1,0 +1,754 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <dm>
+    <tool-version>2.3.1.0</tool-version>
+    <code>DT021</code>
+    <name>発注明細</name>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2019-10-29 14:28:40.0</create-time>
+    <updator>eclipse</updator>
+    <update-time>2021-03-01 15:15:52.0</update-time>
+    <dm-item-list>
+      <dm-item>
+        <dm-code>DT021</dm-code>
+        <code>NRHATTYU</code>
+        <name>発注NO</name>
+        <order>10</order>
+        <length>7</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
+        <data-type>CODE</data-type>
+        <ref-dm-code>DT020</ref-dm-code>
+        <ref-dm-item-code>NRHATTYU</ref-dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-10-29 14:36:59.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-01 09:37:07.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT021</dm-code>
+        <code>SQHATTYU</code>
+        <name>発行行番</name>
+        <order>20</order>
+        <length>3</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-10-29 14:36:59.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT021</dm-code>
+        <code>NRTANPIN</code>
+        <name>単品NO</name>
+        <order>30</order>
+        <length>7</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-10-29 14:36:59.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-01 15:15:52.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT021</dm-code>
+        <code>SQLOT</code>
+        <name>ロットNO</name>
+        <order>40</order>
+        <length>4</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-10-29 14:36:59.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-14 14:11:51.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT021</dm-code>
+        <code>QTHATTYU</code>
+        <name>発注数</name>
+        <order>50</order>
+        <length>3</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-10-29 14:36:59.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-10-29 14:40:02.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT021</dm-code>
+        <code>QTNYUKA</code>
+        <name>実際入荷数</name>
+        <order>60</order>
+        <length>3</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-10-29 14:36:59.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT021</dm-code>
+        <code>PRKOUNYU</code>
+        <name>購入単価</name>
+        <order>70</order>
+        <length>7</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-10-29 14:36:59.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT021</dm-code>
+        <code>QTZAIKO</code>
+        <name>在庫計上数</name>
+        <order>80</order>
+        <length>4</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <description>実際入荷数×購入単位別入り数を初期値とする</description>
+        <creator>eclipse</creator>
+        <create-time>2019-10-29 14:36:59.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-10-29 14:40:02.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT021</dm-code>
+        <code>DTNYUKAYOTEI</code>
+        <name>入荷予定日</name>
+        <order>90</order>
+        <length>0</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>DATE</data-type>
+        <is-disable>false</is-disable>
+        <description>発注時には「希望帚」と示される</description>
+        <creator>eclipse</creator>
+        <create-time>2019-10-29 14:36:59.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-10-29 14:40:02.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT021</dm-code>
+        <code>DTNYUKA</code>
+        <name>実際入荷日</name>
+        <order>100</order>
+        <length>0</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>DATE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-10-29 14:36:59.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT021</dm-code>
+        <code>NRTORIHIKI</code>
+        <name>取引管理NO</name>
+        <order>110</order>
+        <length>7</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-10-29 14:36:59.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT021</dm-code>
+        <code>CDSIIRESAKI</code>
+        <name>仕入先CODE</name>
+        <order>120</order>
+        <length>7</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>CODE</data-type>
+        <ref-dm-code>DT010</ref-dm-code>
+        <ref-dm-item-code>CDSIIRESAKI</ref-dm-item-code>
+        <is-disable>false</is-disable>
+        <description>発注見出しからの継承。入荷エントリーで利用できる</description>
+        <creator>eclipse</creator>
+        <create-time>2019-10-29 14:36:59.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-08 16:40:28.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT021</dm-code>
+        <code>AMSIIRE</code>
+        <name>仕入額</name>
+        <order>130</order>
+        <length>7</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>CURRENCY</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-10-29 14:36:59.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT021</dm-code>
+        <code>AMTAX</code>
+        <name>消費税額</name>
+        <order>140</order>
+        <length>7</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>CURRENCY</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-10-29 14:36:59.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DT021</dm-code>
+        <code>STNYUKA</code>
+        <name>入荷状況</name>
+        <order>150</order>
+        <length>1</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <description>1:未入荷</description>
+        <creator>eclipse</creator>
+        <create-time>2019-10-29 14:36:59.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-10-29 14:40:02.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+    </dm-item-list>
+    <dm-ope-list>
+      <dm-ope>
+        <code>DF022_UPDATE</code>
+        <dm-code>DT021</dm-code>
+        <name>Update STNYUKA of all 発注NO</name>
+        <type>UPDATE</type>
+        <condition>NRHATTYU=CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-12 13:19:44.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-13 17:06:10.0</update-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF022_UPDATE</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>STNYUKA</dm-item-code>
+            <statement>CODE(@2)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-12 13:19:44.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-12 13:27:24.0</update-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>LOCK</code>
+        <dm-code>DT021</dm-code>
+        <name>Lock</name>
+        <type>LOCK</type>
+        <condition>NRHATTYU=CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-06 17:21:04.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-06 17:22:14.0</update-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>DF024_INSERT</code>
+        <dm-code>DT021</dm-code>
+        <name>Insert</name>
+        <type>INSERT</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-06 17:21:04.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-18 09:49:01.0</update-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_INSERT</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>NRHATTYU</dm-item-code>
+            <statement>CODE(@1)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-06 17:22:22.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-06 17:29:54.0</update-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_INSERT</dm-ope-code>
+            <order>20</order>
+            <dm-item-code>SQHATTYU</dm-item-code>
+            <statement>NUM(@2)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-06 17:22:22.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-07 10:26:36.0</update-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_INSERT</dm-ope-code>
+            <order>30</order>
+            <dm-item-code>NRTANPIN</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 11:20:01.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_INSERT</dm-ope-code>
+            <order>40</order>
+            <dm-item-code>SQLOT</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 11:20:01.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_INSERT</dm-ope-code>
+            <order>50</order>
+            <dm-item-code>QTHATTYU</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 11:20:01.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_INSERT</dm-ope-code>
+            <order>60</order>
+            <dm-item-code>QTNYUKA</dm-item-code>
+            <statement>0</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 11:20:01.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-11 16:46:52.0</update-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_INSERT</dm-ope-code>
+            <order>70</order>
+            <dm-item-code>PRKOUNYU</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 11:20:01.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_INSERT</dm-ope-code>
+            <order>80</order>
+            <dm-item-code>QTZAIKO</dm-item-code>
+            <statement>NAVAL(BT020{NRTANPIN = _IN_.NRTANPIN}.VLUNIT,@NULL) * QTHATTYU</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 11:20:01.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-18 09:49:01.0</update-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_INSERT</dm-ope-code>
+            <order>90</order>
+            <dm-item-code>DTNYUKAYOTEI</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 11:20:01.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_INSERT</dm-ope-code>
+            <order>100</order>
+            <dm-item-code>DTNYUKA</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 11:20:01.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-11 10:58:37.0</update-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_INSERT</dm-ope-code>
+            <order>110</order>
+            <dm-item-code>NRTORIHIKI</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 11:20:01.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_INSERT</dm-ope-code>
+            <order>120</order>
+            <dm-item-code>CDSIIRESAKI</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 11:20:01.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_INSERT</dm-ope-code>
+            <order>130</order>
+            <dm-item-code>AMSIIRE</dm-item-code>
+            <statement>_IN_.QTHATTYU * _IN_.PRKOUNYU</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 11:20:01.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-11 16:36:11.0</update-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_INSERT</dm-ope-code>
+            <order>140</order>
+            <dm-item-code>AMTAX</dm-item-code>
+            <statement>#CAL_TAX('_IN_.QTHATTYU * _IN_.PRKOUNYU')</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 11:20:01.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-14 10:55:58.0</update-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_INSERT</dm-ope-code>
+            <order>150</order>
+            <dm-item-code>STNYUKA</dm-item-code>
+            <statement>CODE(0)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 11:20:01.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-11 10:21:02.0</update-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>DF024_DELETE</code>
+        <dm-code>DT021</dm-code>
+        <name>Delete</name>
+        <type>DELETE</type>
+        <condition>NRHATTYU=CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-06 17:21:04.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-19 14:38:04.0</update-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>DF026_UPDATE_01</code>
+        <dm-code>DT021</dm-code>
+        <name>Update input by NRHATTYU and SQHATTYU</name>
+        <type>UPDATE</type>
+        <condition>NRHATTYU=CODE(@1) AND SQHATTYU=NUM(@2)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-11 14:27:27.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-18 09:55:54.0</update-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF026_UPDATE_01</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>QTNYUKA</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-11 14:27:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF026_UPDATE_01</dm-ope-code>
+            <order>20</order>
+            <dm-item-code>QTZAIKO</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-11 14:27:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF026_UPDATE_01</dm-ope-code>
+            <order>30</order>
+            <dm-item-code>DTNYUKA</dm-item-code>
+            <statement>@TODAY</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-11 14:27:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF026_UPDATE_01</dm-ope-code>
+            <order>40</order>
+            <dm-item-code>STNYUKA</dm-item-code>
+            <statement>CODE(2)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-11 14:27:27.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-11 14:27:48.0</update-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>DF024_UPDATE</code>
+        <dm-code>DT021</dm-code>
+        <name>Update SQLOT and NRTORIHIKI</name>
+        <type>UPDATE</type>
+        <condition>NRHATTYU=CODE(@1) AND SQHATTYU=NUM(@2)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-15 16:37:19.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-19 11:10:58.0</update-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_UPDATE</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>SQLOT</dm-item-code>
+            <statement>CODE(@3)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-15 16:37:19.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF024_UPDATE</dm-ope-code>
+            <order>20</order>
+            <dm-item-code>NRTORIHIKI</dm-item-code>
+            <statement>CODE(@4)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-19 11:10:58.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>DF026_CHECK_ERR</code>
+        <dm-code>DT021</dm-code>
+        <name>DF026 Check Error</name>
+        <type>NONE</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-11 13:28:22.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-12 10:21:27.0</update-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>DF026_CHECK_ERR</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>STNYUKA</dm-item-code>
+            <precondition>STNYUKA &lt;&gt; @NULL</precondition>
+            <msg-code-ng>ERR_CHECK_SELECT_ERR</msg-code-ng>
+            <msg-param-ng>@1</msg-param-ng>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-11 13:28:22.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-12 10:21:27.0</update-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>SELECT</code>
+        <dm-code>DT021</dm-code>
+        <name>Select by NRHATTYU</name>
+        <type>SELECT</type>
+        <condition>NRHATTYU=CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-07 13:11:58.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-11 14:03:19.0</update-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>SELECT_01</code>
+        <dm-code>DT021</dm-code>
+        <name>Select by CDSIIRESAKI</name>
+        <type>SELECT</type>
+        <condition>CDSIIRESAKI = CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-08 15:50:59.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-11 14:03:19.0</update-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>SELECT_02</code>
+        <dm-code>DT021</dm-code>
+        <name>Select by DTNYUKAYOTEI, DTNYUKAYOTEI</name>
+        <type>SELECT</type>
+        <condition>CDSIIRESAKI = CODE(@1) AND DTNYUKAYOTEI = DATE(@2)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-08 15:43:08.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-11 14:03:19.0</update-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>SELECT_03</code>
+        <dm-code>DT021</dm-code>
+        <name>Select by NRHATTYU, SQHATTYU</name>
+        <type>SELECT</type>
+        <condition>NRHATTYU = CODE(@1) AND SQHATTYU = NUM(@2)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-11 14:03:19.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-11 14:04:44.0</update-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>SELECT_04</code>
+        <dm-code>DT021</dm-code>
+        <name>Select by NRHATTYU, STNYUKA</name>
+        <type>SELECT</type>
+        <condition>NRHATTYU = CODE(@1) AND STNYUKA = CODE(@2)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-11 14:37:24.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>ZERO_RECORD</code>
+        <dm-code>DT021</dm-code>
+        <name>Zero Record</name>
+        <type>NONE</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-07 13:17:54.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-12 13:10:59.0</update-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>ZERO_RECORD</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>NRHATTYU</dm-item-code>
+            <precondition>NRHATTYU &lt;&gt; @NULL</precondition>
+            <msg-code-ng>ERR_EXISTANCE</msg-code-ng>
+            <msg-param-ng>'発注明細'</msg-param-ng>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 13:17:54.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-12 13:10:59.0</update-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>ACTION_ERR</code>
+        <dm-code>DT021</dm-code>
+        <name>Action Error</name>
+        <type>NONE</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-13 09:59:07.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>DT021</dm-code>
+            <dm-ope-code>ACTION_ERR</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>NRHATTYU</dm-item-code>
+            <precondition>NRHATTYU &lt;&gt; @NULL</precondition>
+            <msg-code-ng>ERR_ACTION</msg-code-ng>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-13 09:59:07.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+    </dm-ope-list>
+    <dm-prop-list/>
+  </dm>
