@@ -7,7 +7,7 @@
     <creator>eclipse</creator>
     <create-time>2021-03-01 16:37:33.0</create-time>
     <updator>eclipse</updator>
-    <update-time>2021-03-01 16:47:04.0</update-time>
+    <update-time>2021-03-02 10:06:38.0</update-time>
     <dm-item-list>
       <dm-item>
         <dm-code>DT100</dm-code>
@@ -180,9 +180,13 @@
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
         <data-type>TEXT</data-type>
+        <ref-dm-code>DT200</ref-dm-code>
+        <ref-dm-item-code>NRSIHARAI</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 16:47:04.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-02 10:06:38.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>

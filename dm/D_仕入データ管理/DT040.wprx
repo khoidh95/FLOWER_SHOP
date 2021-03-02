@@ -7,7 +7,7 @@
     <creator>eclipse</creator>
     <create-time>2021-03-01 13:16:03.0</create-time>
     <updator>eclipse</updator>
-    <update-time>2021-03-01 16:31:43.0</update-time>
+    <update-time>2021-03-02 15:48:09.0</update-time>
     <dm-item-list>
       <dm-item>
         <dm-code>DT040</dm-code>
@@ -17,14 +17,14 @@
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
         <data-type>CODE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 15:23:59.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2021-03-01 16:31:43.0</update-time>
+        <update-time>2021-03-02 10:05:31.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -38,11 +38,13 @@
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
         <data-type>TEXT</data-type>
+        <ref-dm-code>DT010</ref-dm-code>
+        <ref-dm-item-code>CDSIIRESAKI</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 15:23:59.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2021-03-01 16:31:43.0</update-time>
+        <update-time>2021-03-02 15:48:09.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -72,13 +74,13 @@
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>false</is-nullable>
-        <key-group>1</key-group>
+        <key-group>0</key-group>
         <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 15:23:59.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2021-03-01 16:31:43.0</update-time>
+        <update-time>2021-03-02 10:05:31.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -92,9 +94,13 @@
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
         <data-type>TEXT</data-type>
+        <ref-dm-code>BT020</ref-dm-code>
+        <ref-dm-item-code>NRTANPIN</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 16:31:43.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-02 15:48:09.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -108,9 +114,13 @@
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
         <data-type>NUM</data-type>
+        <ref-dm-code>ET010</ref-dm-code>
+        <ref-dm-item-code>SQLOT</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 16:31:43.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-02 15:48:09.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -218,11 +228,13 @@
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
+        <key-group>2</key-group>
         <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 16:31:43.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-02 10:05:31.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
     </dm-item-list>

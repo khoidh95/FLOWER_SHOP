@@ -7,7 +7,7 @@
     <creator>eclipse</creator>
     <create-time>2021-03-01 16:51:38.0</create-time>
     <updator>eclipse</updator>
-    <update-time>2021-03-01 16:54:17.0</update-time>
+    <update-time>2021-03-02 15:48:06.0</update-time>
     <dm-item-list>
       <dm-item>
         <dm-code>DT200</dm-code>
@@ -36,9 +36,13 @@
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
         <data-type>TEXT</data-type>
+        <ref-dm-code>DT010</ref-dm-code>
+        <ref-dm-item-code>CDSIIRESAKI</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 16:54:17.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-02 15:48:06.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -66,11 +70,13 @@
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
+        <key-group>2</key-group>
         <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 16:54:17.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-02 15:48:06.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
