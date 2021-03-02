@@ -4,8 +4,66 @@
     <code>FlowerShop</code>
     <name>花束問題</name>
     <type>web</type>
+    <default-io-code>MENU</default-io-code>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
-    <create-time>2021-02-26 12:25:21.152</create-time>
-    <app-io-list/>
+    <create-time>2021-02-26 12:25:21.0</create-time>
+    <app-io-list>
+      <app-io>
+        <app-code>FlowerShop</app-code>
+        <io-code>MENU</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-02 15:07:22.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>FlowerShop</app-code>
+        <io-code>BF010</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-02 18:29:22.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>FlowerShop</app-code>
+        <io-code>BF020</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-02 18:29:22.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>FlowerShop</app-code>
+        <io-code>CF010</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-02 18:29:22.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>FlowerShop</app-code>
+        <io-code>CF020</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-02 18:29:22.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>FlowerShop</app-code>
+        <io-code>DF010</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-02 18:29:22.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>FlowerShop</app-code>
+        <io-code>DF020</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-02 18:29:22.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>FlowerShop</app-code>
+        <io-code>DF026</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-02 18:29:22.0</create-time>
+      </app-io>
+    </app-io-list>
   </app>

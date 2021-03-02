@@ -1,7 +1,24 @@
-<?xml version = "1.0"  encoding = "Windows-31J" ?>
-<DbInfoList>
-<jdbcDbList>
-</jdbcDbList>
-<dataSourceDbList>
-</dataSourceDbList>
-</DbInfoList>
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <DbInfoList>
+    <tool-version>2.4.1.0</tool-version>
+    <dataSourceDbList>
+      <dataSourceDb>
+        <code>main</code>
+        <createTime>2021-02-28 17:21:58.0</createTime>
+        <creator>eclipse</creator>
+        <dataSourceName>jdbc/FlowerShop</dataSourceName>
+        <dbName>FlowerShop</dbName>
+        <dbType>mssqlserver</dbType>
+        <delimiter>go</delimiter>
+        <disable>false</disable>
+        <encoding>UTF-8</encoding>
+        <name>メイン</name>
+        <password>P@ssw0rd</password>
+        <schemaGenerated>true</schemaGenerated>
+        <toolVersion>2.4.1.0</toolVersion>
+        <userId>FlowerShop</userId>
+      </dataSourceDb>
+    </dataSourceDbList>
+    <defaultDbCode>main</defaultDbCode>
+    <jdbcDbList/>
+  </DbInfoList>

@@ -1,28 +1,34 @@
+html-type=HTML5
+
+app-gen-FlowerShop-test-mode=false
 
 export-war-task=
 
-html-type=HTML5
+
+application=FlowerShop
+
+app-gen-FlowerShop-env-app=
+
+app-gen-FlowerShop-theme=Sky
+
+
+ddl-method=JDBC
+
+app-gen-FlowerShop-app-doc-gen=false
+
+test-mode=false
 
 app-doc-gen=false
 
-app-gen-FlowerShop-html-type=HTML5
+env-app=
 
 deploy-to-server=false
 
 theme=Sky
 
-app-gen-FlowerShop-app-doc-gen=false
+app-gen-FlowerShop-html-type=HTML5
 
+jdbc-driver=com.microsoft.sqlserver.jdbc.SQLServerDriver
 
-test-mode=false
-
-application=FlowerShop
-
-app-gen-FlowerShop-theme=Sky
-
-env-app=FlowerShop
-
-app-gen-FlowerShop-env-app=FlowerShop
-
-app-gen-FlowerShop-test-mode=false
+jdbc-url=jdbc:sqlserver://localhost:1433
 
