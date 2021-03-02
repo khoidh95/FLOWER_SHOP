@@ -2,7 +2,7 @@
   <dm>
     <tool-version>2.4.1.0</tool-version>
     <code>CT020</code>
-    <name>発注見出し</name>
+    <name>受注見出し</name>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
     <create-time>2021-03-01 08:52:19.0</create-time>

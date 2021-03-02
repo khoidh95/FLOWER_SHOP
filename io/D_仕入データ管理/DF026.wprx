@@ -1,0 +1,13 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <io>
+    <tool-version>2.4.1.0</tool-version>
+    <code>DF026</code>
+    <name>入荷エントリー</name>
+    <io-type>IO</io-type>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2021-03-02 18:23:37.397</create-time>
+    <io-parts-list/>
+    <io-item-list/>
+    <io-prop-list/>
+  </io>
