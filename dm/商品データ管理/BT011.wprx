@@ -4,6 +4,7 @@
     <code>BT011</code>
     <name>構成明細</name>
     <is-disable>false</is-disable>
+    <description>商品（結束商品）を構成する単品の内訳が登録される</description>
     <creator>eclipse</creator>
     <create-time>2021-02-28 18:17:38.0</create-time>
     <dm-item-list>
@@ -17,6 +18,8 @@
         <is-nullable>false</is-nullable>
         <key-group>1</key-group>
         <data-type>CODE</data-type>
+        <ref-dm-code>BT010</ref-dm-code>
+        <ref-dm-item-code>NRSYOHIN</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-02-28 18:22:25.0</create-time>
@@ -30,8 +33,10 @@
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>false</is-nullable>
-        <key-group>2</key-group>
+        <key-group>1</key-group>
         <data-type>CODE</data-type>
+        <ref-dm-code>BT020</ref-dm-code>
+        <ref-dm-item-code>NRTANPIN</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-02-28 18:22:25.0</create-time>

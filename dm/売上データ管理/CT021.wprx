@@ -1,17 +1,16 @@
 <?xml version = "1.0"  encoding = "UTF-8" ?>
   <dm>
     <tool-version>2.4.1.0</tool-version>
-    <code>BT010</code>
-    <name>商品</name>
+    <code>CT021</code>
+    <name>受注明細</name>
     <is-disable>false</is-disable>
-    <description>結束された商品の定義が登録される</description>
     <creator>eclipse</creator>
-    <create-time>2021-02-28 17:43:08.0</create-time>
+    <create-time>2021-03-01 09:13:22.0</create-time>
     <dm-item-list>
       <dm-item>
-        <dm-code>BT010</dm-code>
-        <code>NRSYOHIN</code>
-        <name>商品No.</name>
+        <dm-code>CT021</dm-code>
+        <code>NRJYUTYU</code>
+        <name>受注No.</name>
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
@@ -20,59 +19,74 @@
         <data-type>CODE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-02-28 17:51:23.0</create-time>
+        <create-time>2021-03-01 09:19:13.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
-        <dm-code>BT010</dm-code>
-        <code>TXSYOHIN</code>
-        <name>商品名</name>
-        <length>20</length>
+        <dm-code>CT021</dm-code>
+        <code>NRTANPIN</code>
+        <name>単品No.</name>
+        <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>false</is-nullable>
-        <key-group>0</key-group>
-        <data-type>TEXT</data-type>
+        <key-group>2</key-group>
+        <data-type>CODE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-02-28 17:51:23.0</create-time>
+        <create-time>2021-03-01 09:19:13.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
-        <dm-code>BT010</dm-code>
-        <code>KBSYOHIN</code>
-        <name>商品タイプ</name>
+        <dm-code>CT021</dm-code>
+        <code>QTKOUSEI</code>
+        <name>構成数</name>
         <length>2</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>false</is-nullable>
+        <is-nullable>true</is-nullable>
         <key-group>0</key-group>
-        <data-type>CODE</data-type>
+        <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-02-28 17:51:23.0</create-time>
+        <create-time>2021-03-01 09:19:13.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
-        <dm-code>BT010</dm-code>
-        <code>KBSEASON</code>
-        <name>季節のオススメ区分</name>
+        <dm-code>CT021</dm-code>
+        <code>QTALLOC</code>
+        <name>引当数</name>
+        <length>2</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 09:19:13.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>CT021</dm-code>
+        <code>FGKANRYO</code>
+        <name>出荷完了フラグ</name>
         <length>1</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>false</is-nullable>
+        <is-nullable>true</is-nullable>
         <key-group>0</key-group>
         <data-type>CODE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-02-28 17:51:23.0</create-time>
+        <create-time>2021-03-01 09:19:13.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
-        <dm-code>BT010</dm-code>
-        <code>PRHANBAI</code>
-        <name>標準売価</name>
-        <length>7</length>
+        <dm-code>CT021</dm-code>
+        <code>SQLIST</code>
+        <name>一覧順序</name>
+        <length>3</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>true</is-nullable>
@@ -80,69 +94,53 @@
         <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-02-28 17:51:23.0</create-time>
+        <create-time>2021-03-01 09:19:13.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
-        <dm-code>BT010</dm-code>
-        <code>PRGENKA</code>
-        <name>標準原価</name>
-        <length>7</length>
-        <byteSize>0</byteSize>
-        <scale>0</scale>
-        <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
-        <data-type>NUM</data-type>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-02-28 17:51:23.0</create-time>
-        <dm-item-prop-list/>
-      </dm-item>
-      <dm-item>
-        <dm-code>BT010</dm-code>
-        <code>TXIMAGE</code>
-        <name>外観</name>
+        <dm-code>CT021</dm-code>
+        <code>DTSYUKKAYOTEI</code>
+        <name>出荷予定日</name>
         <length>0</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
-        <data-type>FILE</data-type>
+        <data-type>DATE</data-type>
         <is-disable>false</is-disable>
+        <description>受注見出しからの物理継承。出荷ロット再編処理で用いられる</description>
         <creator>eclipse</creator>
-        <create-time>2021-02-28 17:51:23.0</create-time>
+        <create-time>2021-03-01 09:19:13.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
-        <dm-code>BT010</dm-code>
-        <code>TXTEKIYO1</code>
-        <name>商品摘要</name>
-        <length>30</length>
+        <dm-code>CT021</dm-code>
+        <code>TXLOT</code>
+        <name>ロット内訳</name>
+        <length>40</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
         <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
-        <description>顧客に示される情報</description>
         <creator>eclipse</creator>
-        <create-time>2021-02-28 17:51:23.0</create-time>
+        <create-time>2021-03-01 09:19:13.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
-        <dm-code>BT010</dm-code>
-        <code>TXTEKIYO2</code>
-        <name>結束摘要</name>
-        <length>30</length>
+        <dm-code>CT021</dm-code>
+        <code>QTZANSU</code>
+        <name>引当残数</name>
+        <length>2</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
-        <data-type>TEXT</data-type>
+        <data-type>NUM</data-type>
         <is-disable>false</is-disable>
-        <description>結束担当者に示される情報。顧客には示されない</description>
         <creator>eclipse</creator>
-        <create-time>2021-02-28 17:51:23.0</create-time>
+        <create-time>2021-03-01 09:19:13.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
     </dm-item-list>
