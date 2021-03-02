@@ -7,7 +7,7 @@
     <creator>eclipse</creator>
     <create-time>2019-10-29 14:23:23.0</create-time>
     <updator>eclipse</updator>
-    <update-time>2021-03-01 15:15:41.0</update-time>
+    <update-time>2021-03-02 10:03:41.0</update-time>
     <dm-item-list>
       <dm-item>
         <dm-code>DT020</dm-code>
@@ -39,10 +39,14 @@
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
         <data-type>CODE</data-type>
+        <ref-dm-code>DT010</ref-dm-code>
+        <ref-dm-item-code>CDSIIRESAKI</ref-dm-item-code>
         <is-disable>false</is-disable>
         <description>更新不可</description>
         <creator>eclipse</creator>
         <create-time>2019-10-29 14:27:31.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-02 10:03:41.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>

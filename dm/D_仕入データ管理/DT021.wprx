@@ -7,7 +7,7 @@
     <creator>eclipse</creator>
     <create-time>2019-10-29 14:28:40.0</create-time>
     <updator>eclipse</updator>
-    <update-time>2021-03-01 15:15:52.0</update-time>
+    <update-time>2021-03-02 15:38:47.0</update-time>
     <dm-item-list>
       <dm-item>
         <dm-code>DT021</dm-code>
@@ -20,13 +20,13 @@
         <is-nullable>false</is-nullable>
         <key-group>1</key-group>
         <data-type>CODE</data-type>
-        <ref-dm-code>DT020</ref-dm-code>
-        <ref-dm-item-code>NRHATTYU</ref-dm-item-code>
+        <ref-dm-code>BT020</ref-dm-code>
+        <ref-dm-item-code>NRTANPIN</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-10-29 14:36:59.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2019-11-01 09:37:07.0</update-time>
+        <update-time>2021-03-02 15:38:47.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -40,9 +40,13 @@
         <is-nullable>false</is-nullable>
         <key-group>1</key-group>
         <data-type>NUM</data-type>
+        <ref-dm-code>BT020</ref-dm-code>
+        <ref-dm-item-code>NRTANPIN</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-10-29 14:36:59.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-02 15:38:47.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -194,11 +198,13 @@
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
+        <key-group>2</key-group>
         <data-type>CODE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-10-29 14:36:59.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-02 15:37:25.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -219,7 +225,7 @@
         <creator>eclipse</creator>
         <create-time>2019-10-29 14:36:59.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2019-11-08 16:40:28.0</update-time>
+        <update-time>2021-03-02 15:38:47.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
