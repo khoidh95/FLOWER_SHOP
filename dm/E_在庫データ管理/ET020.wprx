@@ -1,0 +1,73 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <dm>
+    <tool-version>2.4.0.0</tool-version>
+    <code>ET020</code>
+    <name>廃棄指示見出し</name>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2021-03-02 14:53:13.0</create-time>
+    <dm-item-list>
+      <dm-item>
+        <dm-code>ET020</dm-code>
+        <code>NRHAIKI</code>
+        <name>廃棄指示NO</name>
+        <length>7</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-02 14:57:41.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET020</dm-code>
+        <code>DTSHIJI</code>
+        <name>指示日</name>
+        <length>0</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>0</key-group>
+        <data-type>DATE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-02 14:57:41.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET020</dm-code>
+        <code>DTKANRYO</code>
+        <name>完了日時</name>
+        <length>0</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>TIME</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-02 14:57:41.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET020</dm-code>
+        <code>STKANRYO</code>
+        <name>完了状況</name>
+        <length>2</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>0</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-02 14:57:41.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+    </dm-item-list>
+    <dm-ope-list/>
+    <dm-prop-list/>
+  </dm>
