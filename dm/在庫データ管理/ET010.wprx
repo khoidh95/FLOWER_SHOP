@@ -10,13 +10,15 @@
       <dm-item>
         <dm-code>ET010</dm-code>
         <code>NRTANPIN</code>
-        <name>単品No</name>
+        <name>単品NO</name>
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>false</is-nullable>
-        <key-group>0</key-group>
-        <data-type>TEXT</data-type>
+        <key-group>1</key-group>
+        <data-type>CODE</data-type>
+        <ref-dm-code>BT020</ref-dm-code>
+        <ref-dm-item-code>NRTANPIN</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 10:05:20.0</create-time>
@@ -25,13 +27,15 @@
       <dm-item>
         <dm-code>ET010</dm-code>
         <code>SQLOT</code>
-        <name>ロットNo</name>
+        <name>ロットNO</name>
         <length>4</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>false</is-nullable>
-        <key-group>0</key-group>
-        <data-type>NUM</data-type>
+        <key-group>1</key-group>
+        <data-type>CODE</data-type>
+        <ref-dm-code>BT020</ref-dm-code>
+        <ref-dm-item-code>NRTANPIN</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 10:19:13.0</create-time>
@@ -115,13 +119,13 @@
       <dm-item>
         <dm-code>ET010</dm-code>
         <code>CDSIIRESAKI</code>
-        <name>仕入先</name>
+        <name>仕入先CODE</name>
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>false</is-nullable>
         <key-group>0</key-group>
-        <data-type>TEXT</data-type>
+        <data-type>CODE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 13:44:56.0</create-time>
@@ -210,8 +214,8 @@
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>false</is-nullable>
-        <key-group>0</key-group>
-        <data-type>TEXT</data-type>
+        <key-group>2</key-group>
+        <data-type>CODE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 13:52:18.0</create-time>
