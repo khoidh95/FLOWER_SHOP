@@ -16,6 +16,8 @@ ddl-method=JDBC
 
 app-gen-FlowerShop-app-doc-gen=false
 
+AwsDeployDialog.dbToolUrl=
+
 test-mode=false
 
 app-doc-gen=false
