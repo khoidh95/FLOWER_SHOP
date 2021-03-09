@@ -5,17 +5,93 @@
     <name>商品の一覧・保守</name>
     <io-type>IO</io-type>
     <dm-code>BT010</dm-code>
+    <condition>NRSYOHIN CT CODE(@1) AND TXSYOHIN CT @2 
+AND KBSYOHIN EQ CODE(@3) AND KBSEASON EQ CODE(@4)</condition>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
-    <create-time>2021-03-02 18:30:30.201</create-time>
+    <create-time>2021-03-02 18:30:30.0</create-time>
     <io-parts-list/>
     <io-item-list>
       <io-item>
         <io-code>BF010</io-code>
-        <code>NRSYOHIN</code>
-        <name>商品No.</name>
+        <code>I_NRSYOHIN</code>
+        <name>商品NO</name>
         <is-visible>true</is-visible>
-        <item-type>IO</item-type>
+        <item-type>I</item-type>
+        <is-require>false</is-require>
+        <length>7</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-item-code>@CODE</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-03 14:18:01.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>I_NRSYOHIN</io-item-code>
+            <key>partitionType</key>
+            <value>BOX</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>I_NRSYOHIN</io-item-code>
+            <key>partitionLabel</key>
+            <value>検索条件</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>I_NRSYOHIN</io-item-code>
+            <key>fieldWidth</key>
+            <value>100px</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>BF010</io-code>
+        <code>I_TXSYOHIN</code>
+        <name>商品名</name>
+        <is-visible>true</is-visible>
+        <item-type>I</item-type>
+        <is-require>false</is-require>
+        <length>20</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-item-code>@TEXT</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-03 14:18:01.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>I_TXSYOHIN</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>BF010</io-code>
+        <code>I_KBSYOHIN</code>
+        <name>商品タイプ</name>
+        <is-visible>true</is-visible>
+        <item-type>I</item-type>
         <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
@@ -24,12 +100,226 @@
         <max-ByteSize>0</max-ByteSize>
         <level>1</level>
         <sort-key>0</sort-key>
+        <dm-item-code>@CODE</dm-item-code>
+        <choice-list>
+          <fixed>:|A:A商品群|B:B商品群</fixed>
+        </choice-list>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-03 14:18:01.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>BF010</io-code>
+        <code>I_KBSEASON</code>
+        <name>季節のオススメ区分</name>
+        <is-visible>true</is-visible>
+        <item-type>I</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-item-code>@CODE</dm-item-code>
+        <choice-list>
+          <fixed>:|A:対象外|B:対象</fixed>
+        </choice-list>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-03 14:18:01.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>I_KBSEASON</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>BF010</io-code>
+        <code>A_SEARCH</code>
+        <name>検索</name>
+        <is-visible>true</is-visible>
+        <item-type>A</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <next-io-param>I_NRSYOHIN,I_TXSYOHIN,I_KBSYOHIN,I_KBSEASON</next-io-param>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-03 14:18:01.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>A_SEARCH</io-item-code>
+            <key>labelWidth</key>
+            <value>95px</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>BF010</io-code>
+        <code>G_SYOHIN</code>
+        <name>商品一覧</name>
+        <is-visible>true</is-visible>
+        <item-type>G</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-03 14:18:01.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>G_SYOHIN</io-item-code>
+            <key>partitionType</key>
+            <value>BOX</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>G_SYOHIN</io-item-code>
+            <key>partitionLabel</key>
+            <value>商品一覧</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>G_SYOHIN</io-item-code>
+            <key>rows</key>
+            <value>20</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>G_SYOHIN</io-item-code>
+            <key>summaryTarget</key>
+            <value>ALL</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>BF010</io-code>
+        <code>LINENO</code>
+        <name>No.</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>2</level>
+        <sort-key>0</sort-key>
+        <dm-item-code>@NUM</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-03 14:18:01.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>LINENO</io-item-code>
+            <key>lineNumber</key>
+            <value>WHOLE</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>BF010</io-code>
+        <code>A_MEISAI</code>
+        <name>明細</name>
+        <is-visible>false</is-visible>
+        <item-type>A</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <next-io-code>BF012_1</next-io-code>
+        <next-io-param>NRSYOHIN</next-io-param>
+        <level>2</level>
+        <sort-key>0</sort-key>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-03 14:18:01.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>A_MEISAI</io-item-code>
+            <key>fieldType</key>
+            <value>LINK</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>BF010</io-code>
+        <code>NRSYOHIN</code>
+        <name>商品No.</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>2</level>
+        <sort-key>0</sort-key>
         <dm-code>BT010</dm-code>
         <dm-item-code>NRSYOHIN</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-02 18:30:30.201</create-time>
-        <io-item-prop-list/>
+        <create-time>2021-03-02 18:30:30.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>NRSYOHIN</io-item-code>
+            <key>fieldType</key>
+            <value>LINK</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>NRSYOHIN</io-item-code>
+            <key>fieldAction</key>
+            <value>A_MEISAI</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -38,20 +328,20 @@
         <code>TXSYOHIN</code>
         <name>商品名</name>
         <is-visible>true</is-visible>
-        <item-type>IO</item-type>
+        <item-type>O</item-type>
         <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
+        <level>2</level>
         <sort-key>0</sort-key>
         <dm-code>BT010</dm-code>
         <dm-item-code>TXSYOHIN</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-02 18:30:30.201</create-time>
+        <create-time>2021-03-02 18:30:30.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -61,20 +351,23 @@
         <code>KBSYOHIN</code>
         <name>商品タイプ</name>
         <is-visible>true</is-visible>
-        <item-type>IO</item-type>
+        <item-type>O</item-type>
         <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
+        <level>2</level>
         <sort-key>0</sort-key>
         <dm-code>BT010</dm-code>
         <dm-item-code>KBSYOHIN</dm-item-code>
+        <choice-list>
+          <fixed>A:A商品群|B:B商品群</fixed>
+        </choice-list>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-02 18:30:30.201</create-time>
+        <create-time>2021-03-02 18:30:30.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -82,22 +375,25 @@
       <io-item>
         <io-code>BF010</io-code>
         <code>KBSEASON</code>
-        <name>季節のオススメ区分</name>
+        <name>オススメ</name>
         <is-visible>true</is-visible>
-        <item-type>IO</item-type>
+        <item-type>O</item-type>
         <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
+        <level>2</level>
         <sort-key>0</sort-key>
         <dm-code>BT010</dm-code>
         <dm-item-code>KBSEASON</dm-item-code>
+        <choice-list>
+          <fixed>A:対象外|B:対象</fixed>
+        </choice-list>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-02 18:30:30.201</create-time>
+        <create-time>2021-03-02 18:30:30.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -107,120 +403,28 @@
         <code>PRHANBAI</code>
         <name>標準売価</name>
         <is-visible>true</is-visible>
-        <item-type>IO</item-type>
+        <item-type>O</item-type>
         <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
+        <level>2</level>
         <sort-key>0</sort-key>
         <dm-code>BT010</dm-code>
         <dm-item-code>PRHANBAI</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-02 18:30:30.201</create-time>
+        <create-time>2021-03-02 18:30:30.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
         <io-code>BF010</io-code>
-        <code>PRGENKA</code>
-        <name>標準原価</name>
-        <is-visible>true</is-visible>
-        <item-type>IO</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>BT010</dm-code>
-        <dm-item-code>PRGENKA</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-02 18:30:30.201</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>BF010</io-code>
-        <code>TXIMAGE</code>
-        <name>外観</name>
-        <is-visible>true</is-visible>
-        <item-type>IO</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>BT010</dm-code>
-        <dm-item-code>TXIMAGE</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-02 18:30:30.201</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>BF010</io-code>
-        <code>TXTEKIYO1</code>
-        <name>商品摘要</name>
-        <is-visible>true</is-visible>
-        <item-type>IO</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>BT010</dm-code>
-        <dm-item-code>TXTEKIYO1</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-02 18:30:30.201</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>BF010</io-code>
-        <code>TXTEKIYO2</code>
-        <name>結束摘要</name>
-        <is-visible>true</is-visible>
-        <item-type>IO</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>BT010</dm-code>
-        <dm-item-code>TXTEKIYO2</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-02 18:30:30.201</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>BF010</io-code>
-        <code>INSERT_A</code>
-        <name>INSERT</name>
+        <code>A_ADD</code>
+        <name>F6 追加</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>
@@ -230,19 +434,42 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <statement>@INSERT</statement>
+        <next-io-code>BF011</next-io-code>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-02 18:30:30.201</create-time>
-        <io-item-prop-list/>
+        <create-time>2021-03-02 18:30:30.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>A_ADD</io-item-code>
+            <key>partitionType</key>
+            <value>NONE</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>A_ADD</io-item-code>
+            <key>functionKey</key>
+            <value>F6</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>A_ADD</io-item-code>
+            <key>labelWidth</key>
+            <value>105px</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
         <io-code>BF010</io-code>
-        <code>UPDATE_A</code>
-        <name>UPDATE</name>
+        <code>A_EXPORT</code>
+        <name>F12 出力</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>
@@ -256,55 +483,41 @@
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-02 18:30:30.201</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>BF010</io-code>
-        <code>DELETE_A</code>
-        <name>DELETE</name>
-        <is-visible>true</is-visible>
-        <item-type>A</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <statement>@DELETE</statement>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-02 18:30:30.201</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>BF010</io-code>
-        <code>B</code>
-        <name>BACK</name>
-        <is-visible>true</is-visible>
-        <item-type>A</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <statement>@BACK</statement>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-02 18:30:30.201</create-time>
-        <io-item-prop-list/>
+        <create-time>2021-03-02 18:30:30.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>A_EXPORT</io-item-code>
+            <key>functionKey</key>
+            <value>F12</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>A_EXPORT</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>A_EXPORT</io-item-code>
+            <key>labelWidth</key>
+            <value>105px</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
     </io-item-list>
     <io-prop-list/>
+    <sec-io>
+      <io-code>BF010</io-code>
+      <is-disable>false</is-disable>
+    </sec-io>
+    <sec-menu>
+      <io-code>BF010</io-code>
+      <is-disable>false</is-disable>
+    </sec-menu>
   </io>

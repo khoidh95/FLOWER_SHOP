@@ -291,6 +291,82 @@
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
+      <io-item>
+        <io-code>MENU</io-code>
+        <code>S_USER_NM</code>
+        <name>UserName for Session</name>
+        <is-visible>false</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>20</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <statement>NAVAL(ZT020{USER_CODE = CODE(@USER)}.USER_NAME,@NULL)</statement>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-item-code>@TEXT</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:32:55.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>MENU</io-code>
+            <io-item-code>S_USER_NM</io-item-code>
+            <key>sessionAttributeKey</key>
+            <value>USER_NAME</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>MENU</io-code>
+            <io-item-code>S_USER_NM</io-item-code>
+            <key>secretItem</key>
+            <value>TRUE</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>MENU</io-code>
+        <code>S_MENU_URL</code>
+        <name>Menu URL for Session</name>
+        <is-visible>false</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>50</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <statement>CREATEURL(@IOCODE)</statement>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-item-code>@TEXT</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:32:55.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>MENU</io-code>
+            <io-item-code>S_MENU_URL</io-item-code>
+            <key>sessionAttributeKey</key>
+            <value>MENU_URL</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>MENU</io-code>
+            <io-item-code>S_MENU_URL</io-item-code>
+            <key>secretItem</key>
+            <value>TRUE</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
     </io-item-list>
     <io-prop-list/>
     <sec-io>
