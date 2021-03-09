@@ -1,0 +1,150 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <bp>
+    <tool-version>2.4.1.0</tool-version>
+    <code>BF013_UPDATE</code>
+    <name>商品構成明細の更新</name>
+    <is-commit>false</is-commit>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2021-03-06 17:43:51.0</create-time>
+    <bp-logic-list>
+      <bp-logic>
+        <bp-code>BF013_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>IN</ctrl-code>
+        <dm-code>BT010</dm-code>
+        <work-code>WK1</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 17:46:16.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>BF013_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>IN</ctrl-code>
+        <dm-code>BT011</dm-code>
+        <work-code>WK2</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 17:46:16.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>BF013_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>BT010</dm-code>
+        <func-code>LOCK</func-code>
+        <param>WK1.NRSYOHIN</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 17:46:16.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>BF013_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>BT010</dm-code>
+        <func-code>UPDATE</func-code>
+        <param>WK1,WK1.NRSYOHIN</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 17:46:16.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>BF013_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>BT011</dm-code>
+        <func-code>LOCK</func-code>
+        <param>WK1.NRSYOHIN</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 17:46:16.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>BF013_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>FOREACH</ctrl-code>
+        <param>WK2</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 17:46:16.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>BF013_UPDATE</bp-code>
+        <level>1</level>
+        <ctrl-code>IF</ctrl-code>
+        <param>WK2._RECORD_STATUS_= @INSERT</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 17:46:16.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>BF013_UPDATE</bp-code>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>BT011</dm-code>
+        <func-code>INSERT</func-code>
+        <param>WK2</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 17:46:16.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>BF013_UPDATE</bp-code>
+        <level>1</level>
+        <ctrl-code>ELSEIF</ctrl-code>
+        <param>WK2._RECORD_STATUS_= @UPDATE</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 17:46:16.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>BF013_UPDATE</bp-code>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>BT011</dm-code>
+        <func-code>UPDATE</func-code>
+        <param>WK2,WK2.NRSYOHIN,WK2.NRTANPIN</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 17:46:16.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>BF013_UPDATE</bp-code>
+        <level>1</level>
+        <ctrl-code>ELSEIF</ctrl-code>
+        <param>WK2._RECORD_STATUS_= @DELETE</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 17:46:16.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>BF013_UPDATE</bp-code>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>BT011</dm-code>
+        <func-code>DELETE</func-code>
+        <param>WK2.NRSYOHIN,WK2.NRTANPIN</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 17:46:16.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>BF013_UPDATE</bp-code>
+        <level>1</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 17:46:16.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>BF013_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 17:46:16.0</create-time>
+      </bp-logic>
+    </bp-logic-list>
+  </bp>
