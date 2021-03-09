@@ -1,2 +1,113 @@
 <?xml version = "1.0"  encoding = "UTF-8" ?>
-  <msg-list/>
+  <msg-list>
+    <msg>
+      <tool-version>2.4.1.0</tool-version>
+      <code>ERR_CHECK_SELECT_ERR</code>
+      <type>ERROR</type>
+      <message>{1} ステータス以外のレコードは選択できません。</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-02 11:20:15.0</create-time>
+    </msg>
+    <msg>
+      <tool-version>2.4.1.0</tool-version>
+      <code>ERR_EXISTANCE</code>
+      <type>ERROR</type>
+      <message>{1} は存在しません。</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-02 11:21:44.0</create-time>
+    </msg>
+    <msg>
+      <tool-version>2.4.1.0</tool-version>
+      <code>ERR_ACTION</code>
+      <type>ERROR</type>
+      <message>このアクションは実行できません。</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-02 11:21:44.0</create-time>
+    </msg>
+    <msg>
+      <tool-version>2.4.1.0</tool-version>
+      <code>ERR_IMAGE</code>
+      <type>ERROR</type>
+      <message>「画像 *」が入力されていません。</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-06 13:50:59.0</create-time>
+    </msg>
+    <msg>
+      <tool-version>2.4.1.0</tool-version>
+      <code>ERR_COMPARE01</code>
+      <type>ERROR</type>
+      <message>{1} は {2} より大きくなければなりません。</message>
+      <is-disable>false</is-disable>
+      <description>{1} must be greater than {2}.</description>
+      <creator>eclipse</creator>
+      <create-time>2021-03-06 13:51:25.0</create-time>
+    </msg>
+    <msg>
+      <tool-version>2.4.1.0</tool-version>
+      <code>MSG_AFT_REGIST</code>
+      <type>INFO</type>
+      <message>登録しました。</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-06 13:51:42.0</create-time>
+    </msg>
+    <msg>
+      <tool-version>2.4.1.0</tool-version>
+      <code>MSG_PRE_REGIST</code>
+      <type>INFO</type>
+      <message>登録します。よろしいですか？</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-06 13:51:59.0</create-time>
+    </msg>
+    <msg>
+      <tool-version>2.4.1.0</tool-version>
+      <code>ERR_COMPARE02</code>
+      <type>ERROR</type>
+      <message>{1} は {2} 以上でなければなりません。</message>
+      <is-disable>false</is-disable>
+      <description>{1} must be greater than or equal {2}.</description>
+      <creator>eclipse</creator>
+      <create-time>2021-03-06 16:29:41.0</create-time>
+    </msg>
+    <msg>
+      <tool-version>2.4.1.0</tool-version>
+      <code>ERR_INVALID</code>
+      <type>ERROR</type>
+      <message>{1} は無効または存在しません。</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-06 16:29:54.0</create-time>
+    </msg>
+    <msg>
+      <tool-version>2.4.1.0</tool-version>
+      <code>MSG_AFT_UPDATE</code>
+      <type>INFO</type>
+      <message>更新しました。</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-06 16:30:11.0</create-time>
+    </msg>
+    <msg>
+      <tool-version>2.4.1.0</tool-version>
+      <code>MSG_PRE_UPDATE</code>
+      <type>INFO</type>
+      <message>更新します。よろしいですか？</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-06 16:30:23.0</create-time>
+    </msg>
+    <msg>
+      <tool-version>2.4.1.0</tool-version>
+      <code>ERR_REQUIRED</code>
+      <type>ERROR</type>
+      <message>{1} を入れてください。</message>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-09 22:53:53.0</create-time>
+    </msg>
+  </msg-list>

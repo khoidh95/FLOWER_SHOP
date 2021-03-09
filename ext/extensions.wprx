@@ -1,0 +1,75 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <ext-list>
+    <ext>
+      <tool-version>2.4.1.0</tool-version>
+      <code>EXT_EMAIL</code>
+      <name>Email regex check</name>
+      <type>INPUTCHAR</type>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-09 22:31:12.0</create-time>
+      <refdef-list/>
+      <ext-prop-list>
+        <ext-prop>
+          <ext-code>EXT_EMAIL</ext-code>
+          <key>regex</key>
+          <value>/^([a-zA-Z0-9])+([a-zA-Z0-9\._-])*@([a-zA-Z0-9_-])+([a-zA-Z0-9\._-]+)+$/</value>
+          <is-disable>false</is-disable>
+        </ext-prop>
+        <ext-prop>
+          <ext-code>EXT_EMAIL</ext-code>
+          <key>errMessage</key>
+          <value>Please enter the valid email address.</value>
+          <is-disable>false</is-disable>
+        </ext-prop>
+      </ext-prop-list>
+    </ext>
+    <ext>
+      <tool-version>2.4.1.0</tool-version>
+      <code>EXT_TEL</code>
+      <name>Phone regex check</name>
+      <type>INPUTCHAR</type>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-09 22:31:12.0</create-time>
+      <refdef-list/>
+      <ext-prop-list>
+        <ext-prop>
+          <ext-code>EXT_TEL</ext-code>
+          <key>regex</key>
+          <value>/^((\+[0-9-]{1,5}-)?\d{1,5}-)?\d{1,4}-\d{1,4}$/</value>
+          <is-disable>false</is-disable>
+        </ext-prop>
+        <ext-prop>
+          <ext-code>EXT_TEL</ext-code>
+          <key>errMessage</key>
+          <value>Please enter the valid phone number.</value>
+          <is-disable>false</is-disable>
+        </ext-prop>
+      </ext-prop-list>
+    </ext>
+    <ext>
+      <tool-version>2.4.1.0</tool-version>
+      <code>EXT_YUBIN</code>
+      <name>Postal code regex check</name>
+      <type>INPUTCHAR</type>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-09 22:31:12.0</create-time>
+      <refdef-list/>
+      <ext-prop-list>
+        <ext-prop>
+          <ext-code>EXT_YUBIN</ext-code>
+          <key>regex</key>
+          <value>/[0-9]{3}-[0-9]{4}/</value>
+          <is-disable>false</is-disable>
+        </ext-prop>
+        <ext-prop>
+          <ext-code>EXT_YUBIN</ext-code>
+          <key>errMessage</key>
+          <value>Please enter the valid postal code.</value>
+          <is-disable>false</is-disable>
+        </ext-prop>
+      </ext-prop-list>
+    </ext>
+  </ext-list>
