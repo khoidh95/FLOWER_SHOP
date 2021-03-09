@@ -29,9 +29,11 @@
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
         <data-type>CODE</data-type>
+        <ref-dm-code>CT010</ref-dm-code>
+        <ref-dm-item-code>IDKOKYAKU</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 09:12:03.0</create-time>
@@ -39,14 +41,16 @@
       </dm-item>
       <dm-item>
         <dm-code>CT020</dm-code>
-        <code>NRSYOUHIN</code>
+        <code>NRSYOHIN</code>
         <name>商品No.</name>
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
+        <is-nullable>false</is-nullable>
+        <key-group>3</key-group>
         <data-type>CODE</data-type>
+        <ref-dm-code>BT010</ref-dm-code>
+        <ref-dm-item-code>NRSYOHIN</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 09:12:03.0</create-time>
@@ -59,7 +63,7 @@
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
         <data-type>NUM</data-type>
         <is-disable>false</is-disable>
@@ -74,7 +78,7 @@
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
         <data-type>NUM</data-type>
         <is-disable>false</is-disable>
@@ -89,7 +93,7 @@
         <length>20</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
         <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
@@ -104,9 +108,9 @@
         <length>8</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
-        <data-type>CODE</data-type>
+        <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 09:12:03.0</create-time>
@@ -119,7 +123,7 @@
         <length>40</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
         <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
@@ -134,9 +138,9 @@
         <length>14</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
-        <data-type>CODE</data-type>
+        <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 09:12:03.0</create-time>
@@ -149,7 +153,7 @@
         <length>300</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
         <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
@@ -164,7 +168,7 @@
         <length>0</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
         <data-type>DATE</data-type>
         <is-disable>false</is-disable>
@@ -179,7 +183,7 @@
         <length>0</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
         <data-type>DATE</data-type>
         <is-disable>false</is-disable>
@@ -194,7 +198,7 @@
         <length>0</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
         <data-type>DATE</data-type>
         <is-disable>false</is-disable>
@@ -285,8 +289,8 @@
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
+        <is-nullable>false</is-nullable>
+        <key-group>2</key-group>
         <data-type>CODE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
@@ -300,7 +304,7 @@
         <length>1</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
         <data-type>CODE</data-type>
         <is-disable>false</is-disable>
@@ -315,7 +319,7 @@
         <length>2</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
         <data-type>CODE</data-type>
         <is-disable>false</is-disable>
@@ -327,12 +331,12 @@
         <dm-code>CT020</dm-code>
         <code>FGCOPYJYUSYO</code>
         <name>顧客住所複写フラグ</name>
-        <length>1</length>
+        <length>0</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
-        <data-type>CODE</data-type>
+        <data-type>BOOL</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 09:12:03.0</create-time>

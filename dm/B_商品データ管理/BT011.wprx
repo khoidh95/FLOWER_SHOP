@@ -103,6 +103,158 @@
         <dm-item-prop-list/>
       </dm-item>
     </dm-item-list>
-    <dm-ope-list/>
+    <dm-ope-list>
+      <dm-ope>
+        <code>INSERT</code>
+        <dm-code>BT011</dm-code>
+        <name>Insert</name>
+        <type>INSERT</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 15:04:15.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>BT011</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>NRSYOHIN</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 15:04:15.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>BT011</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>NRTANPIN</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 15:04:15.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>BT011</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>QTKOUSEI</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 15:04:15.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>BT011</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>QTHISSU</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 15:04:15.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>BT011</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>TXTEKIYO</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 15:04:15.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>BT011</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>SQLIST</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 15:04:15.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>UPDATE</code>
+        <dm-code>BT011</dm-code>
+        <name>Update</name>
+        <type>UPDATE</type>
+        <condition>NRSYOHIN = CODE(@1) AND NRTANPIN = CODE(@2)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 15:04:15.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>BT011</dm-code>
+            <dm-ope-code>UPDATE</dm-ope-code>
+            <dm-item-code>QTKOUSEI</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 15:04:15.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>BT011</dm-code>
+            <dm-ope-code>UPDATE</dm-ope-code>
+            <dm-item-code>QTHISSU</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 15:04:15.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>BT011</dm-code>
+            <dm-ope-code>UPDATE</dm-ope-code>
+            <dm-item-code>TXTEKIYO</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 15:04:15.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>BT011</dm-code>
+            <dm-ope-code>UPDATE</dm-ope-code>
+            <dm-item-code>SQLIST</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 15:04:15.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>DELETE</code>
+        <dm-code>BT011</dm-code>
+        <name>Delete</name>
+        <type>DELETE</type>
+        <condition>NRSYOHIN = CODE(@1) AND NRTANPIN = CODE(@2)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 15:04:15.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>LOCK</code>
+        <dm-code>BT011</dm-code>
+        <name>Lock</name>
+        <type>LOCK</type>
+        <condition>NRSYOHIN = CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 15:04:15.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>SELECT</code>
+        <dm-code>BT011</dm-code>
+        <name>Select</name>
+        <type>SELECT</type>
+        <condition>NRSYOHIN = CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 15:04:15.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+    </dm-ope-list>
     <dm-prop-list/>
   </dm>

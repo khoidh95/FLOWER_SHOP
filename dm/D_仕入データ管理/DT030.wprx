@@ -1,25 +1,22 @@
 <?xml version = "1.0"  encoding = "UTF-8" ?>
   <dm>
-    <tool-version>2.3.1.0</tool-version>
+    <tool-version>2.4.1.0</tool-version>
     <code>DT030</code>
     <name>仕入振替</name>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
     <create-time>2021-03-01 16:33:07.0</create-time>
-    <updator>eclipse</updator>
-    <update-time>2021-03-02 15:48:11.0</update-time>
     <dm-item-list>
       <dm-item>
         <dm-code>DT030</dm-code>
         <code>NRHURISIIRE</code>
         <name>仕入振替NO</name>
-        <order>10</order>
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>false</is-nullable>
         <key-group>1</key-group>
-        <data-type>TEXT</data-type>
+        <data-type>CODE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 16:37:12.0</create-time>
@@ -29,7 +26,6 @@
         <dm-code>DT030</dm-code>
         <code>CDSIIRESAKI</code>
         <name>仕入先C</name>
-        <order>20</order>
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
@@ -41,15 +37,12 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 16:37:12.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-02 10:04:38.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
         <dm-code>DT030</dm-code>
         <code>DTTORIHIKI</code>
         <name>取引日</name>
-        <order>30</order>
         <length>0</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
@@ -65,13 +58,12 @@
         <dm-code>DT030</dm-code>
         <code>KBHURISIIRE</code>
         <name>振替区分</name>
-        <order>40</order>
         <length>2</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
-        <data-type>TEXT</data-type>
+        <data-type>CODE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 16:37:12.0</create-time>
@@ -81,7 +73,6 @@
         <dm-code>DT030</dm-code>
         <code>AMHURISIIRE</code>
         <name>振替額</name>
-        <order>50</order>
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
@@ -97,7 +88,6 @@
         <dm-code>DT030</dm-code>
         <code>AMTAX</code>
         <name>消費税額</name>
-        <order>60</order>
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
@@ -113,7 +103,6 @@
         <dm-code>DT030</dm-code>
         <code>TXTEKIYO</code>
         <name>摘要</name>
-        <order>70</order>
         <length>50</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
@@ -129,18 +118,15 @@
         <dm-code>DT030</dm-code>
         <code>NRTORIHIKI</code>
         <name>取引管理NO</name>
-        <order>80</order>
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>2</key-group>
-        <data-type>TEXT</data-type>
+        <data-type>CODE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 16:37:12.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-02 15:48:11.0</update-time>
         <dm-item-prop-list/>
       </dm-item>
     </dm-item-list>

@@ -1,0 +1,78 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <dm>
+    <tool-version>2.4.1.0</tool-version>
+    <code>DMSEQ</code>
+    <name>番号管理テーブル</name>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2021-03-06 13:58:42.0</create-time>
+    <dm-item-list>
+      <dm-item>
+        <dm-code>DMSEQ</dm-code>
+        <code>KEYITEM</code>
+        <name>キー</name>
+        <length>12</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 13:59:23.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>DMSEQ</dm-code>
+        <code>VALUESET</code>
+        <name>採番値</name>
+        <length>10</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 13:59:23.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+    </dm-item-list>
+    <dm-ope-list>
+      <dm-ope>
+        <code>LOCK</code>
+        <dm-code>DMSEQ</dm-code>
+        <name>Lock</name>
+        <type>LOCK</type>
+        <condition>KEYITEM = CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:00:21.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>UPDATE</code>
+        <dm-code>DMSEQ</dm-code>
+        <name>Update</name>
+        <type>UPDATE</type>
+        <condition>KEYITEM = CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:00:21.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>DMSEQ</dm-code>
+            <dm-ope-code>UPDATE</dm-ope-code>
+            <dm-item-code>VALUESET</dm-item-code>
+            <statement>NEXTCODE(CODE(@2))</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:00:21.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+    </dm-ope-list>
+    <dm-prop-list/>
+  </dm>
