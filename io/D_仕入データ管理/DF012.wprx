@@ -1,6 +1,6 @@
 <?xml version = "1.0"  encoding = "UTF-8" ?>
   <io>
-    <tool-version>2.3.1.0</tool-version>
+    <tool-version>2.4.1.0</tool-version>
     <code>DF012</code>
     <name>仕入先と関連情報の確認</name>
     <io-type>IO</io-type>
@@ -8,8 +8,6 @@
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
     <create-time>2021-03-03 15:26:11.0</create-time>
-    <updator>eclipse</updator>
-    <update-time>2021-03-04 17:29:08.0</update-time>
     <io-parts-list/>
     <io-item-list>
       <io-item>
@@ -25,7 +23,6 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <statement>DF012_01_INIT:CDSIIRESAKI,I_DTNYUKAYOTEI</statement>
-        <order>-1</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
@@ -48,7 +45,6 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <default-value>CODE(@1)</default-value>
-        <order>20</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -87,7 +83,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>30</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -126,7 +121,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>40</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -158,7 +152,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>50</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -182,7 +175,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>60</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -206,7 +198,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>70</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -238,7 +229,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>80</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -262,7 +252,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>90</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -294,7 +283,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>100</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -318,7 +306,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>110</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -343,7 +330,6 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <default-value>@TODAY</default-value>
-        <order>120</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-item-code>@DATE</dm-item-code>
@@ -397,7 +383,6 @@
         <max-ByteSize>0</max-ByteSize>
         <statement>DF012_01_INIT:CDSIIRESAKI,I_DTNYUKAYOTEI</statement>
         <next-io-param>CDSIIRESAKI</next-io-param>
-        <order>130</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
@@ -441,7 +426,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>140</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
@@ -471,7 +455,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>150</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-item-code>@NUM</dm-item-code>
@@ -502,7 +485,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>160</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-code>DT021</dm-code>
@@ -526,7 +508,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>170</order>
         <level>2</level>
         <sort-key>1</sort-key>
         <sort-type>A</sort-type>
@@ -551,7 +532,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>180</order>
         <level>2</level>
         <sort-key>2</sort-key>
         <sort-type>A</sort-type>
@@ -576,15 +556,13 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>190</order>
+        <statement>#GET_TXTANPIN('G_NRTANPIN')</statement>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-item-code>@TEXT</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-04 17:18:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 17:24:29.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>DF012</io-code>
@@ -609,7 +587,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>200</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-code>DT021</dm-code>
@@ -634,7 +611,6 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <statement>NAVAL(BT020{NRTANPIN = G_NRTANPIN}.KBUNIT,@NULL)</statement>
-        <order>210</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-item-code>@CODE</dm-item-code>
@@ -660,7 +636,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>220</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-code>DT021</dm-code>
@@ -684,7 +659,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>230</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-code>DT021</dm-code>
@@ -709,14 +683,11 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <next-io-param>CDSIIRESAKI</next-io-param>
-        <order>240</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-04 17:25:30.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 17:29:08.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>DF012</io-code>
@@ -756,7 +727,6 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <statement>@BACK</statement>
-        <order>250</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
@@ -782,7 +752,14 @@
         <io-item-next-io-logic-list/>
       </io-item>
     </io-item-list>
-    <io-prop-list/>
+    <io-prop-list>
+      <io-prop>
+        <io-code>DF012</io-code>
+        <key>dmSource</key>
+        <value>WORKAREA</value>
+        <is-disable>false</is-disable>
+      </io-prop>
+    </io-prop-list>
     <sec-io>
       <io-code>DF012</io-code>
       <is-disable>false</is-disable>

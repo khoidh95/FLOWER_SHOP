@@ -4,8 +4,8 @@ app-gen-FlowerShop-test-mode=false
 
 export-war-task=
 
-
 application=FlowerShop
+
 
 app-gen-FlowerShop-env-app=
 
@@ -16,17 +16,15 @@ ddl-method=JDBC
 
 app-gen-FlowerShop-app-doc-gen=false
 
-AwsDeployDialog.dbToolUrl=
-
 test-mode=false
-
-app-doc-gen=false
 
 env-app=
 
-deploy-to-server=false
+app-doc-gen=false
 
 theme=Sky
+
+deploy-to-server=false
 
 app-gen-FlowerShop-html-type=HTML5
 

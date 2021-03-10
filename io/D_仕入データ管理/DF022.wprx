@@ -1,6 +1,6 @@
 <?xml version = "1.0"  encoding = "UTF-8" ?>
   <io>
-    <tool-version>2.3.1.0</tool-version>
+    <tool-version>2.4.1.0</tool-version>
     <code>DF022</code>
     <name>発注見出しと関連情報の確認</name>
     <io-type>IO</io-type>
@@ -9,8 +9,6 @@
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
     <create-time>2019-11-06 11:37:27.0</create-time>
-    <updator>eclipse</updator>
-    <update-time>2021-03-10 12:40:06.0</update-time>
     <io-parts-list/>
     <io-item-list>
       <io-item>
@@ -25,7 +23,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>10</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT020</dm-code>
@@ -33,8 +30,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-06 11:37:27.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-11-27 11:39:56.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>DF022</io-code>
@@ -66,7 +61,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>20</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT020</dm-code>
@@ -74,8 +68,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-06 11:37:27.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-11-07 11:29:48.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>DF022</io-code>
@@ -100,7 +92,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>30</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT020</dm-code>
@@ -111,8 +102,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-06 11:37:27.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-11-11 11:06:13.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>DF022</io-code>
@@ -137,7 +126,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>40</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT020</dm-code>
@@ -145,8 +133,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-06 11:37:27.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-12-02 18:24:07.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -164,15 +150,12 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <statement>#GET_TXSIIRESAKI('CDSIIRESAKI')</statement>
-        <order>50</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-item-code>@TEXT</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-07 11:29:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-12-05 14:00:33.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>DF022</io-code>
@@ -204,14 +187,11 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>60</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-07 11:34:44.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-11-28 16:50:27.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>DF022</io-code>
@@ -271,7 +251,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>70</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-item-code>@NUM</dm-item-code>
@@ -302,7 +281,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>80</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-code>DT021</dm-code>
@@ -310,8 +288,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-07 11:35:15.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-11-07 12:51:39.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -328,7 +304,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>90</order>
         <level>2</level>
         <sort-key>1</sort-key>
         <sort-type>A</sort-type>
@@ -340,8 +315,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-28 16:23:56.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-11-28 16:52:09.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -358,7 +331,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>100</order>
         <level>2</level>
         <sort-key>2</sort-key>
         <sort-type>A</sort-type>
@@ -367,8 +339,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-07 11:34:44.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-11-28 16:52:09.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -385,7 +355,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>110</order>
         <level>2</level>
         <sort-key>3</sort-key>
         <sort-type>A</sort-type>
@@ -394,8 +363,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-07 11:34:44.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-11-28 16:50:08.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -413,15 +380,12 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <statement>#GET_TXTANPIN('G_NRTANPIN')</statement>
-        <order>120</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-item-code>@TEXT</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-07 11:34:44.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-12-05 14:00:33.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -439,7 +403,6 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <default-value>1</default-value>
-        <order>130</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-code>DT021</dm-code>
@@ -447,8 +410,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-07 11:34:44.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-11-28 16:45:09.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -466,7 +427,6 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <statement>#GET_KBUNIT('G_NRTANPIN')</statement>
-        <order>140</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-item-code>@CODE</dm-item-code>
@@ -476,8 +436,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-07 11:34:44.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-12-05 14:00:33.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -495,7 +453,6 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <default-value>NAVAL(BT020{NRTANPIN = G_NRTANPIN}.PRKOUNYU,@NULL)</default-value>
-        <order>150</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-code>DT021</dm-code>
@@ -503,8 +460,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-06 15:41:56.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-11-28 16:34:58.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -521,7 +476,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>160</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-code>DT021</dm-code>
@@ -529,8 +483,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-07 12:54:41.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-11-28 16:45:15.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -548,15 +500,12 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <statement>NAVAL(G_PRKOUNYU * IF(G_STNYUKA &lt;&gt; CODE(2), G_QTHATTYU, G_QTNYUKA),0)</statement>
-        <order>170</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-item-code>@CURRENCY</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-28 16:27:24.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-11-29 15:48:17.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -575,14 +524,11 @@
         <max-ByteSize>0</max-ByteSize>
         <next-io-param>'DF022',NRHATTYU</next-io-param>
         <condition>STHATTYU &lt;&gt; CODE(0)</condition>
-        <order>180</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-14 15:07:06.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-09 15:58:26.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>DF022</io-code>
@@ -615,14 +561,11 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <next-io-code>@BACK</next-io-code>
-        <order>190</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2019-11-06 11:37:27.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2019-12-02 11:37:48.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>DF022</io-code>
@@ -653,7 +596,5 @@
       <is-disable>false</is-disable>
       <creator>eclipse</creator>
       <create-time>2019-11-14 11:42:19.0</create-time>
-      <updator>eclipse</updator>
-      <update-time>2021-03-09 18:08:42.0</update-time>
     </sec-menu>
   </io>

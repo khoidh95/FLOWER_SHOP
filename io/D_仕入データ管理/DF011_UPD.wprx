@@ -1,7 +1,7 @@
 <?xml version = "1.0"  encoding = "UTF-8" ?>
   <io>
-    <tool-version>2.3.1.0</tool-version>
-    <code>DF011</code>
+    <tool-version>2.4.1.0</tool-version>
+    <code>DF011_UPD</code>
     <name>仕入先の保守</name>
     <io-type>IO</io-type>
     <dm-code>DT010</dm-code>
@@ -9,12 +9,10 @@
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
     <create-time>2021-03-03 15:21:48.0</create-time>
-    <updator>eclipse</updator>
-    <update-time>2021-03-04 17:28:47.0</update-time>
     <io-parts-list/>
     <io-item-list>
       <io-item>
-        <io-code>DF011</io-code>
+        <io-code>DF011_UPD</io-code>
         <code>CDSIIRESAKI</code>
         <name>仕入先CODE</name>
         <is-visible>true</is-visible>
@@ -25,7 +23,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>10</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -33,14 +30,12 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 17:21:22.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011</io-code>
+        <io-code>DF011_UPD</io-code>
         <code>TXSIIRESAKI</code>
         <name>仕入先名</name>
         <is-visible>true</is-visible>
@@ -51,7 +46,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>20</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -59,14 +53,12 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 17:21:22.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011</io-code>
+        <io-code>DF011_UPD</io-code>
         <code>NRYUBIN</code>
         <name>郵便番号</name>
         <is-visible>true</is-visible>
@@ -77,7 +69,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>30</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -85,14 +76,12 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 17:21:22.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011</io-code>
+        <io-code>DF011_UPD</io-code>
         <code>TXJYUSYO1</code>
         <name>住所１</name>
         <is-visible>true</is-visible>
@@ -103,7 +92,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>40</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -111,14 +99,12 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 17:21:22.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011</io-code>
+        <io-code>DF011_UPD</io-code>
         <code>TXJYUSYO2</code>
         <name>ビル名</name>
         <is-visible>true</is-visible>
@@ -129,7 +115,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>50</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -137,14 +122,12 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-03 15:32:08.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011</io-code>
+        <io-code>DF011_UPD</io-code>
         <code>TXEMAIL</code>
         <name>Email</name>
         <is-visible>true</is-visible>
@@ -155,7 +138,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>60</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -163,14 +145,12 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 17:21:22.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011</io-code>
+        <io-code>DF011_UPD</io-code>
         <code>NRPHONE</code>
         <name>電話番号</name>
         <is-visible>true</is-visible>
@@ -181,7 +161,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>70</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -189,14 +168,12 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 17:21:22.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011</io-code>
+        <io-code>DF011_UPD</io-code>
         <code>NRFAX</code>
         <name>FAX番号</name>
         <is-visible>true</is-visible>
@@ -207,7 +184,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>80</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -215,11 +191,9 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-03 15:33:02.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>DF011</io-code>
+            <io-code>DF011_UPD</io-code>
             <io-item-code>NRFAX</io-item-code>
             <key>layout</key>
             <value>X_AXIS</value>
@@ -230,7 +204,7 @@
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011</io-code>
+        <io-code>DF011_UPD</io-code>
         <code>TXFURIKOMI</code>
         <name>振込先口座</name>
         <is-visible>true</is-visible>
@@ -241,7 +215,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>90</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -249,14 +222,12 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 17:21:22.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011</io-code>
+        <io-code>DF011_UPD</io-code>
         <code>AMKAIKAKEZAN</code>
         <name>現買掛残高</name>
         <is-visible>true</is-visible>
@@ -267,7 +238,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>100</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -280,7 +250,7 @@
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011</io-code>
+        <io-code>DF011_UPD</io-code>
         <code>UPDATE_A</code>
         <name>更新 [F8]</name>
         <is-visible>true</is-visible>
@@ -293,24 +263,21 @@
         <max-ByteSize>0</max-ByteSize>
         <statement>DF011_UPDATE</statement>
         <next-io-param>_RESULT_.CDSIIRESAKI</next-io-param>
-        <order>110</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-04 17:23:37.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 17:28:47.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>DF011</io-code>
+            <io-code>DF011_UPD</io-code>
             <io-item-code>UPDATE_A</io-item-code>
             <key>labelWidth</key>
             <value>75</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
-            <io-code>DF011</io-code>
+            <io-code>DF011_UPD</io-code>
             <io-item-code>UPDATE_A</io-item-code>
             <key>functionKey</key>
             <value>F8</value>
@@ -321,7 +288,7 @@
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011</io-code>
+        <io-code>DF011_UPD</io-code>
         <code>B</code>
         <name>戻る [F1]</name>
         <is-visible>true</is-visible>
@@ -333,7 +300,6 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <next-io-code>@BACK</next-io-code>
-        <order>120</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
@@ -341,14 +307,14 @@
         <create-time>2021-03-04 17:23:37.0</create-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>DF011</io-code>
+            <io-code>DF011_UPD</io-code>
             <io-item-code>B</io-item-code>
             <key>labelWidth</key>
             <value>75</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
-            <io-code>DF011</io-code>
+            <io-code>DF011_UPD</io-code>
             <io-item-code>B</io-item-code>
             <key>functionKey</key>
             <value>F1</value>
@@ -361,12 +327,11 @@
     </io-item-list>
     <io-prop-list/>
     <sec-io>
-      <io-code>DF011</io-code>
+      <io-code>DF011_UPD</io-code>
       <is-disable>false</is-disable>
     </sec-io>
     <sec-menu>
-      <io-code>DF011</io-code>
-      <role-menu>*:MENU_TOP</role-menu>
+      <io-code>DF011_UPD</io-code>
       <is-disable>false</is-disable>
       <creator>eclipse</creator>
       <create-time>2021-03-04 17:20:35.0</create-time>

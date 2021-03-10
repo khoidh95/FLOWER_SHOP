@@ -17,11 +17,11 @@
         <is-nullable>false</is-nullable>
         <key-group>1</key-group>
         <data-type>CODE</data-type>
-        <ref-dm-code>BT020</ref-dm-code>
-        <ref-dm-item-code>NRTANPIN</ref-dm-item-code>
+        <ref-dm-code>DT020</ref-dm-code>
+        <ref-dm-item-code>NRHATTYU</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-10-29 14:36:59.0</create-time>
+        <create-time>2021-03-10 17:16:08.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -36,7 +36,7 @@
         <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-10-29 14:36:59.0</create-time>
+        <create-time>2021-03-10 17:16:08.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -46,12 +46,14 @@
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
         <data-type>CODE</data-type>
+        <ref-dm-code>BT020</ref-dm-code>
+        <ref-dm-item-code>NRTANPIN</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-10-29 14:36:59.0</create-time>
+        <create-time>2021-03-10 17:16:08.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -66,7 +68,7 @@
         <data-type>CODE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-10-29 14:36:59.0</create-time>
+        <create-time>2021-03-10 17:16:08.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -81,7 +83,7 @@
         <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-10-29 14:36:59.0</create-time>
+        <create-time>2021-03-10 17:16:08.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -96,7 +98,7 @@
         <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-10-29 14:36:59.0</create-time>
+        <create-time>2021-03-10 17:16:08.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -111,7 +113,7 @@
         <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-10-29 14:36:59.0</create-time>
+        <create-time>2021-03-10 17:16:08.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -127,7 +129,7 @@
         <is-disable>false</is-disable>
         <description>実際入荷数×購入単位別入り数を初期値とする</description>
         <creator>eclipse</creator>
-        <create-time>2019-10-29 14:36:59.0</create-time>
+        <create-time>2021-03-10 17:16:08.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -143,7 +145,7 @@
         <is-disable>false</is-disable>
         <description>発注時には「希望帚」と示される</description>
         <creator>eclipse</creator>
-        <create-time>2019-10-29 14:36:59.0</create-time>
+        <create-time>2021-03-10 17:16:08.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -158,7 +160,7 @@
         <data-type>DATE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-10-29 14:36:59.0</create-time>
+        <create-time>2021-03-10 17:16:08.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -173,7 +175,7 @@
         <data-type>CODE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-10-29 14:36:59.0</create-time>
+        <create-time>2021-03-10 17:16:08.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -191,7 +193,7 @@
         <is-disable>false</is-disable>
         <description>発注見出しからの継承。入荷エントリーで利用できる</description>
         <creator>eclipse</creator>
-        <create-time>2019-10-29 14:36:59.0</create-time>
+        <create-time>2021-03-10 17:16:08.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -206,7 +208,7 @@
         <data-type>CURRENCY</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-10-29 14:36:59.0</create-time>
+        <create-time>2021-03-10 17:16:08.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -221,7 +223,7 @@
         <data-type>CURRENCY</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-10-29 14:36:59.0</create-time>
+        <create-time>2021-03-10 17:16:08.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -237,7 +239,7 @@
         <is-disable>false</is-disable>
         <description>1:未入荷</description>
         <creator>eclipse</creator>
-        <create-time>2019-10-29 14:36:59.0</create-time>
+        <create-time>2021-03-10 17:16:08.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
     </dm-item-list>
@@ -251,7 +253,7 @@
         <is-commit>false</is-commit>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-12 13:19:44.0</create-time>
+        <create-time>2021-03-10 17:15:36.0</create-time>
         <dm-ope-logic-list>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -260,7 +262,7 @@
             <statement>CODE(@2)</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-12 13:19:44.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
         </dm-ope-logic-list>
       </dm-ope>
@@ -273,7 +275,7 @@
         <is-commit>false</is-commit>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-06 17:21:04.0</create-time>
+        <create-time>2021-03-10 17:15:36.0</create-time>
         <dm-ope-logic-list/>
       </dm-ope>
       <dm-ope>
@@ -284,7 +286,7 @@
         <is-commit>false</is-commit>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-06 17:21:04.0</create-time>
+        <create-time>2021-03-10 17:15:36.0</create-time>
         <dm-ope-logic-list>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -293,7 +295,7 @@
             <statement>CODE(@1)</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-06 17:22:22.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -302,7 +304,7 @@
             <statement>NUM(@2)</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-06 17:22:22.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -311,7 +313,7 @@
             <statement>_IN_._ITEM_</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-07 11:20:01.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -320,7 +322,7 @@
             <statement>_IN_._ITEM_</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-07 11:20:01.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -329,7 +331,7 @@
             <statement>_IN_._ITEM_</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-07 11:20:01.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -338,7 +340,7 @@
             <statement>0</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-07 11:20:01.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -347,7 +349,7 @@
             <statement>_IN_._ITEM_</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-07 11:20:01.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -356,7 +358,7 @@
             <statement>NAVAL(BT020{NRTANPIN = _IN_.NRTANPIN}.VLUNIT,@NULL) * QTHATTYU</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-07 11:20:01.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -365,7 +367,7 @@
             <statement>_IN_._ITEM_</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-07 11:20:01.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -374,7 +376,7 @@
             <statement>_IN_._ITEM_</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-07 11:20:01.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -383,7 +385,7 @@
             <statement>_IN_._ITEM_</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-07 11:20:01.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -392,7 +394,7 @@
             <statement>_IN_._ITEM_</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-07 11:20:01.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -401,7 +403,7 @@
             <statement>_IN_.QTHATTYU * _IN_.PRKOUNYU</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-07 11:20:01.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -410,7 +412,7 @@
             <statement>#CAL_TAX('_IN_.QTHATTYU * _IN_.PRKOUNYU')</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-07 11:20:01.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -419,7 +421,7 @@
             <statement>CODE(0)</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-07 11:20:01.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
         </dm-ope-logic-list>
       </dm-ope>
@@ -432,7 +434,7 @@
         <is-commit>false</is-commit>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-06 17:21:04.0</create-time>
+        <create-time>2021-03-10 17:15:36.0</create-time>
         <dm-ope-logic-list/>
       </dm-ope>
       <dm-ope>
@@ -444,7 +446,7 @@
         <is-commit>false</is-commit>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-11 14:27:27.0</create-time>
+        <create-time>2021-03-10 17:15:36.0</create-time>
         <dm-ope-logic-list>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -453,7 +455,7 @@
             <statement>_IN_._ITEM_</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-11 14:27:27.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -462,7 +464,7 @@
             <statement>_IN_._ITEM_</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-11 14:27:27.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -471,7 +473,7 @@
             <statement>@TODAY</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-11 14:27:27.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -480,7 +482,7 @@
             <statement>CODE(2)</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-11 14:27:27.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
         </dm-ope-logic-list>
       </dm-ope>
@@ -493,7 +495,7 @@
         <is-commit>false</is-commit>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-15 16:37:19.0</create-time>
+        <create-time>2021-03-10 17:15:36.0</create-time>
         <dm-ope-logic-list>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -502,7 +504,7 @@
             <statement>CODE(@3)</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-15 16:37:19.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -511,7 +513,7 @@
             <statement>CODE(@4)</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-19 11:10:58.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
         </dm-ope-logic-list>
       </dm-ope>
@@ -523,7 +525,7 @@
         <is-commit>false</is-commit>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-11 13:28:22.0</create-time>
+        <create-time>2021-03-10 17:15:36.0</create-time>
         <dm-ope-logic-list>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -534,7 +536,7 @@
             <msg-param-ng>@1</msg-param-ng>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-11 13:28:22.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
         </dm-ope-logic-list>
       </dm-ope>
@@ -547,7 +549,7 @@
         <is-commit>false</is-commit>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-07 13:11:58.0</create-time>
+        <create-time>2021-03-10 17:15:36.0</create-time>
         <dm-ope-logic-list/>
       </dm-ope>
       <dm-ope>
@@ -559,7 +561,7 @@
         <is-commit>false</is-commit>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-08 15:50:59.0</create-time>
+        <create-time>2021-03-10 17:15:36.0</create-time>
         <dm-ope-logic-list/>
       </dm-ope>
       <dm-ope>
@@ -571,7 +573,7 @@
         <is-commit>false</is-commit>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-08 15:43:08.0</create-time>
+        <create-time>2021-03-10 17:15:36.0</create-time>
         <dm-ope-logic-list/>
       </dm-ope>
       <dm-ope>
@@ -583,7 +585,7 @@
         <is-commit>false</is-commit>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-11 14:03:19.0</create-time>
+        <create-time>2021-03-10 17:15:36.0</create-time>
         <dm-ope-logic-list/>
       </dm-ope>
       <dm-ope>
@@ -595,7 +597,7 @@
         <is-commit>false</is-commit>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-11 14:37:24.0</create-time>
+        <create-time>2021-03-10 17:15:36.0</create-time>
         <dm-ope-logic-list/>
       </dm-ope>
       <dm-ope>
@@ -606,7 +608,7 @@
         <is-commit>false</is-commit>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-07 13:17:54.0</create-time>
+        <create-time>2021-03-10 17:15:36.0</create-time>
         <dm-ope-logic-list>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -617,7 +619,7 @@
             <msg-param-ng>'発注明細'</msg-param-ng>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-07 13:17:54.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
         </dm-ope-logic-list>
       </dm-ope>
@@ -629,7 +631,7 @@
         <is-commit>false</is-commit>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-13 09:59:07.0</create-time>
+        <create-time>2021-03-10 17:15:36.0</create-time>
         <dm-ope-logic-list>
           <dm-ope-logic>
             <dm-code>DT021</dm-code>
@@ -639,7 +641,7 @@
             <msg-code-ng>ERR_ACTION</msg-code-ng>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
-            <create-time>2019-11-13 09:59:07.0</create-time>
+            <create-time>2021-03-10 17:15:36.0</create-time>
           </dm-ope-logic>
         </dm-ope-logic-list>
       </dm-ope>

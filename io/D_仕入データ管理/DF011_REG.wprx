@@ -1,6 +1,6 @@
 <?xml version = "1.0"  encoding = "UTF-8" ?>
   <io>
-    <tool-version>2.3.1.0</tool-version>
+    <tool-version>2.4.1.0</tool-version>
     <code>DF011_REG</code>
     <name>仕入先の登録</name>
     <io-type>IO</io-type>
@@ -8,8 +8,6 @@
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
     <create-time>2021-03-03 15:21:48.0</create-time>
-    <updator>eclipse</updator>
-    <update-time>2021-03-10 14:32:43.0</update-time>
     <io-parts-list/>
     <io-item-list>
       <io-item>
@@ -24,15 +22,13 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>10</order>
+        <default-value>'* AUTO'</default-value>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-item-code>@TEXT</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-04 16:48:07.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-10 12:52:19.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -50,7 +46,6 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <condition>CDSIIRESAKI &lt;&gt; @NULL</condition>
-        <order>20</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -58,8 +53,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 17:05:05.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>DF011_REG</io-code>
@@ -84,7 +77,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>30</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -92,8 +84,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 16:49:12.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -110,7 +100,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>40</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -118,8 +107,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 16:49:12.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -136,7 +123,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>50</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -144,8 +130,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 16:49:12.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -162,7 +146,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>60</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -170,8 +153,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-03 15:32:08.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -188,7 +169,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>70</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -196,8 +176,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 16:49:12.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -214,7 +192,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>80</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -222,8 +199,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 16:49:12.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -240,7 +215,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>90</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -248,8 +222,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-03 15:33:02.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>DF011_REG</io-code>
@@ -274,7 +246,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>100</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -282,8 +253,6 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-04 16:49:12.0</update-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -300,7 +269,6 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>110</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
@@ -329,7 +297,6 @@
         <next-io-param>_RESULT_.CDSIIRESAKI</next-io-param>
         <msg-code-pre>MSG_PRE_REGIST</msg-code-pre>
         <msg-code-ok>MSG_AFT_REGIST</msg-code-ok>
-        <order>120</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
@@ -366,16 +333,12 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <statement>@BACK</statement>
         <next-io-code>@BACK</next-io-code>
-        <order>130</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-03 15:21:48.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-10 12:52:59.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>DF011_REG</io-code>
