@@ -1,25 +1,26 @@
 <?xml version = "1.0"  encoding = "UTF-8" ?>
   <io>
     <tool-version>2.3.1.0</tool-version>
-    <code>DF010</code>
-    <name>仕入先の一覧・保守</name>
-    <io-type>IO</io-type>
+    <code>DF300</code>
+    <name>仕入先選択ダイアログ</name>
+    <io-type>DIALOG</io-type>
     <dm-code>DT010</dm-code>
+    <condition>CDSIIRESAKI CT CODE(@1) AND TXSIIRESAKI CT @2</condition>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
-    <create-time>2021-03-02 18:21:24.0</create-time>
+    <create-time>2019-11-06 13:03:56.0</create-time>
     <updator>eclipse</updator>
-    <update-time>2021-03-10 12:47:45.0</update-time>
+    <update-time>2019-12-05 14:03:39.0</update-time>
     <io-parts-list/>
     <io-item-list>
       <io-item>
-        <io-code>DF010</io-code>
+        <io-code>DF300</io-code>
         <code>I_CDSIIRESAKI</code>
-        <name>仕入先CODE</name>
+        <name>仕入先CD</name>
         <is-visible>true</is-visible>
         <item-type>I</item-type>
         <is-require>false</is-require>
-        <length>0</length>
+        <length>7</length>
         <scale>-1</scale>
         <min-length>0</min-length>
         <max-length>0</max-length>
@@ -30,19 +31,19 @@
         <dm-item-code>@CODE</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-02 18:21:24.0</create-time>
+        <create-time>2019-11-01 16:00:30.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2021-03-04 16:52:12.0</update-time>
+        <update-time>2019-12-05 14:03:39.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>DF010</io-code>
+            <io-code>DF300</io-code>
             <io-item-code>I_CDSIIRESAKI</io-item-code>
             <key>partitionType</key>
             <value>BOX</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
-            <io-code>DF010</io-code>
+            <io-code>DF300</io-code>
             <io-item-code>I_CDSIIRESAKI</io-item-code>
             <key>partitionLabel</key>
             <value>検索条件</value>
@@ -53,7 +54,7 @@
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF010</io-code>
+        <io-code>DF300</io-code>
         <code>I_TXSIIRESAKI</code>
         <name>仕入先名</name>
         <is-visible>true</is-visible>
@@ -72,10 +73,10 @@
         <creator>eclipse</creator>
         <create-time>2019-11-01 16:00:30.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2021-03-03 16:51:42.0</update-time>
+        <update-time>2019-12-05 14:03:39.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>DF010</io-code>
+            <io-code>DF300</io-code>
             <io-item-code>I_TXSIIRESAKI</io-item-code>
             <key>layout</key>
             <value>X_AXIS</value>
@@ -86,7 +87,7 @@
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF010</io-code>
+        <io-code>DF300</io-code>
         <code>A_SEARCH</code>
         <name>検索 [F3]</name>
         <is-visible>true</is-visible>
@@ -105,17 +106,24 @@
         <creator>eclipse</creator>
         <create-time>2019-11-01 16:00:30.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2021-03-04 17:03:08.0</update-time>
+        <update-time>2019-12-02 11:18:32.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>DF010</io-code>
+            <io-code>DF300</io-code>
             <io-item-code>A_SEARCH</io-item-code>
-            <key>labelWidth</key>
-            <value>75</value>
+            <key>layout</key>
+            <value>X_AXIS</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
-            <io-code>DF010</io-code>
+            <io-code>DF300</io-code>
+            <io-item-code>A_SEARCH</io-item-code>
+            <key>labelWidth</key>
+            <value>80</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>DF300</io-code>
             <io-item-code>A_SEARCH</io-item-code>
             <key>functionKey</key>
             <value>F3</value>
@@ -126,68 +134,7 @@
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF010</io-code>
-        <code>A_ADD</code>
-        <name>追加 [F6]</name>
-        <is-visible>true</is-visible>
-        <item-type>A</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <next-io-code>DF011_REG</next-io-code>
-        <order>40</order>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2019-11-07 13:50:52.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-10 12:47:45.0</update-time>
-        <io-item-prop-list>
-          <io-item-prop>
-            <io-code>DF010</io-code>
-            <io-item-code>A_ADD</io-item-code>
-            <key>left</key>
-            <value>5px</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>DF010</io-code>
-            <io-item-code>A_ADD</io-item-code>
-            <key>labelWidth</key>
-            <value>75</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>DF010</io-code>
-            <io-item-code>A_ADD</io-item-code>
-            <key>functionKey</key>
-            <value>F6</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>DF010</io-code>
-            <io-item-code>A_ADD</io-item-code>
-            <key>partitionType</key>
-            <value>NONE</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>DF010</io-code>
-            <io-item-code>A_ADD</io-item-code>
-            <key>layout</key>
-            <value>Y_AXIS</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-        </io-item-prop-list>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>DF010</io-code>
+        <io-code>DF300</io-code>
         <code>G</code>
         <name>仕入先</name>
         <is-visible>true</is-visible>
@@ -198,38 +145,38 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>50</order>
+        <order>40</order>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-01 15:57:18.0</create-time>
+        <create-time>2019-11-06 13:36:03.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2021-03-09 12:56:28.0</update-time>
+        <update-time>2019-11-27 09:24:49.0</update-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>DF010</io-code>
+            <io-code>DF300</io-code>
             <io-item-code>G</io-item-code>
             <key>rows</key>
             <value>20</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
-            <io-code>DF010</io-code>
+            <io-code>DF300</io-code>
             <io-item-code>G</io-item-code>
             <key>summaryTarget</key>
             <value>ALL</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
-            <io-code>DF010</io-code>
+            <io-code>DF300</io-code>
             <io-item-code>G</io-item-code>
             <key>partitionType</key>
             <value>BOX</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
-            <io-code>DF010</io-code>
+            <io-code>DF300</io-code>
             <io-item-code>G</io-item-code>
             <key>partitionLabel</key>
             <value>仕入先一覧</value>
@@ -240,7 +187,7 @@
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF010</io-code>
+        <io-code>DF300</io-code>
         <code>LINENO</code>
         <name>No.</name>
         <is-visible>true</is-visible>
@@ -251,18 +198,16 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>60</order>
+        <order>50</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-item-code>@NUM</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-12 10:42:16.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-09 12:56:28.0</update-time>
+        <create-time>2019-11-12 10:43:47.0</create-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>DF010</io-code>
+            <io-code>DF300</io-code>
             <io-item-code>LINENO</io-item-code>
             <key>lineNumber</key>
             <value>WHOLE</value>
@@ -273,10 +218,10 @@
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF010</io-code>
-        <code>A_LINK</code>
-        <name>情報</name>
-        <is-visible>false</is-visible>
+        <io-code>DF300</io-code>
+        <code>A_SELECT</code>
+        <name>選択</name>
+        <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>
         <length>0</length>
@@ -284,32 +229,51 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <next-io-code>DF012</next-io-code>
-        <next-io-param>CDSIIRESAKI</next-io-param>
-        <order>70</order>
+        <statement>@RETURN</statement>
+        <next-io-param>G_CDSIIRESAKI,G_TXSIIRESAKI</next-io-param>
+        <order>60</order>
         <level>2</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-01 16:00:30.0</create-time>
+        <create-time>2019-11-06 13:05:48.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2021-03-09 12:56:28.0</update-time>
-        <io-item-prop-list>
-          <io-item-prop>
-            <io-code>DF010</io-code>
-            <io-item-code>A_LINK</io-item-code>
-            <key>fieldType</key>
-            <value>LINK</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-        </io-item-prop-list>
+        <update-time>2019-11-06 14:32:26.0</update-time>
+        <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF010</io-code>
-        <code>CDSIIRESAKI</code>
+        <io-code>DF300</io-code>
+        <code>G_CDSIIRESAKI</code>
         <name>仕入先CD</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <order>70</order>
+        <level>2</level>
+        <sort-key>1</sort-key>
+        <sort-type>A</sort-type>
+        <dm-code>DT010</dm-code>
+        <dm-item-code>CDSIIRESAKI</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-06 13:36:03.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-12-02 18:27:55.0</update-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>DF300</io-code>
+        <code>G_TXSIIRESAKI</code>
+        <name>仕入先名</name>
         <is-visible>true</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
@@ -320,38 +284,20 @@
         <max-ByteSize>0</max-ByteSize>
         <order>80</order>
         <level>2</level>
-        <sort-key>1</sort-key>
-        <sort-type>A</sort-type>
+        <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
-        <dm-item-code>CDSIIRESAKI</dm-item-code>
+        <dm-item-code>TXSIIRESAKI</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-01 15:57:18.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-09 12:56:28.0</update-time>
-        <io-item-prop-list>
-          <io-item-prop>
-            <io-code>DF010</io-code>
-            <io-item-code>CDSIIRESAKI</io-item-code>
-            <key>fieldType</key>
-            <value>LINK</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>DF010</io-code>
-            <io-item-code>CDSIIRESAKI</io-item-code>
-            <key>fieldAction</key>
-            <value>A_LINK</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-        </io-item-prop-list>
+        <create-time>2019-11-06 13:36:03.0</create-time>
+        <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF010</io-code>
-        <code>TXSIIRESAKI</code>
-        <name>仕入先名</name>
+        <io-code>DF300</io-code>
+        <code>G_TXJYUSYO1</code>
+        <name>住所１</name>
         <is-visible>true</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
@@ -364,76 +310,72 @@
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-code>DT010</dm-code>
-        <dm-item-code>TXSIIRESAKI</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2019-11-01 15:57:18.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-09 12:56:28.0</update-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>DF010</io-code>
-        <code>TXJYUSYO1</code>
-        <name>住所１</name>
-        <is-visible>true</is-visible>
-        <item-type>O</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <order>100</order>
-        <level>2</level>
-        <sort-key>0</sort-key>
-        <dm-code>DT010</dm-code>
         <dm-item-code>TXJYUSYO1</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-01 15:57:18.0</create-time>
-        <updator>eclipse</updator>
-        <update-time>2021-03-09 12:56:28.0</update-time>
+        <create-time>2019-11-06 13:36:03.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF010</io-code>
-        <code>AMKAIKAKEZAN</code>
-        <name>現買掛残高</name>
+        <io-code>DF300</io-code>
+        <code>B</code>
+        <name>閉じる F1</name>
         <is-visible>true</is-visible>
-        <item-type>O</item-type>
+        <item-type>A</item-type>
         <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <order>110</order>
-        <level>2</level>
+        <statement>@RETURN</statement>
+        <order>100</order>
+        <level>1</level>
         <sort-key>0</sort-key>
-        <dm-code>DT010</dm-code>
-        <dm-item-code>AMKAIKAKEZAN</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2019-11-01 15:57:18.0</create-time>
+        <create-time>2019-11-06 13:03:56.0</create-time>
         <updator>eclipse</updator>
-        <update-time>2021-03-09 12:56:28.0</update-time>
-        <io-item-prop-list/>
+        <update-time>2019-11-27 09:24:49.0</update-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>DF300</io-code>
+            <io-item-code>B</io-item-code>
+            <key>labelWidth</key>
+            <value>80</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>DF300</io-code>
+            <io-item-code>B</io-item-code>
+            <key>functionKey</key>
+            <value>F1</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>DF300</io-code>
+            <io-item-code>B</io-item-code>
+            <key>partitionType</key>
+            <value>NONE</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
     </io-item-list>
-    <io-prop-list/>
+    <io-prop-list>
+      <io-prop>
+        <io-code>DF300</io-code>
+        <key>dialogFeatures</key>
+        <value>width=800,left=100,height=500,top=30</value>
+        <is-disable>false</is-disable>
+      </io-prop>
+    </io-prop-list>
     <sec-io>
-      <io-code>DF010</io-code>
+      <io-code>DF300</io-code>
       <is-disable>false</is-disable>
     </sec-io>
-    <sec-menu>
-      <io-code>DF010</io-code>
-      <is-disable>false</is-disable>
-    </sec-menu>
   </io>

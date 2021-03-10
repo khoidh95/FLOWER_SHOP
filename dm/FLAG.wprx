@@ -1,0 +1,92 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <dm>
+    <tool-version>2.3.0.0</tool-version>
+    <code>FLAG</code>
+    <name>Flag</name>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2019-11-18 14:51:44.0</create-time>
+    <updator>eclipse</updator>
+    <update-time>2019-12-02 17:43:24.0</update-time>
+    <dm-item-list>
+      <dm-item>
+        <dm-code>FLAG</dm-code>
+        <code>FLAG</code>
+        <name>Flag</name>
+        <order>10</order>
+        <length>0</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
+        <data-type>BOOL</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-18 14:52:10.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+    </dm-item-list>
+    <dm-ope-list>
+      <dm-ope>
+        <code>FLAG_TRUE</code>
+        <dm-code>FLAG</dm-code>
+        <name>Set the flag</name>
+        <type>NONE</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-18 14:53:41.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-18 14:56:40.0</update-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>FLAG</dm-code>
+            <dm-ope-code>FLAG_TRUE</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>FLAG</dm-item-code>
+            <statement>BOOL(@1)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-18 14:53:41.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-18 14:56:40.0</update-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>err_test</code>
+        <dm-code>FLAG</dm-code>
+        <name>err test</name>
+        <type>NONE</type>
+        <is-commit>false</is-commit>
+        <is-disable>true</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-18 16:28:29.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-12-02 17:43:24.0</update-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>FLAG</dm-code>
+            <dm-ope-code>err_test</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>FLAG</dm-item-code>
+            <precondition>FLAG &lt;&gt; @FALSE</precondition>
+            <msg-code-ng>test_err_msg</msg-code-ng>
+            <msg-param-ng>@1</msg-param-ng>
+            <is-disable>true</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-18 16:28:29.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-12-02 17:43:24.0</update-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+    </dm-ope-list>
+    <dm-prop-list>
+      <dm-prop>
+        <key>targetDb</key>
+        <value>_NONE_</value>
+        <is-disable>false</is-disable>
+      </dm-prop>
+    </dm-prop-list>
+  </dm>

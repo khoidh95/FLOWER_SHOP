@@ -1,0 +1,101 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <bp>
+    <tool-version>2.3.1.0</tool-version>
+    <code>DF021_INSERT</code>
+    <name>発注見出しの保守 INSERT</name>
+    <is-commit>false</is-commit>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2019-11-06 13:16:51.0</create-time>
+    <updator>eclipse</updator>
+    <update-time>2021-03-10 15:30:48.0</update-time>
+    <bp-logic-list>
+      <bp-logic>
+        <bp-code>DF021_INSERT</bp-code>
+        <id>10</id>
+        <order>10</order>
+        <level>0</level>
+        <ctrl-code>IN</ctrl-code>
+        <dm-code>DT020</dm-code>
+        <work-code>WK1</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-06 13:17:15.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF021_INSERT</bp-code>
+        <id>20</id>
+        <order>20</order>
+        <level>0</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DMSEQ</dm-code>
+        <func-code>LOCK</func-code>
+        <param>'NRHATTYU'</param>
+        <work-code>SEQ_BEF</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-06 13:18:11.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-06 13:18:47.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF021_INSERT</bp-code>
+        <id>30</id>
+        <order>30</order>
+        <level>0</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DMSEQ</dm-code>
+        <func-code>UPDATE</func-code>
+        <param>'NRHATTYU',SEQ_BEF.VALUESET</param>
+        <work-code>SEQ_AFT</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-06 13:18:47.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-10 15:30:48.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF021_INSERT</bp-code>
+        <id>40</id>
+        <order>40</order>
+        <level>0</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DT020</dm-code>
+        <func-code>INSERT</func-code>
+        <param>WK1,SEQ_AFT.VALUESET</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-06 13:19:17.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-10 15:30:48.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF021_INSERT</bp-code>
+        <id>50</id>
+        <order>50</order>
+        <level>0</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DT020</dm-code>
+        <func-code>SELECT</func-code>
+        <param>SEQ_AFT.VALUESET</param>
+        <work-code>WK_OUT</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-11 10:37:08.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-10 15:30:48.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF021_INSERT</bp-code>
+        <id>60</id>
+        <order>60</order>
+        <level>0</level>
+        <ctrl-code>OUT</ctrl-code>
+        <dm-code>DT020</dm-code>
+        <work-code>WK_OUT</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-06 13:21:10.0</create-time>
+      </bp-logic>
+    </bp-logic-list>
+  </bp>

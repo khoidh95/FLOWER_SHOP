@@ -1,0 +1,167 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <bp>
+    <tool-version>2.3.1.0</tool-version>
+    <code>DF012_01_INIT</code>
+    <name>仕入先と関連情報の確認 WA Init</name>
+    <is-commit>false</is-commit>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2019-11-08 15:38:45.0</create-time>
+    <updator>eclipse</updator>
+    <update-time>2019-11-08 16:28:22.0</update-time>
+    <bp-logic-list>
+      <bp-logic>
+        <bp-code>DF012_01_INIT</bp-code>
+        <id>10</id>
+        <order>10</order>
+        <level>0</level>
+        <ctrl-code>ARG</ctrl-code>
+        <func-code>CODE</func-code>
+        <work-code>CDSIIRESAKI</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-08 15:41:28.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF012_01_INIT</bp-code>
+        <id>20</id>
+        <order>20</order>
+        <level>0</level>
+        <ctrl-code>ARG</ctrl-code>
+        <func-code>DATE</func-code>
+        <work-code>DTNYUKAYOTEI</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-08 15:41:28.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF012_01_INIT</bp-code>
+        <id>30</id>
+        <order>30</order>
+        <level>0</level>
+        <ctrl-code>WORKAREA</ctrl-code>
+        <dm-code>DT010</dm-code>
+        <param>CLEAR</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-08 16:03:08.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF012_01_INIT</bp-code>
+        <id>40</id>
+        <order>40</order>
+        <level>0</level>
+        <ctrl-code>WORKAREA</ctrl-code>
+        <dm-code>DT021</dm-code>
+        <param>CLEAR</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-08 15:43:52.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-08 16:24:57.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF012_01_INIT</bp-code>
+        <id>50</id>
+        <order>50</order>
+        <level>0</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DT010</dm-code>
+        <func-code>SELECT01</func-code>
+        <param>_ARG_.CDSIIRESAKI</param>
+        <work-code>DT010</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-08 16:04:35.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF012_01_INIT</bp-code>
+        <id>60</id>
+        <order>60</order>
+        <level>0</level>
+        <ctrl-code>IF</ctrl-code>
+        <param>_ARG_.DTNYUKAYOTEI = @NULL</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-08 16:28:22.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF012_01_INIT</bp-code>
+        <id>70</id>
+        <order>70</order>
+        <level>1</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DT021</dm-code>
+        <func-code>SELECT_01</func-code>
+        <param>_ARG_.CDSIIRESAKI</param>
+        <work-code>DT021</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-08 16:28:22.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF012_01_INIT</bp-code>
+        <id>80</id>
+        <order>80</order>
+        <level>0</level>
+        <ctrl-code>ELSE</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-08 16:28:22.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF012_01_INIT</bp-code>
+        <id>90</id>
+        <order>90</order>
+        <level>1</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DT021</dm-code>
+        <func-code>SELECT_02</func-code>
+        <param>_ARG_.CDSIIRESAKI,_ARG_.DTNYUKAYOTEI</param>
+        <work-code>DT021</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-08 15:55:19.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-08 16:28:22.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF012_01_INIT</bp-code>
+        <id>100</id>
+        <order>100</order>
+        <level>0</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-08 16:28:22.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF012_01_INIT</bp-code>
+        <id>110</id>
+        <order>110</order>
+        <level>0</level>
+        <ctrl-code>WORKAREA</ctrl-code>
+        <dm-code>DT010</dm-code>
+        <param>MOVE,DT010</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-08 16:05:31.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-08 16:19:16.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF012_01_INIT</bp-code>
+        <id>120</id>
+        <order>120</order>
+        <level>0</level>
+        <ctrl-code>WORKAREA</ctrl-code>
+        <dm-code>DT021</dm-code>
+        <param>MOVE,DT021</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-08 15:46:48.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-08 16:23:54.0</update-time>
+      </bp-logic>
+    </bp-logic-list>
+  </bp>

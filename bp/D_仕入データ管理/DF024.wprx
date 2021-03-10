@@ -1,0 +1,429 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <bp>
+    <tool-version>2.3.1.0</tool-version>
+    <code>DF024</code>
+    <name>発注明細の一括保守</name>
+    <is-commit>false</is-commit>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2019-11-06 15:48:20.0</create-time>
+    <updator>eclipse</updator>
+    <update-time>2021-03-10 15:32:01.0</update-time>
+    <bp-logic-list>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>10</id>
+        <order>10</order>
+        <level>0</level>
+        <ctrl-code>IN</ctrl-code>
+        <dm-code>DT021</dm-code>
+        <work-code>WK1</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-06 17:23:09.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>20</id>
+        <order>20</order>
+        <level>0</level>
+        <ctrl-code>IN</ctrl-code>
+        <dm-code>DT020</dm-code>
+        <work-code>WK2</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 15:03:07.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>30</id>
+        <order>30</order>
+        <level>0</level>
+        <ctrl-code>ARG</ctrl-code>
+        <func-code>CODE</func-code>
+        <work-code>NRHATTYU</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-06 17:24:16.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>40</id>
+        <order>40</order>
+        <level>0</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DT020</dm-code>
+        <func-code>UPDATE_DTHATTYU</func-code>
+        <param>_ARG_.NRHATTYU,WK2.DTHATTYU</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 15:07:40.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>50</id>
+        <order>50</order>
+        <level>0</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DT021</dm-code>
+        <func-code>LOCK</func-code>
+        <param>_ARG_.NRHATTYU</param>
+        <work-code>TMP1_DT021</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-06 17:36:03.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-19 10:27:47.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>60</id>
+        <order>60</order>
+        <level>0</level>
+        <ctrl-code>IF</ctrl-code>
+        <param>COUNT(TMP1_DT021.NRHATTYU[]) &gt; 0</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 14:20:47.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>70</id>
+        <order>70</order>
+        <level>1</level>
+        <ctrl-code>FOREACH</ctrl-code>
+        <param>TMP1_DT021</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 10:27:47.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-19 14:05:00.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>80</id>
+        <order>80</order>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>ET010</dm-code>
+        <func-code>DELETE</func-code>
+        <param>TMP1_DT021.NRTANPIN,TMP1_DT021.SQLOT</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 10:31:32.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-09 14:07:29.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>90</id>
+        <order>90</order>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>ET100</dm-code>
+        <func-code>DELETE</func-code>
+        <param>TMP1_DT021.NRTANPIN,TMP1_DT021.SQLOT</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 16:01:32.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-19 16:36:43.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>100</id>
+        <order>100</order>
+        <level>1</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 10:31:32.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>110</id>
+        <order>110</order>
+        <level>1</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DT021</dm-code>
+        <func-code>DF024_DELETE</func-code>
+        <param>_ARG_.NRHATTYU</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-13 09:40:11.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>120</id>
+        <order>120</order>
+        <level>0</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 14:20:47.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>130</id>
+        <order>130</order>
+        <level>0</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>COUNTER</dm-code>
+        <func-code>INIT_COUNTER</func-code>
+        <work-code>SQHATTYU</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-13 09:21:44.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-19 13:21:45.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>140</id>
+        <order>140</order>
+        <level>0</level>
+        <ctrl-code>FOREACH</ctrl-code>
+        <param>WK1</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-06 17:28:34.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>150</id>
+        <order>150</order>
+        <level>1</level>
+        <ctrl-code>IF</ctrl-code>
+        <param>WK1._RECORD_STATUS_ &lt;&gt; @DELETE</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-06 17:28:34.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-21 09:28:53.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>160</id>
+        <order>160</order>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>COUNTER</dm-code>
+        <func-code>INC_COUNTER</func-code>
+        <param>SQHATTYU.COUNTER</param>
+        <work-code>SQHATTYU</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-13 09:35:14.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-19 13:22:46.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>170</id>
+        <order>170</order>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DT021</dm-code>
+        <func-code>DF024_INSERT</func-code>
+        <param>WK1,_ARG_.NRHATTYU,SQHATTYU.COUNTER</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-13 09:36:33.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-19 13:22:46.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>180</id>
+        <order>180</order>
+        <level>2</level>
+        <ctrl-code>COMMENT</ctrl-code>
+        <is-disable>false</is-disable>
+        <description>INSERT ET010</description>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 10:34:50.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>190</id>
+        <order>190</order>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>ET010</dm-code>
+        <func-code>SELECT_01</func-code>
+        <param>WK1.NRTANPIN</param>
+        <work-code>TMP2_ET010</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 10:34:50.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-19 12:51:07.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>200</id>
+        <order>200</order>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>COUNTER</dm-code>
+        <func-code>NEXTCODE_SQLOT</func-code>
+        <param>NULLVAL(MAX(TMP2_ET010.SQLOT[]),CODE('0000'))</param>
+        <work-code>SQLOT</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 10:34:50.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>210</id>
+        <order>210</order>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>ET010</dm-code>
+        <func-code>INSERT</func-code>
+        <param>WK1.NRTANPIN,WK1.NRHATTYU
+,SQHATTYU.COUNTER,SQLOT.SQLOT</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 10:34:50.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-09 14:07:29.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>220</id>
+        <order>220</order>
+        <level>2</level>
+        <ctrl-code>COMMENT</ctrl-code>
+        <is-disable>false</is-disable>
+        <description>Insert ET100</description>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 10:43:36.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>230</id>
+        <order>230</order>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DMSEQ</dm-code>
+        <func-code>LOCK</func-code>
+        <param>'NRTORIHIKI'</param>
+        <work-code>SEQ_BEF</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 15:59:15.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>240</id>
+        <order>240</order>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DMSEQ</dm-code>
+        <func-code>UPDATE</func-code>
+        <param>'NRTORIHIKI',SEQ_BEF.VALUESET</param>
+        <work-code>SEQ_AFT</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 15:59:15.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-10 15:31:27.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>250</id>
+        <order>250</order>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>ET100</dm-code>
+        <func-code>DF024_INSERT</func-code>
+        <param>SEQ_AFT.VALUESET
+,SQLOT.SQLOT
+,WK1.NRTANPIN
+,WK1.NRHATTYU
+,SQHATTYU.COUNTER</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 10:44:10.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-10 15:32:01.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>260</id>
+        <order>260</order>
+        <level>2</level>
+        <ctrl-code>COMMENT</ctrl-code>
+        <is-disable>false</is-disable>
+        <description>UPDATE DT021 SQLOT and NRTORIHIKI</description>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 10:34:50.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-19 11:17:26.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>270</id>
+        <order>270</order>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DT021</dm-code>
+        <func-code>DF024_UPDATE</func-code>
+        <param>WK1.NRHATTYU, SQHATTYU.COUNTER, SQLOT.SQLOT, SEQ_AFT.VALUESET</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 10:34:50.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-10 15:31:27.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>280</id>
+        <order>280</order>
+        <level>2</level>
+        <ctrl-code>COMMENT</ctrl-code>
+        <is-disable>false</is-disable>
+        <description>UPDATE ET010 SQLOT</description>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 11:17:26.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-19 11:19:50.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>290</id>
+        <order>290</order>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>ET010</dm-code>
+        <func-code>UPDATE_03</func-code>
+        <param>WK1.NRTANPIN, SQLOT.SQLOT, SEQ_AFT.VALUESET</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 11:19:50.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2021-03-10 15:31:27.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>300</id>
+        <order>300</order>
+        <level>1</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-06 17:35:42.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF024</bp-code>
+        <id>310</id>
+        <order>310</order>
+        <level>0</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-07 08:52:58.0</create-time>
+      </bp-logic>
+    </bp-logic-list>
+  </bp>

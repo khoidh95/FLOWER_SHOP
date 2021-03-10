@@ -1,0 +1,227 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <dm>
+    <tool-version>2.3.1.0</tool-version>
+    <code>COUNTER</code>
+    <name>Counter</name>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2019-11-07 10:17:35.0</create-time>
+    <updator>eclipse</updator>
+    <update-time>2019-11-19 13:44:35.0</update-time>
+    <dm-item-list>
+      <dm-item>
+        <dm-code>COUNTER</dm-code>
+        <code>COUNTER</code>
+        <name>発行行番</name>
+        <order>10</order>
+        <length>3</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-07 10:18:18.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-13 17:19:11.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>COUNTER</dm-code>
+        <code>NRTORIHIKI</code>
+        <name>取引管理NO</name>
+        <order>20</order>
+        <length>7</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 13:29:18.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>COUNTER</dm-code>
+        <code>SQLOT</code>
+        <name>ロットNO</name>
+        <order>30</order>
+        <length>4</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-15 15:22:55.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+    </dm-item-list>
+    <dm-ope-list>
+      <dm-ope>
+        <code>INC_COUNTER</code>
+        <dm-code>COUNTER</dm-code>
+        <name>Increment of counter</name>
+        <type>NONE</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-07 10:19:33.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-13 17:19:11.0</update-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>COUNTER</dm-code>
+            <dm-ope-code>INC_COUNTER</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>COUNTER</dm-item-code>
+            <statement>NUM(@1)+1</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 10:19:33.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-13 17:19:11.0</update-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>INIT_COUNTER</code>
+        <dm-code>COUNTER</dm-code>
+        <name>Initialize the counter</name>
+        <type>NONE</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-13 09:18:39.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-13 17:19:11.0</update-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>COUNTER</dm-code>
+            <dm-ope-code>INIT_COUNTER</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>COUNTER</dm-item-code>
+            <statement>0</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-13 09:19:06.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-13 17:19:11.0</update-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>INIT_SQLOT</code>
+        <dm-code>COUNTER</dm-code>
+        <name>Iniliaze the ロットNO</name>
+        <type>NONE</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-15 15:53:12.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-15 15:53:27.0</update-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>COUNTER</dm-code>
+            <dm-ope-code>INIT_SQLOT</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>SQLOT</dm-item-code>
+            <statement>CODE('0001')</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-15 15:53:27.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>NEXTCODE_SQLOT</code>
+        <dm-code>COUNTER</dm-code>
+        <name>Nextcode of ロットNO</name>
+        <type>NONE</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-15 15:24:10.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-18 08:42:12.0</update-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>COUNTER</dm-code>
+            <dm-ope-code>NEXTCODE_SQLOT</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>SQLOT</dm-item-code>
+            <statement>NEXTCODE(CODE(@1))</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-15 15:25:28.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-15 17:29:05.0</update-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>MAX_SQHATTYU</code>
+        <dm-code>COUNTER</dm-code>
+        <name>Max of 発行行番</name>
+        <type>NONE</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-07 10:20:30.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-15 17:28:44.0</update-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>COUNTER</dm-code>
+            <dm-ope-code>MAX_SQHATTYU</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>COUNTER</dm-item-code>
+            <statement>NULLVAL(MAX(DT021{NRHATTYU = CODE(@1)}.SQHATTYU[]),0)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-07 10:20:30.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-15 17:28:44.0</update-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>COUNT_ERR</code>
+        <dm-code>COUNTER</dm-code>
+        <name>Count Error</name>
+        <type>NONE</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-12 09:33:03.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-12 10:22:32.0</update-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>COUNTER</dm-code>
+            <dm-ope-code>COUNT_ERR</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>COUNTER</dm-item-code>
+            <precondition>COUNTER &lt;&gt; @NULL</precondition>
+            <msg-code-ng>ERR_COUNT</msg-code-ng>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2019-11-12 09:33:03.0</create-time>
+            <updator>eclipse</updator>
+            <update-time>2019-11-12 10:22:32.0</update-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+    </dm-ope-list>
+    <dm-prop-list>
+      <dm-prop>
+        <key>targetDb</key>
+        <value>_NONE_</value>
+        <is-disable>false</is-disable>
+      </dm-prop>
+    </dm-prop-list>
+  </dm>

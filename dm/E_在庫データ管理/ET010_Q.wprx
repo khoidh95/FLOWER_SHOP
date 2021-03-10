@@ -1,0 +1,227 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <dm>
+    <tool-version>2.3.0.0</tool-version>
+    <code>ET010_Q</code>
+    <name>単品ロット dbQuery</name>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2019-11-18 14:25:51.0</create-time>
+    <updator>eclipse</updator>
+    <update-time>2019-12-02 17:45:01.0</update-time>
+    <dm-item-list>
+      <dm-item>
+        <dm-code>ET010_Q</dm-code>
+        <code>DTHAIKIYOTEI</code>
+        <name>廃棄予定日</name>
+        <order>10</order>
+        <length>0</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>DATE</data-type>
+        <ref-dm-code>ET010</ref-dm-code>
+        <ref-dm-item-code>DTHAIKIYOTEI</ref-dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-18 14:40:30.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-18 14:42:01.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010_Q</dm-code>
+        <code>QTZAIKO</code>
+        <name>現在庫数</name>
+        <order>20</order>
+        <length>4</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <ref-dm-code>ET010</ref-dm-code>
+        <ref-dm-item-code>QTZAIKO</ref-dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-18 14:40:30.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-18 14:42:01.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010_Q</dm-code>
+        <code>NRTANPIN</code>
+        <name>単品NO</name>
+        <order>30</order>
+        <length>7</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
+        <data-type>CODE</data-type>
+        <ref-dm-code>ET010</ref-dm-code>
+        <ref-dm-item-code>NRTANPIN</ref-dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-18 14:40:30.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-18 14:42:21.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010_Q</dm-code>
+        <code>SQLOT</code>
+        <name>ロットNO</name>
+        <order>40</order>
+        <length>4</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
+        <data-type>CODE</data-type>
+        <ref-dm-code>ET010</ref-dm-code>
+        <ref-dm-item-code>SQLOT</ref-dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-18 14:40:30.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-18 14:42:21.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010_Q</dm-code>
+        <code>DTNYUKA</code>
+        <name>入荷日</name>
+        <order>50</order>
+        <length>0</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>DATE</data-type>
+        <ref-dm-code>ET010</ref-dm-code>
+        <ref-dm-item-code>DTNYUKA</ref-dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-18 15:03:51.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010_Q</dm-code>
+        <code>QTNYUKO</code>
+        <name>入庫数</name>
+        <order>60</order>
+        <length>4</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <ref-dm-code>ET010</ref-dm-code>
+        <ref-dm-item-code>QTNYUKO</ref-dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-18 14:40:30.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-18 14:42:01.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010_Q</dm-code>
+        <code>QTSYUKKO</code>
+        <name>出庫数</name>
+        <order>70</order>
+        <length>4</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <ref-dm-code>ET010</ref-dm-code>
+        <ref-dm-item-code>QTSYUKKO</ref-dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-18 14:40:30.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-18 14:42:01.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010_Q</dm-code>
+        <code>QTHAIKIYOTEI</code>
+        <name>廃棄予定数</name>
+        <order>80</order>
+        <length>4</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <ref-dm-code>ET010</ref-dm-code>
+        <ref-dm-item-code>QTHAIKIYOTEI</ref-dm-item-code>
+        <is-disable>false</is-disable>
+        <description>対応する受払予定（廃棄予定）から算出される</description>
+        <creator>eclipse</creator>
+        <create-time>2019-11-18 14:40:30.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-18 14:42:01.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010_Q</dm-code>
+        <code>FGKANRYO</code>
+        <name>完了フラグ</name>
+        <order>90</order>
+        <length>0</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>0</key-group>
+        <data-type>BOOL</data-type>
+        <ref-dm-code>ET010</ref-dm-code>
+        <ref-dm-item-code>FGKANRYO</ref-dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-19 18:03:44.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-12-02 17:45:01.0</update-time>
+        <dm-item-prop-list/>
+      </dm-item>
+    </dm-item-list>
+    <dm-ope-list>
+      <dm-ope>
+        <code>SELECT</code>
+        <dm-code>ET010_Q</dm-code>
+        <name>Select</name>
+        <type>SELECT</type>
+        <condition>NRTANPIN = CODE(@1) AND FGKANRYO = @FALSE AND DTNYUKA &lt;&gt; @NULL</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-18 14:44:04.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-19 17:59:57.0</update-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+    </dm-ope-list>
+    <dm-prop-list>
+      <dm-prop>
+        <key>dbQuery</key>
+        <value>SELECT DTHAIKIYOTEI
+	, QTZAIKO
+	, NRTANPIN
+	, SQLOT
+	, DTNYUKA
+	, QTNYUKO
+	, QTSYUKKO
+	, QTHAIKIYOTEI
+	, FGKANRYO 
+FROM ET010 
+WHERE @WP_CONDITION
+ORDER BY DTHAIKIYOTEI
+	, QTZAIKO ASC</value>
+        <is-disable>false</is-disable>
+      </dm-prop>
+    </dm-prop-list>
+  </dm>

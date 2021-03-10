@@ -1,0 +1,189 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <bp>
+    <tool-version>2.3.1.0</tool-version>
+    <code>DF026_02_INIT</code>
+    <name>入荷エントリー WA Init</name>
+    <is-commit>false</is-commit>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2019-11-11 11:15:55.0</create-time>
+    <updator>eclipse</updator>
+    <update-time>2021-03-09 19:34:33.0</update-time>
+    <bp-logic-list>
+      <bp-logic>
+        <bp-code>DF026_02_INIT</bp-code>
+        <id>10</id>
+        <order>10</order>
+        <level>0</level>
+        <ctrl-code>IN</ctrl-code>
+        <dm-code>DT021</dm-code>
+        <work-code>IN</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-11 11:16:28.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-11 13:40:37.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF026_02_INIT</bp-code>
+        <id>20</id>
+        <order>20</order>
+        <level>0</level>
+        <ctrl-code>IF</ctrl-code>
+        <param>COUNTIF (IN._RECORD_SELECTED_[] = @ TRUE) &lt; 1</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-12 09:31:29.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-12 10:24:36.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF026_02_INIT</bp-code>
+        <id>30</id>
+        <order>30</order>
+        <level>1</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>COUNTER</dm-code>
+        <func-code>COUNT_ERR</func-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-12 09:36:11.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF026_02_INIT</bp-code>
+        <id>40</id>
+        <order>40</order>
+        <level>0</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-12 09:36:19.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF026_02_INIT</bp-code>
+        <id>50</id>
+        <order>50</order>
+        <level>0</level>
+        <ctrl-code>WORKAREA</ctrl-code>
+        <dm-code>DT021</dm-code>
+        <param>CLEAR</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-11 11:21:50.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF026_02_INIT</bp-code>
+        <id>60</id>
+        <order>60</order>
+        <level>0</level>
+        <ctrl-code>FOREACH</ctrl-code>
+        <param>IN</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-11 13:08:56.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-11 13:20:33.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF026_02_INIT</bp-code>
+        <id>70</id>
+        <order>70</order>
+        <level>1</level>
+        <ctrl-code>IF</ctrl-code>
+        <param>IN._RECORD_SELECTED_</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-11 14:03:44.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-12 09:09:36.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF026_02_INIT</bp-code>
+        <id>80</id>
+        <order>80</order>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DT021</dm-code>
+        <func-code>SELECT_03</func-code>
+        <param>IN.NRHATTYU,IN.SQHATTYU</param>
+        <work-code>WK</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-09 13:57:18.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF026_02_INIT</bp-code>
+        <id>90</id>
+        <order>90</order>
+        <level>2</level>
+        <ctrl-code>IF</ctrl-code>
+        <param>WK.STNYUKA &lt;&gt; CODE(1)</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-12 09:38:26.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-12 13:37:26.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF026_02_INIT</bp-code>
+        <id>100</id>
+        <order>100</order>
+        <level>3</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>DT021</dm-code>
+        <func-code>DF026_CHECK_ERR</func-code>
+        <param>'未入荷'</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-12 09:44:54.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-12 13:37:26.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF026_02_INIT</bp-code>
+        <id>110</id>
+        <order>110</order>
+        <level>2</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-12 09:44:54.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF026_02_INIT</bp-code>
+        <id>120</id>
+        <order>120</order>
+        <level>2</level>
+        <ctrl-code>WORKAREA</ctrl-code>
+        <dm-code>DT021</dm-code>
+        <param>APPEND,WK</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-11 11:25:50.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-11 14:04:00.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF026_02_INIT</bp-code>
+        <id>130</id>
+        <order>130</order>
+        <level>1</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2019-11-11 13:08:56.0</create-time>
+        <updator>eclipse</updator>
+        <update-time>2019-11-12 09:09:36.0</update-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>DF026_02_INIT</bp-code>
+        <id>140</id>
+        <order>140</order>
+        <level>0</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-09 17:35:14.0</create-time>
+      </bp-logic>
+    </bp-logic-list>
+  </bp>

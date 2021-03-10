@@ -1,123 +1,19 @@
 <?xml version = "1.0"  encoding = "UTF-8" ?>
   <dm>
-    <tool-version>2.4.1.0</tool-version>
+    <tool-version>2.3.1.0</tool-version>
     <code>ET010</code>
     <name>単品ロット</name>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
     <create-time>2021-03-01 09:56:08.0</create-time>
+    <updator>eclipse</updator>
+    <update-time>2021-03-10 14:54:09.0</update-time>
     <dm-item-list>
-      <dm-item>
-        <dm-code>ET010</dm-code>
-        <code>NRTANPIN</code>
-        <name>単品NO</name>
-        <length>7</length>
-        <byteSize>0</byteSize>
-        <scale>0</scale>
-        <is-nullable>false</is-nullable>
-        <key-group>1</key-group>
-        <data-type>CODE</data-type>
-        <ref-dm-code>BT020</ref-dm-code>
-        <ref-dm-item-code>NRTANPIN</ref-dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-01 10:05:20.0</create-time>
-        <dm-item-prop-list/>
-      </dm-item>
-      <dm-item>
-        <dm-code>ET010</dm-code>
-        <code>SQLOT</code>
-        <name>ロットNO</name>
-        <length>4</length>
-        <byteSize>0</byteSize>
-        <scale>0</scale>
-        <is-nullable>false</is-nullable>
-        <key-group>1</key-group>
-        <data-type>CODE</data-type>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-01 10:19:13.0</create-time>
-        <dm-item-prop-list/>
-      </dm-item>
-      <dm-item>
-        <dm-code>ET010</dm-code>
-        <code>PRZAIKO</code>
-        <name>在庫単価</name>
-        <length>7</length>
-        <byteSize>0</byteSize>
-        <scale>0</scale>
-        <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
-        <data-type>NUM</data-type>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-01 11:38:53.0</create-time>
-        <dm-item-prop-list/>
-      </dm-item>
-      <dm-item>
-        <dm-code>ET010</dm-code>
-        <code>QTKISYU</code>
-        <name>期首在庫数</name>
-        <length>4</length>
-        <byteSize>0</byteSize>
-        <scale>0</scale>
-        <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
-        <data-type>NUM</data-type>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-01 13:41:29.0</create-time>
-        <dm-item-prop-list/>
-      </dm-item>
-      <dm-item>
-        <dm-code>ET010</dm-code>
-        <code>QTNYUKO</code>
-        <name>入庫数</name>
-        <length>4</length>
-        <byteSize>0</byteSize>
-        <scale>0</scale>
-        <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
-        <data-type>NUM</data-type>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-01 13:42:33.0</create-time>
-        <dm-item-prop-list/>
-      </dm-item>
-      <dm-item>
-        <dm-code>ET010</dm-code>
-        <code>QTSYUKKO</code>
-        <name>出庫数</name>
-        <length>4</length>
-        <byteSize>0</byteSize>
-        <scale>0</scale>
-        <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
-        <data-type>NUM</data-type>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-01 13:43:23.0</create-time>
-        <dm-item-prop-list/>
-      </dm-item>
-      <dm-item>
-        <dm-code>ET010</dm-code>
-        <code>QTHAIKI</code>
-        <name>廃棄数</name>
-        <length>4</length>
-        <byteSize>0</byteSize>
-        <scale>0</scale>
-        <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
-        <data-type>NUM</data-type>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-01 13:43:23.0</create-time>
-        <dm-item-prop-list/>
-      </dm-item>
       <dm-item>
         <dm-code>ET010</dm-code>
         <code>CDSIIRESAKI</code>
         <name>仕入先C</name>
+        <order>10</order>
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
@@ -131,8 +27,25 @@
       </dm-item>
       <dm-item>
         <dm-code>ET010</dm-code>
+        <code>DTHAIKIYOTEI</code>
+        <name>廃棄予定日</name>
+        <order>20</order>
+        <length>0</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>0</key-group>
+        <data-type>DATE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 13:49:49.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010</dm-code>
         <code>DTNYUKA</code>
         <name>入荷日</name>
+        <order>30</order>
         <length>0</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
@@ -148,6 +61,7 @@
         <dm-code>ET010</dm-code>
         <code>DTNYUKAYOTEI</code>
         <name>入荷予定日</name>
+        <order>40</order>
         <length>0</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
@@ -157,42 +71,13 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 13:48:49.0</create-time>
-        <dm-item-prop-list/>
-      </dm-item>
-      <dm-item>
-        <dm-code>ET010</dm-code>
-        <code>QTNYUKAYOTEI</code>
-        <name>入荷予定数</name>
-        <length>4</length>
-        <byteSize>0</byteSize>
-        <scale>0</scale>
-        <is-nullable>true</is-nullable>
-        <key-group>0</key-group>
-        <data-type>NUM</data-type>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-01 13:48:49.0</create-time>
-        <dm-item-prop-list/>
-      </dm-item>
-      <dm-item>
-        <dm-code>ET010</dm-code>
-        <code>DTHAIKIYOTEI</code>
-        <name>廃棄予定日</name>
-        <length>0</length>
-        <byteSize>0</byteSize>
-        <scale>0</scale>
-        <is-nullable>false</is-nullable>
-        <key-group>0</key-group>
-        <data-type>DATE</data-type>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-01 13:49:49.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
         <dm-code>ET010</dm-code>
         <code>FGKANRYO</code>
         <name>完了フラグ</name>
+        <order>50</order>
         <length>0</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
@@ -206,8 +91,27 @@
       </dm-item>
       <dm-item>
         <dm-code>ET010</dm-code>
+        <code>NRTANPIN</code>
+        <name>単品NO</name>
+        <order>60</order>
+        <length>7</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
+        <data-type>CODE</data-type>
+        <ref-dm-code>BT020</ref-dm-code>
+        <ref-dm-item-code>NRTANPIN</ref-dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 10:05:20.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010</dm-code>
         <code>NRTORIHIKI</code>
         <name>取引管理No</name>
+        <order>70</order>
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
@@ -221,8 +125,25 @@
       </dm-item>
       <dm-item>
         <dm-code>ET010</dm-code>
-        <code>QTZAIKO</code>
-        <name>現在庫数</name>
+        <code>PRZAIKO</code>
+        <name>在庫単価</name>
+        <order>80</order>
+        <length>7</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 11:38:53.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010</dm-code>
+        <code>QTHAIKI</code>
+        <name>廃棄数</name>
+        <order>90</order>
         <length>4</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
@@ -231,13 +152,14 @@
         <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 13:56:04.0</create-time>
+        <create-time>2021-03-01 13:43:23.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
         <dm-code>ET010</dm-code>
         <code>QTHAIKIYOTEI</code>
         <name>廃棄予定数</name>
+        <order>100</order>
         <length>4</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
@@ -251,8 +173,57 @@
       </dm-item>
       <dm-item>
         <dm-code>ET010</dm-code>
+        <code>QTKISYU</code>
+        <name>期首在庫数</name>
+        <order>110</order>
+        <length>4</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 13:41:29.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010</dm-code>
+        <code>QTNYUKAYOTEI</code>
+        <name>入荷予定数</name>
+        <order>120</order>
+        <length>4</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 13:48:49.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010</dm-code>
+        <code>QTNYUKO</code>
+        <name>入庫数</name>
+        <order>130</order>
+        <length>4</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 13:42:33.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010</dm-code>
         <code>QTSUMMARY</code>
         <name>在庫推移計算用WORK</name>
+        <order>140</order>
         <length>4</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
@@ -264,7 +235,461 @@
         <create-time>2021-03-01 13:56:04.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
+      <dm-item>
+        <dm-code>ET010</dm-code>
+        <code>QTSYUKKO</code>
+        <name>出庫数</name>
+        <order>150</order>
+        <length>4</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 13:43:23.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010</dm-code>
+        <code>QTZAIKO</code>
+        <name>現在庫数</name>
+        <order>160</order>
+        <length>4</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>NUM</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 13:56:04.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ET010</dm-code>
+        <code>SQLOT</code>
+        <name>ロットNO</name>
+        <order>170</order>
+        <length>4</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-01 10:19:13.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
     </dm-item-list>
-    <dm-ope-list/>
+    <dm-ope-list>
+      <dm-ope>
+        <code>SELECT_02</code>
+        <dm-code>ET010</dm-code>
+        <name>Select by NRTANPIN and FGKANRYO</name>
+        <type>SELECT</type>
+        <condition>NRTANPIN = CODE(@1) AND FGKANRYO = @FALSE</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 14:52:23.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>SELECT_03</code>
+        <dm-code>ET010</dm-code>
+        <name>Select by NRTANPIN and SQLOT</name>
+        <type>SELECT</type>
+        <condition>NRTANPIN = CODE(@1) AND SQLOT = CODE(@2)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 14:52:23.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>DELETE</code>
+        <dm-code>ET010</dm-code>
+        <name>Delete by NRTANPIN and SQLOT</name>
+        <type>DELETE</type>
+        <condition>NRTANPIN = CODE(@1) AND SQLOT = CODE(@2)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 14:52:23.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>INSERT</code>
+        <dm-code>ET010</dm-code>
+        <name>Insert</name>
+        <type>INSERT</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 14:52:23.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>NRTANPIN</dm-item-code>
+            <statement>CODE(@1)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>20</order>
+            <dm-item-code>SQLOT</dm-item-code>
+            <statement>CODE(@4)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>30</order>
+            <dm-item-code>PRZAIKO</dm-item-code>
+            <statement>NAVAL(DT021{NRHATTYU = CODE(@2) AND SQHATTYU = NUM(@3)}.PRKOUNYU,@NULL)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>40</order>
+            <dm-item-code>QTKISYU</dm-item-code>
+            <statement>NAVAL(BT020{NRTANPIN = CODE(@1)}.QTZAIKO,@NULL)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>50</order>
+            <dm-item-code>QTNYUKO</dm-item-code>
+            <statement>0</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>60</order>
+            <dm-item-code>QTSYUKKO</dm-item-code>
+            <statement>0</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>70</order>
+            <dm-item-code>QTHAIKI</dm-item-code>
+            <statement>0</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>80</order>
+            <dm-item-code>CDSIIRESAKI</dm-item-code>
+            <statement>NAVAL(BT020{NRTANPIN = CODE(@1)}.CDSIIRESAKI,@NULL)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>90</order>
+            <dm-item-code>DTNYUKA</dm-item-code>
+            <statement>@NULL</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>100</order>
+            <dm-item-code>DTNYUKAYOTEI</dm-item-code>
+            <statement>NAVAL(DT021{NRHATTYU = CODE(@2) AND SQHATTYU = NUM(@3)}.DTNYUKAYOTEI,@NULL)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>110</order>
+            <dm-item-code>QTNYUKAYOTEI</dm-item-code>
+            <statement>NAVAL(DT021{NRHATTYU = CODE(@2) AND SQHATTYU = NUM(@3)}.QTHATTYU * BT020{NRTANPIN = CODE(@1)}.VLUNIT,@NULL)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>120</order>
+            <dm-item-code>DTHAIKIYOTEI</dm-item-code>
+            <statement>@NULL</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>130</order>
+            <dm-item-code>FGKANRYO</dm-item-code>
+            <statement>@FALSE</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>140</order>
+            <dm-item-code>NRTORIHIKI</dm-item-code>
+            <statement>@NULL</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>150</order>
+            <dm-item-code>QTZAIKO</dm-item-code>
+            <statement>NAVAL(DT021{NRHATTYU = CODE(@2) AND SQHATTYU = NUM(@3)}.QTZAIKO,@NULL)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>160</order>
+            <dm-item-code>QTHAIKIYOTEI</dm-item-code>
+            <statement>0</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <order>170</order>
+            <dm-item-code>QTSUMMARY</dm-item-code>
+            <statement>@NULL</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>UPDATE_01</code>
+        <dm-code>ET010</dm-code>
+        <name>Update the QTY</name>
+        <type>UPDATE</type>
+        <condition>NRTANPIN = CODE(@1) AND SQLOT = CODE(@2)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 14:52:23.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>UPDATE_01</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>QTSYUKKO</dm-item-code>
+            <statement>NAVAL(ET010{NRTANPIN = CODE(@1) AND SQLOT = CODE(@2)}.QTSYUKKO,@NULL) + NUM(@3)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>UPDATE_01</dm-ope-code>
+            <order>20</order>
+            <dm-item-code>QTHAIKIYOTEI</dm-item-code>
+            <statement>NAVAL(ET010{NRTANPIN = CODE(@1) AND SQLOT = CODE(@2)}.QTHAIKIYOTEI,@NULL) - NUM(@3)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>UPDATE_01</dm-ope-code>
+            <order>30</order>
+            <dm-item-code>QTZAIKO</dm-item-code>
+            <statement>NAVAL(ET010{NRTANPIN = CODE(@1) AND SQLOT = CODE(@2)}.QTZAIKO,@NULL) - NUM(@3)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>UPDATE_02</code>
+        <dm-code>ET010</dm-code>
+        <name>Update the flag</name>
+        <type>UPDATE</type>
+        <condition>NRTANPIN = CODE(@1) AND SQLOT = CODE(@2)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 14:52:23.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>UPDATE_02</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>FGKANRYO</dm-item-code>
+            <statement>@TRUE</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>UPDATE_03</code>
+        <dm-code>ET010</dm-code>
+        <name>Update the NRTORIHIKI</name>
+        <type>UPDATE</type>
+        <condition>NRTANPIN = CODE(@1) AND SQLOT = CODE(@2)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 14:52:23.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>UPDATE_03</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>NRTORIHIKI</dm-item-code>
+            <statement>CODE(@3)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>UPDATE_04</code>
+        <dm-code>ET010</dm-code>
+        <name>Update on arrival</name>
+        <type>UPDATE</type>
+        <condition>NRTANPIN = CODE(@1) AND SQLOT = CODE(@2)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 14:52:23.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>UPDATE_04</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>QTNYUKO</dm-item-code>
+            <statement>NUM(@3)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>UPDATE_04</dm-ope-code>
+            <order>20</order>
+            <dm-item-code>DTNYUKA</dm-item-code>
+            <statement>DATE(@4)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>UPDATE_04</dm-ope-code>
+            <order>30</order>
+            <dm-item-code>DTHAIKIYOTEI</dm-item-code>
+            <statement>ADDDATE(DATE(@4),0,0,NAVAL(BT020{NRTANPIN = CODE(@1)}.VLHAIKI,@NULL))</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>UPDATE_04</dm-ope-code>
+            <order>40</order>
+            <dm-item-code>QTHAIKIYOTEI</dm-item-code>
+            <statement>NUM(@3)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>UPDATE_04</dm-ope-code>
+            <order>50</order>
+            <dm-item-code>QTZAIKO</dm-item-code>
+            <statement>NAVAL(BT020{NRTANPIN = CODE(@1)}.QTZAIKO,@NULL)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>UPDATE_05</code>
+        <dm-code>ET010</dm-code>
+        <name>Update the flag AUTO</name>
+        <type>MODIFY</type>
+        <condition>DTHAIKIYOTEI &lt;= @TODAY</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 14:52:23.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>ET010</dm-code>
+            <dm-ope-code>UPDATE_05</dm-ope-code>
+            <order>10</order>
+            <dm-item-code>FGKANRYO</dm-item-code>
+            <statement>@TRUE</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 14:52:23.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>SELECT_01</code>
+        <dm-code>ET010</dm-code>
+        <name>Select by NRTANPIN</name>
+        <type>SELECT</type>
+        <condition>NRTANPIN = CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 14:54:09.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+    </dm-ope-list>
     <dm-prop-list/>
   </dm>
