@@ -1,0 +1,354 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <dm>
+    <tool-version>2.4.1.0</tool-version>
+    <code>ZT020</code>
+    <name>USER INFO</name>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2021-03-06 14:37:23.0</create-time>
+    <dm-item-list>
+      <dm-item>
+        <dm-code>ZT020</dm-code>
+        <code>USER_CODE</code>
+        <name>利用者コード</name>
+        <length>8</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:39:39.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ZT020</dm-code>
+        <code>PASSWORD</code>
+        <name>パスワード</name>
+        <length>20</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>TEXT</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:39:39.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ZT020</dm-code>
+        <code>USER_NAME</code>
+        <name>利用者名</name>
+        <length>30</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>TEXT</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:39:39.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ZT020</dm-code>
+        <code>TEL</code>
+        <name>TEL</name>
+        <length>11</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>TEXT</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:39:39.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ZT020</dm-code>
+        <code>POSTAL_CODE</code>
+        <name>郵便番号</name>
+        <length>7</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>TEXT</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:39:39.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ZT020</dm-code>
+        <code>ADDRESS</code>
+        <name>住所</name>
+        <length>50</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>TEXT</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:39:39.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ZT020</dm-code>
+        <code>REGISTER_DATE</code>
+        <name>登録日</name>
+        <length>0</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>DATE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:39:39.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ZT020</dm-code>
+        <code>REGISTER_USER</code>
+        <name>登録者</name>
+        <length>8</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:39:39.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ZT020</dm-code>
+        <code>UPDATE_DATE</code>
+        <name>更新日</name>
+        <length>0</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>DATE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:39:39.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>ZT020</dm-code>
+        <code>UPDATE_USER</code>
+        <name>更新者</name>
+        <length>8</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
+        <data-type>CODE</data-type>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:39:39.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+    </dm-item-list>
+    <dm-ope-list>
+      <dm-ope>
+        <code>INSERT</code>
+        <dm-code>ZT020</dm-code>
+        <name>Insert</name>
+        <type>INSERT</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:41:27.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>USER_CODE</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>PASSWORD</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>USER_NAME</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>TEL</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>POSTAL_CODE</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>ADDRESS</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>REGISTER_DATE</dm-item-code>
+            <statement>@TODAY</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>REGISTER_USER</dm-item-code>
+            <statement>CODE(@USER)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>UPDATE_DATE</dm-item-code>
+            <statement>@TODAY</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>UPDATE_USER</dm-item-code>
+            <statement>CODE(@USER)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>UPDATE</code>
+        <dm-code>ZT020</dm-code>
+        <name>Update</name>
+        <type>UPDATE</type>
+        <condition>USER_CODE = CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:41:27.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>UPDATE</dm-ope-code>
+            <dm-item-code>PASSWORD</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>UPDATE</dm-ope-code>
+            <dm-item-code>USER_NAME</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>UPDATE</dm-ope-code>
+            <dm-item-code>TEL</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>UPDATE</dm-ope-code>
+            <dm-item-code>POSTAL_CODE</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>UPDATE</dm-ope-code>
+            <dm-item-code>ADDRESS</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>UPDATE</dm-ope-code>
+            <dm-item-code>UPDATE_DATE</dm-item-code>
+            <statement>@TODAY</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>ZT020</dm-code>
+            <dm-ope-code>UPDATE</dm-ope-code>
+            <dm-item-code>UPDATE_USER</dm-item-code>
+            <statement>CODE(@USER)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-06 14:41:27.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>SELECT</code>
+        <dm-code>ZT020</dm-code>
+        <name>Select</name>
+        <type>SELECT</type>
+        <condition>USER_CODE = CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:41:27.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+    </dm-ope-list>
+    <dm-prop-list/>
+  </dm>

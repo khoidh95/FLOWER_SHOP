@@ -1,0 +1,47 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <dm>
+    <tool-version>2.4.1.0</tool-version>
+    <code>Z010</code>
+    <name>USER ROLE</name>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2021-03-06 14:37:05.0</create-time>
+    <dm-item-list>
+      <dm-item>
+        <dm-code>Z010</dm-code>
+        <code>USER_CODE</code>
+        <name>利用者コード</name>
+        <length>8</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
+        <data-type>CODE</data-type>
+        <ref-dm-code>ZT020</ref-dm-code>
+        <ref-dm-item-code>USER_CODE</ref-dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:39:14.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+      <dm-item>
+        <dm-code>Z010</dm-code>
+        <code>ROLE_CD</code>
+        <name>権限コード</name>
+        <length>10</length>
+        <byteSize>0</byteSize>
+        <scale>0</scale>
+        <is-nullable>false</is-nullable>
+        <key-group>1</key-group>
+        <data-type>CODE</data-type>
+        <ref-dm-code>ZT030</ref-dm-code>
+        <ref-dm-item-code>ROLE_CD</ref-dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 14:39:14.0</create-time>
+        <dm-item-prop-list/>
+      </dm-item>
+    </dm-item-list>
+    <dm-ope-list/>
+    <dm-prop-list/>
+  </dm>
