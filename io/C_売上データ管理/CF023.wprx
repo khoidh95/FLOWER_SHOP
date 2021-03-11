@@ -1,18 +1,18 @@
 <?xml version = "1.0"  encoding = "UTF-8" ?>
   <io>
     <tool-version>2.4.1.0</tool-version>
-    <code>CF012</code>
-    <name>顧客と関連情報の確認</name>
+    <code>CF023</code>
+    <name>受注単品構成の保守</name>
     <io-type>IO</io-type>
-    <dm-code>CT010</dm-code>
-    <condition>IDKOKYAKU = CODE(@1)</condition>
+    <dm-code>CT020</dm-code>
+    <condition>NRJYUTYU = CODE(@1)</condition>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
-    <create-time>2021-03-09 21:59:49.0</create-time>
+    <create-time>2021-03-10 19:41:06.0</create-time>
     <io-parts-list/>
     <io-item-list>
       <io-item>
-        <io-code>CF012</io-code>
+        <io-code>CF023</io-code>
         <code>IDKOKYAKU</code>
         <name>顧客ID</name>
         <is-visible>false</is-visible>
@@ -25,19 +25,19 @@
         <max-ByteSize>0</max-ByteSize>
         <level>1</level>
         <sort-key>0</sort-key>
-        <dm-code>CT010</dm-code>
+        <dm-code>CT020</dm-code>
         <dm-item-code>IDKOKYAKU</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-11 15:46:30.0</create-time>
+        <create-time>2021-03-10 20:55:44.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>CF012</io-code>
-        <code>TXKOKYAKU</code>
-        <name>顧客名</name>
+        <io-code>CF023</io-code>
+        <code>NRJYUTYU</code>
+        <name>受注NO</name>
         <is-visible>true</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
@@ -48,24 +48,24 @@
         <max-ByteSize>0</max-ByteSize>
         <level>1</level>
         <sort-key>0</sort-key>
-        <dm-code>CT010</dm-code>
-        <dm-item-code>TXKOKYAKU</dm-item-code>
+        <dm-code>CT020</dm-code>
+        <dm-item-code>NRJYUTYU</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
+        <create-time>2021-03-10 20:55:44.0</create-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>TXKOKYAKU</io-item-code>
+            <io-code>CF023</io-code>
+            <io-item-code>NRJYUTYU</io-item-code>
             <key>partitionType</key>
             <value>BOX</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>TXKOKYAKU</io-item-code>
+            <io-code>CF023</io-code>
+            <io-item-code>NRJYUTYU</io-item-code>
             <key>partitionLabel</key>
-            <value>顧客</value>
+            <value>受注見出し</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -73,9 +73,9 @@
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>CF012</io-code>
-        <code>TXKOKYAKUKANA</code>
-        <name>カナ名</name>
+        <io-code>CF023</io-code>
+        <code>STALLOC</code>
+        <name>引当状況</name>
         <is-visible>true</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
@@ -86,22 +86,136 @@
         <max-ByteSize>0</max-ByteSize>
         <level>1</level>
         <sort-key>0</sort-key>
-        <dm-code>CT010</dm-code>
-        <dm-item-code>TXKOKYAKUKANA</dm-item-code>
+        <dm-code>CT020</dm-code>
+        <dm-item-code>STALLOC</dm-item-code>
+        <choice-list>
+          <fixed>:|0:未引当|1:引当済</fixed>
+        </choice-list>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
+        <create-time>2021-03-10 20:55:44.0</create-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>TXKOKYAKUKANA</io-item-code>
+            <io-code>CF023</io-code>
+            <io-item-code>STALLOC</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>CF023</io-code>
+        <code>STSYUKKA</code>
+        <name>出荷状況</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>CT020</dm-code>
+        <dm-item-code>STSYUKKA</dm-item-code>
+        <choice-list>
+          <fixed>:|0:未受領|1:受領済|2:出荷済</fixed>
+        </choice-list>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 20:55:44.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>CF023</io-code>
+            <io-item-code>STSYUKKA</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>CF023</io-code>
+        <code>TXKOKYAKU</code>
+        <name>顧客名</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>20</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <statement>#GET_TXKOKYAKU('IDKOKYAKU')</statement>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-item-code>@TEXT</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 20:55:44.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>CF023</io-code>
+        <code>NRSYOHIN</code>
+        <name>商品NO</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>CT020</dm-code>
+        <dm-item-code>NRSYOHIN</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 20:55:44.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>CF023</io-code>
+        <code>TXSYOHIN</code>
+        <name>商品名</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>20</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <statement>#GET_TXSYOHIN('NRSYOHIN')</statement>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-item-code>@TEXT</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 20:55:44.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>CF023</io-code>
+            <io-item-code>TXSYOHIN</io-item-code>
             <key>layout</key>
             <value>X_AXIS</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>TXKOKYAKUKANA</io-item-code>
+            <io-code>CF023</io-code>
+            <io-item-code>TXSYOHIN</io-item-code>
             <key>labelAvailable</key>
             <value>FALSE</value>
             <is-disable>false</is-disable>
@@ -111,9 +225,9 @@
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>CF012</io-code>
-        <code>TXJYUSYO1</code>
-        <name>住所1</name>
+        <io-code>CF023</io-code>
+        <code>AMHANBAI</code>
+        <name>販売額</name>
         <is-visible>true</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
@@ -124,19 +238,19 @@
         <max-ByteSize>0</max-ByteSize>
         <level>1</level>
         <sort-key>0</sort-key>
-        <dm-code>CT010</dm-code>
-        <dm-item-code>TXJYUSYO1</dm-item-code>
+        <dm-code>CT020</dm-code>
+        <dm-item-code>AMHANBAI</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
+        <create-time>2021-03-10 20:55:44.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>CF012</io-code>
-        <code>TXJYUSYO2</code>
-        <name>住所2</name>
+        <io-code>CF023</io-code>
+        <code>AMTAX</code>
+        <name>消費税額</name>
         <is-visible>true</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
@@ -147,61 +261,15 @@
         <max-ByteSize>0</max-ByteSize>
         <level>1</level>
         <sort-key>0</sort-key>
-        <dm-code>CT010</dm-code>
-        <dm-item-code>TXJYUSYO2</dm-item-code>
+        <dm-code>CT020</dm-code>
+        <dm-item-code>AMTAX</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF012</io-code>
-        <code>TXEMAIL</code>
-        <name>Email</name>
-        <is-visible>true</is-visible>
-        <item-type>O</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>CT010</dm-code>
-        <dm-item-code>TXEMAIL</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF012</io-code>
-        <code>DTTOUROKU</code>
-        <name>登録日</name>
-        <is-visible>true</is-visible>
-        <item-type>O</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>CT010</dm-code>
-        <dm-item-code>DTTOUROKU</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
+        <create-time>2021-03-10 20:55:44.0</create-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>DTTOUROKU</io-item-code>
+            <io-code>CF023</io-code>
+            <io-item-code>AMTAX</io-item-code>
             <key>layout</key>
             <value>X_AXIS</value>
             <is-disable>false</is-disable>
@@ -211,9 +279,63 @@
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>CF012</io-code>
+        <io-code>CF023</io-code>
+        <code>DTUKETORIYOTEI</code>
+        <name>受取予定日</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>CT020</dm-code>
+        <dm-item-code>DTUKETORIYOTEI</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 20:55:44.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>CF023</io-code>
+        <code>DTSYUKKAYOTEI</code>
+        <name>出荷予定日</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>CT020</dm-code>
+        <dm-item-code>DTSYUKKAYOTEI</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 20:55:44.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>CF023</io-code>
+            <io-item-code>DTSYUKKAYOTEI</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>CF023</io-code>
         <code>G</code>
-        <name>受注見出し</name>
+        <name>受注明細</name>
         <is-visible>true</is-visible>
         <item-type>G</item-type>
         <is-require>false</is-require>
@@ -226,34 +348,20 @@
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
+        <create-time>2021-03-10 20:55:44.0</create-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>G</io-item-code>
-            <key>rows</key>
-            <value>20</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>G</io-item-code>
-            <key>summaryTarget</key>
-            <value>ALL</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF012</io-code>
+            <io-code>CF023</io-code>
             <io-item-code>G</io-item-code>
             <key>partitionType</key>
             <value>BOX</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
-            <io-code>CF012</io-code>
+            <io-code>CF023</io-code>
             <io-item-code>G</io-item-code>
             <key>partitionLabel</key>
-            <value>受注見出し一覧</value>
+            <value>受注明細一覧</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -261,7 +369,7 @@
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>CF012</io-code>
+        <io-code>CF023</io-code>
         <code>LINENO</code>
         <name>No.</name>
         <is-visible>true</is-visible>
@@ -277,10 +385,10 @@
         <dm-item-code>@NUM</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
+        <create-time>2021-03-10 20:55:44.0</create-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>CF012</io-code>
+            <io-code>CF023</io-code>
             <io-item-code>LINENO</io-item-code>
             <key>lineNumber</key>
             <value>WHOLE</value>
@@ -291,40 +399,9 @@
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>CF012</io-code>
-        <code>A_LINK</code>
-        <name>情報</name>
-        <is-visible>false</is-visible>
-        <item-type>A</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <next-io-code>CF021_UPD</next-io-code>
-        <next-io-param>G_NRJYUTYU</next-io-param>
-        <level>2</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-11 15:40:22.0</create-time>
-        <io-item-prop-list>
-          <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>A_LINK</io-item-code>
-            <key>fieldType</key>
-            <value>LINK</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-        </io-item-prop-list>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF012</io-code>
-        <code>G_DTJYUTYU</code>
-        <name>受注日</name>
+        <io-code>CF023</io-code>
+        <code>G_NRTANPIN</code>
+        <name>単品NO</name>
         <is-visible>true</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
@@ -334,106 +411,20 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <level>2</level>
-        <sort-key>1</sort-key>
-        <sort-type>A</sort-type>
-        <dm-code>CT020</dm-code>
-        <dm-item-code>DTJYUTYU</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF012</io-code>
-        <code>G_NRJYUTYU</code>
-        <name>受注NO</name>
-        <is-visible>true</is-visible>
-        <item-type>O</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>2</level>
-        <sort-key>2</sort-key>
-        <sort-type>A</sort-type>
-        <dm-code>CT020</dm-code>
-        <dm-item-code>NRJYUTYU</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
-        <io-item-prop-list>
-          <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>G_NRJYUTYU</io-item-code>
-            <key>fieldType</key>
-            <value>LINK</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>G_NRJYUTYU</io-item-code>
-            <key>fieldAction</key>
-            <value>A_LINK</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-        </io-item-prop-list>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF012</io-code>
-        <code>G_IDKOKYAKU</code>
-        <name>顧客ID</name>
-        <is-visible>false</is-visible>
-        <item-type>O</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>2</level>
         <sort-key>0</sort-key>
-        <dm-code>CT020</dm-code>
-        <dm-item-code>IDKOKYAKU</dm-item-code>
+        <dm-code>CT021</dm-code>
+        <dm-item-code>NRTANPIN</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
+        <create-time>2021-03-10 20:55:44.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>CF012</io-code>
-        <code>G_NRSYOHIN</code>
-        <name>商品NO</name>
-        <is-visible>false</is-visible>
-        <item-type>O</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>2</level>
-        <sort-key>0</sort-key>
-        <dm-code>CT020</dm-code>
-        <dm-item-code>NRSYOHIN</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF012</io-code>
-        <code>TXSYOHIN</code>
-        <name>商品名</name>
+        <io-code>CF023</io-code>
+        <code>G_TXTANPIN</code>
+        <name>単品名</name>
         <is-visible>true</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
@@ -442,93 +433,91 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <statement>#GET_TXSYOHIN('G_NRSYOHIN')</statement>
+        <statement>#GET_TXTANPIN('G_NRTANPIN')</statement>
+        <level>2</level>
+        <sort-key>2</sort-key>
+        <sort-type>A</sort-type>
+        <dm-item-code>@TEXT</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 20:55:44.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>CF023</io-code>
+        <code>G_QTKOUSEI</code>
+        <name>構成数</name>
+        <is-visible>true</is-visible>
+        <item-type>IO</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>2</level>
+        <sort-key>0</sort-key>
+        <dm-code>CT021</dm-code>
+        <dm-item-code>QTKOUSEI</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 20:55:44.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>CF023</io-code>
+        <code>G_QTHISSU</code>
+        <name>必須構成数</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <statement>#GET_QTHISSU('NRSYOHIN','G_NRTANPIN')</statement>
+        <level>2</level>
+        <sort-key>0</sort-key>
+        <dm-item-code>@NUM</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 20:55:44.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>CF023</io-code>
+        <code>G_TXTEKIYO</code>
+        <name>摘要</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <statement>#GET_TXTEKIYO('NRSYOHIN','G_NRTANPIN')</statement>
         <level>2</level>
         <sort-key>0</sort-key>
         <dm-item-code>@TEXT</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
+        <create-time>2021-03-10 20:55:44.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>CF012</io-code>
-        <code>G_DTSYUKKA</code>
-        <name>実際出荷日</name>
-        <is-visible>true</is-visible>
-        <item-type>O</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>2</level>
-        <sort-key>0</sort-key>
-        <dm-code>CT020</dm-code>
-        <dm-item-code>DTSYUKKA</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF012</io-code>
-        <code>G_AMHANBAI</code>
-        <name>販売額</name>
-        <is-visible>true</is-visible>
-        <item-type>O</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>2</level>
-        <sort-key>0</sort-key>
-        <dm-code>CT020</dm-code>
-        <dm-item-code>AMHANBAI</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF012</io-code>
-        <code>G_STSYUKKA</code>
-        <name>出荷状況</name>
-        <is-visible>true</is-visible>
-        <item-type>O</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>2</level>
-        <sort-key>0</sort-key>
-        <dm-code>CT020</dm-code>
-        <dm-item-code>STSYUKKA</dm-item-code>
-        <choice-list>
-          <fixed>:|0:未受領|1:受領済|2:出荷済</fixed>
-        </choice-list>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-09 22:42:36.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF012</io-code>
-        <code>A_ADD</code>
-        <name>追加 [F6]</name>
+        <io-code>CF023</io-code>
+        <code>A_UPDATE</code>
+        <name>更新 [F8]</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>
@@ -537,84 +526,34 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <next-io-code>CF021_REG</next-io-code>
+        <next-io-code>CF022_1</next-io-code>
+        <next-io-param>NRJYUTYU</next-io-param>
+        <condition>STSYUKKA = CODE(0)</condition>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-11 15:40:22.0</create-time>
+        <create-time>2021-03-10 20:55:44.0</create-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>A_ADD</io-item-code>
+            <io-code>CF023</io-code>
+            <io-item-code>A_UPDATE</io-item-code>
             <key>labelWidth</key>
             <value>75</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>A_ADD</io-item-code>
-            <key>functionKey</key>
-            <value>F6</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>A_ADD</io-item-code>
-            <key>partitionType</key>
-            <value>NONE</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>A_ADD</io-item-code>
-            <key>layout</key>
-            <value>Y_AXIS</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>A_ADD</io-item-code>
-            <key>left</key>
-            <value>5px</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-        </io-item-prop-list>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF012</io-code>
-        <code>A_EDIT</code>
-        <name>編集[F5]</name>
-        <is-visible>true</is-visible>
-        <item-type>A</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <next-io-code>CF021_UPD</next-io-code>
-        <next-io-param>IDKOKYAKU</next-io-param>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-11 15:45:21.0</create-time>
-        <io-item-prop-list>
-          <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>A_EDIT</io-item-code>
-            <key>labelWidth</key>
-            <value>75</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF012</io-code>
-            <io-item-code>A_EDIT</io-item-code>
+            <io-code>CF023</io-code>
+            <io-item-code>A_UPDATE</io-item-code>
             <key>functionKey</key>
             <value>F5</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>CF023</io-code>
+            <io-item-code>A_UPDATE</io-item-code>
+            <key>partitionType</key>
+            <value>NONE</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -624,11 +563,11 @@
     </io-item-list>
     <io-prop-list/>
     <sec-io>
-      <io-code>CF012</io-code>
+      <io-code>CF023</io-code>
       <is-disable>false</is-disable>
     </sec-io>
     <sec-menu>
-      <io-code>CF012</io-code>
+      <io-code>CF023</io-code>
       <is-disable>false</is-disable>
     </sec-menu>
   </io>

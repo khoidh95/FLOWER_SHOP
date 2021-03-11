@@ -17,7 +17,7 @@
         <name>顧客ID</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -38,10 +38,10 @@
       <io-item>
         <io-code>CF011_UPD</io-code>
         <code>DTTOUROKU</code>
-        <name>登録日 *</name>
+        <name>登録日</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -229,10 +229,10 @@
       <io-item>
         <io-code>CF011_UPD</io-code>
         <code>TXJYUSYO2</code>
-        <name>住所2</name>
+        <name>住所2 *</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>false</is-require>
+        <is-require>true</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -252,10 +252,10 @@
       <io-item>
         <io-code>CF011_UPD</io-code>
         <code>TXEMAIL</code>
-        <name>Email *</name>
+        <name>Email</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -283,10 +283,10 @@
       <io-item>
         <io-code>CF011_UPD</io-code>
         <code>AMKISYUZAN</code>
-        <name>期首前受残高 *</name>
+        <name>期首前受残高</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -314,10 +314,10 @@
       <io-item>
         <io-code>CF011_UPD</io-code>
         <code>AMMAEUKE</code>
-        <name>前受額 *</name>
+        <name>前受額</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -345,10 +345,10 @@
       <io-item>
         <io-code>CF011_UPD</io-code>
         <code>AMURIAGE</code>
-        <name>売上額 *</name>
+        <name>売上額</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -375,7 +375,7 @@
       </io-item>
       <io-item>
         <io-code>CF011_UPD</io-code>
-        <code>UPDATE_A</code>
+        <code>A_UPDATE</code>
         <name>更新 [F8]</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
@@ -397,14 +397,14 @@
         <io-item-prop-list>
           <io-item-prop>
             <io-code>CF011_UPD</io-code>
-            <io-item-code>UPDATE_A</io-item-code>
+            <io-item-code>A_UPDATE</io-item-code>
             <key>labelWidth</key>
             <value>75</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
             <io-code>CF011_UPD</io-code>
-            <io-item-code>UPDATE_A</io-item-code>
+            <io-item-code>A_UPDATE</io-item-code>
             <key>functionKey</key>
             <value>F8</value>
             <is-disable>false</is-disable>
