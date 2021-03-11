@@ -1,11 +1,10 @@
 html-type=HTML5
 
-app-gen-FlowerShop-test-mode=false
 
 export-war-task=
 
-application=FlowerShop
 
+application=FlowerShop
 
 app-gen-FlowerShop-env-app=
 
@@ -14,17 +13,18 @@ app-gen-FlowerShop-theme=Sky
 
 ddl-method=JDBC
 
-app-gen-FlowerShop-app-doc-gen=false
+
+AwsDeployDialog.dbToolUrl=
 
 test-mode=false
 
-env-app=
-
 app-doc-gen=false
 
-theme=Sky
+env-app=
 
 deploy-to-server=false
+
+theme=Sky
 
 app-gen-FlowerShop-html-type=HTML5
 

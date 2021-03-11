@@ -1,0 +1,206 @@
+<?xml version = "1.0"  encoding = "UTF-8" ?>
+  <bp>
+    <tool-version>2.4.1.0</tool-version>
+    <code>CF021_UPDATE</code>
+    <name>受注見出しの更新</name>
+    <is-commit>false</is-commit>
+    <is-disable>false</is-disable>
+    <creator>eclipse</creator>
+    <create-time>2021-03-10 19:43:13.0</create-time>
+    <bp-logic-list>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>IN</ctrl-code>
+        <dm-code>CT020</dm-code>
+        <work-code>IN</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>CT020</dm-code>
+        <func-code>SELECT</func-code>
+        <param>IN.NRJYUTYU</param>
+        <work-code>WK1</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>IF</ctrl-code>
+        <param>IN.FGCOPYJYUSYO = @FALSE</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>1</level>
+        <ctrl-code>IF</ctrl-code>
+        <param>IN.NRAITEYUBIN = @NULL OR IN.TXAITEJYUSYO = @NULL OR IN.NRAITEPHONE = @NULL</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>CT020</dm-code>
+        <func-code>AITE_ERR</func-code>
+        <param>'相手先'</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>1</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>1</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>CT020</dm-code>
+        <func-code>UPDATE_01</func-code>
+        <param>IN,IN.NRJYUTYU</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>ELSEIF</ctrl-code>
+        <param>IN.FGCOPYJYUSYO = @TRUE</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>1</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>CT020</dm-code>
+        <func-code>UPDATE_02</func-code>
+        <param>IN,IN.NRJYUTYU</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>IF</ctrl-code>
+        <param>IN.DTJYURYO &lt;&gt; @NULL</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>1</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>CT020</dm-code>
+        <func-code>UPDATE_STSYUKKA</func-code>
+        <param>IN.NRJYUTYU,CODE(1)</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>IF</ctrl-code>
+        <param>IN.NRSYOHIN &lt;&gt; WK1.NRSYOHIN</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>1</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>CT021</dm-code>
+        <func-code>ERASE</func-code>
+        <param>IN.NRJYUTYU</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>1</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>BT011</dm-code>
+        <func-code>SELECT</func-code>
+        <param>IN.NRSYOHIN</param>
+        <work-code>WK2</work-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>1</level>
+        <ctrl-code>FOREACH</ctrl-code>
+        <param>WK2</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>2</level>
+        <ctrl-code>CALL</ctrl-code>
+        <dm-code>CT021</dm-code>
+        <func-code>INSERT</func-code>
+        <param>IN.NRJYUTYU,WK2.NRTANPIN,WK2.QTKOUSEI,WK1.DTSYUKKAYOTEI</param>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>1</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+      <bp-logic>
+        <bp-code>CF021_UPDATE</bp-code>
+        <level>0</level>
+        <ctrl-code>END</ctrl-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:43:37.0</create-time>
+      </bp-logic>
+    </bp-logic-list>
+  </bp>

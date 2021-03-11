@@ -1,7 +1,7 @@
 <?xml version = "1.0"  encoding = "UTF-8" ?>
   <macro-list>
     <macro>
-      <tool-version>2.3.1.0</tool-version>
+      <tool-version>2.4.1.0</tool-version>
       <code>CURRENCY_INIT</code>
       <statement>NULLVAL(CURRENCY(@1),0)</statement>
       <is-disable>false</is-disable>
@@ -9,7 +9,7 @@
       <create-time>2021-03-02 11:16:29.0</create-time>
     </macro>
     <macro>
-      <tool-version>2.3.1.0</tool-version>
+      <tool-version>2.4.1.0</tool-version>
       <code>CAL_TAX</code>
       <statement>ROUNDUP(NUM(@1) / 10, 0)</statement>
       <is-disable>false</is-disable>
@@ -17,7 +17,7 @@
       <create-time>2021-03-02 11:19:01.0</create-time>
     </macro>
     <macro>
-      <tool-version>2.3.1.0</tool-version>
+      <tool-version>2.4.1.0</tool-version>
       <code>GET_PRKOUNYU</code>
       <statement>NAVAL(BT020{NRTANPIN = CODE(@1)}.PRKOUNYU,@NULL)</statement>
       <is-disable>false</is-disable>
@@ -25,7 +25,7 @@
       <create-time>2021-03-06 13:19:36.0</create-time>
     </macro>
     <macro>
-      <tool-version>2.3.1.0</tool-version>
+      <tool-version>2.4.1.0</tool-version>
       <code>GET_TXTANPIN</code>
       <statement>NAVAL(BT020{NRTANPIN = CODE(@1)}.TXTANPIN,@NULL)</statement>
       <is-disable>false</is-disable>
@@ -33,7 +33,7 @@
       <create-time>2021-03-06 13:19:36.0</create-time>
     </macro>
     <macro>
-      <tool-version>2.3.1.0</tool-version>
+      <tool-version>2.4.1.0</tool-version>
       <code>NUM_INIT</code>
       <statement>NULLVAL(NUM(@1),0)</statement>
       <is-disable>false</is-disable>
@@ -41,7 +41,7 @@
       <create-time>2021-03-06 15:12:15.0</create-time>
     </macro>
     <macro>
-      <tool-version>2.3.1.0</tool-version>
+      <tool-version>2.4.1.0</tool-version>
       <code>GET_TXSIIRESAKI</code>
       <statement>NAVAL(DT010{CDSIIRESAKI = CODE(@1)}.TXSIIRESAKI,@NULL)</statement>
       <is-disable>false</is-disable>
@@ -49,7 +49,7 @@
       <create-time>2021-03-09 03:48:01.0</create-time>
     </macro>
     <macro>
-      <tool-version>2.3.1.0</tool-version>
+      <tool-version>2.4.1.0</tool-version>
       <code>GET_TXSYOHIN</code>
       <statement>NAVAL(BT010{NRSYOHIN = CODE(@1)}.TXSYOHIN,@NULL)</statement>
       <is-disable>false</is-disable>
@@ -57,7 +57,7 @@
       <create-time>2021-03-09 22:50:02.0</create-time>
     </macro>
     <macro>
-      <tool-version>2.3.1.0</tool-version>
+      <tool-version>2.4.1.0</tool-version>
       <code>GET_TXKOKYAKU</code>
       <statement>NAVAL(CT010{IDKOKYAKU = CODE(@1)}.TXKOKYAKU,@NULL)</statement>
       <is-disable>false</is-disable>
@@ -65,11 +65,27 @@
       <create-time>2021-03-09 23:20:38.0</create-time>
     </macro>
     <macro>
-      <tool-version>2.3.1.0</tool-version>
+      <tool-version>2.4.1.0</tool-version>
       <code>GET_KBUNIT</code>
       <statement>NAVAL(BT020{NRTANPIN = CODE(@1)}.KBUNIT,@NULL)</statement>
       <is-disable>false</is-disable>
       <creator>eclipse</creator>
       <create-time>2021-03-10 14:49:13.0</create-time>
+    </macro>
+    <macro>
+      <tool-version>2.4.1.0</tool-version>
+      <code>GET_QTHISSU</code>
+      <statement>NAVAL(BT011{NRSYOHIN = CODE(@1) AND NRTANPIN = CODE(@2)}.QTHISSU,@NULL)</statement>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-10 21:22:24.0</create-time>
+    </macro>
+    <macro>
+      <tool-version>2.4.1.0</tool-version>
+      <code>GET_TXTEKIYO</code>
+      <statement>NAVAL(BT011{NRSYOHIN = CODE(@1) AND NRTANPIN = CODE(@2)}.TXTEKIYO,@NULL)</statement>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-10 21:38:17.0</create-time>
     </macro>
   </macro-list>

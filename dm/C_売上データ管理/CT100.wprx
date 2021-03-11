@@ -77,6 +77,8 @@
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
         <data-type>CODE</data-type>
+        <ref-dm-code>CT020</ref-dm-code>
+        <ref-dm-item-code>IDKOKYAKU</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 09:32:13.0</create-time>

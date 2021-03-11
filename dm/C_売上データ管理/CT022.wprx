@@ -17,6 +17,8 @@
         <is-nullable>false</is-nullable>
         <key-group>1</key-group>
         <data-type>CODE</data-type>
+        <ref-dm-code>CT021</ref-dm-code>
+        <ref-dm-item-code>NRJYUTYU</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-01 09:23:57.0</create-time>
@@ -30,7 +32,7 @@
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>false</is-nullable>
-        <key-group>2</key-group>
+        <key-group>1</key-group>
         <data-type>CODE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
@@ -45,7 +47,7 @@
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>false</is-nullable>
-        <key-group>3</key-group>
+        <key-group>1</key-group>
         <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>

@@ -10,31 +10,35 @@
       <dm-item>
         <dm-code>CT021</dm-code>
         <code>NRJYUTYU</code>
-        <name>受注No.</name>
+        <name>受注NO</name>
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>false</is-nullable>
         <key-group>1</key-group>
         <data-type>CODE</data-type>
+        <ref-dm-code>CT020</ref-dm-code>
+        <ref-dm-item-code>NRJYUTYU</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 09:19:13.0</create-time>
+        <create-time>2021-03-10 19:51:58.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
         <dm-code>CT021</dm-code>
         <code>NRTANPIN</code>
-        <name>単品No.</name>
+        <name>単品NO</name>
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>false</is-nullable>
-        <key-group>2</key-group>
+        <key-group>1</key-group>
         <data-type>CODE</data-type>
+        <ref-dm-code>BT020</ref-dm-code>
+        <ref-dm-item-code>NRTANPIN</ref-dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 09:19:13.0</create-time>
+        <create-time>2021-03-10 19:51:58.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -49,12 +53,12 @@
         <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 09:19:13.0</create-time>
+        <create-time>2021-03-10 19:51:58.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
         <dm-code>CT021</dm-code>
-        <code>QTALLOC</code>
+        <code>QTAKKOC</code>
         <name>引当数</name>
         <length>2</length>
         <byteSize>0</byteSize>
@@ -64,27 +68,27 @@
         <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 09:19:13.0</create-time>
+        <create-time>2021-03-10 19:51:58.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
         <dm-code>CT021</dm-code>
         <code>FGKANRYO</code>
         <name>出荷完了フラグ</name>
-        <length>1</length>
+        <length>0</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>true</is-nullable>
+        <is-nullable>false</is-nullable>
         <key-group>0</key-group>
-        <data-type>CODE</data-type>
+        <data-type>BOOL</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 09:19:13.0</create-time>
+        <create-time>2021-03-10 19:51:58.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
         <dm-code>CT021</dm-code>
-        <code>SQLIST</code>
+        <code>SQSLIST</code>
         <name>一覧順序</name>
         <length>3</length>
         <byteSize>0</byteSize>
@@ -94,7 +98,7 @@
         <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 09:19:13.0</create-time>
+        <create-time>2021-03-10 19:51:58.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -110,7 +114,7 @@
         <is-disable>false</is-disable>
         <description>受注見出しからの物理継承。出荷ロット再編処理で用いられる</description>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 09:19:13.0</create-time>
+        <create-time>2021-03-10 19:51:58.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -125,7 +129,7 @@
         <data-type>TEXT</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 09:19:13.0</create-time>
+        <create-time>2021-03-10 19:51:58.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
       <dm-item>
@@ -140,10 +144,180 @@
         <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-01 09:19:13.0</create-time>
+        <create-time>2021-03-10 19:51:58.0</create-time>
         <dm-item-prop-list/>
       </dm-item>
     </dm-item-list>
-    <dm-ope-list/>
+    <dm-ope-list>
+      <dm-ope>
+        <code>INSERT</code>
+        <dm-code>CT021</dm-code>
+        <name>Insert</name>
+        <type>INSERT</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:45:49.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>CT021</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>NRJYUTYU</dm-item-code>
+            <statement>CODE(@1)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 19:45:49.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT021</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>NRTANPIN</dm-item-code>
+            <statement>CODE(@2)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 19:45:49.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT021</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>QTKOUSEI</dm-item-code>
+            <statement>NUM(@3)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 19:45:49.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT021</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>QTAKKOC</dm-item-code>
+            <statement>0</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 19:45:49.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT021</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>FGKANRYO</dm-item-code>
+            <statement>@FALSE</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 19:45:49.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT021</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>SQSLIST</dm-item-code>
+            <statement>@NULL</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 19:45:49.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT021</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>DTSYUKKAYOTEI</dm-item-code>
+            <statement>DATE(@4)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 19:45:49.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT021</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>TXLOT</dm-item-code>
+            <statement>@NULL</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 19:45:49.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT021</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>QTZANSU</dm-item-code>
+            <statement>NUM(@3)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 19:45:49.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>SELECT_01</code>
+        <dm-code>CT021</dm-code>
+        <name>Select by NRJYUTYU</name>
+        <type>SELECT</type>
+        <condition>NRJYUTYU = CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:45:49.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>SELECT_02</code>
+        <dm-code>CT021</dm-code>
+        <name>Select by NRJYUTYU and QTZANSU</name>
+        <type>SELECT</type>
+        <condition>NRJYUTYU = CODE(@1) AND QTZANSU = 0</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:45:49.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>ERASE</code>
+        <dm-code>CT021</dm-code>
+        <name>Erase</name>
+        <type>ERASE</type>
+        <condition>NRJYUTYU = CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:45:49.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>UPDATE_01</code>
+        <dm-code>CT021</dm-code>
+        <name>Update ロット</name>
+        <type>UPDATE</type>
+        <condition>NRJYUTYU = CODE(@1) AND NRTANPIN = CODE(@2)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 19:45:49.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>CT021</dm-code>
+            <dm-ope-code>UPDATE_01</dm-ope-code>
+            <dm-item-code>QTAKKOC</dm-item-code>
+            <statement>NUM(@3)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 19:45:49.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT021</dm-code>
+            <dm-ope-code>UPDATE_01</dm-ope-code>
+            <dm-item-code>QTZANSU</dm-item-code>
+            <statement>0</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 19:45:49.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT021</dm-code>
+            <dm-ope-code>UPDATE_01</dm-ope-code>
+            <dm-item-code>TXLOT</dm-item-code>
+            <statement>@4</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-10 19:45:49.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+    </dm-ope-list>
     <dm-prop-list/>
   </dm>
