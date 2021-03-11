@@ -391,7 +391,7 @@
       <io-item>
         <io-code>BF210</io-code>
         <code>B</code>
-        <name>F1 閉じる</name>
+        <name>閉じる [F1]</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>

@@ -90,8 +90,8 @@
       <io-item>
         <io-code>BF022_1</io-code>
         <code>CDSIIRESAKI</code>
-        <name>標準仕入先</name>
-        <is-visible>true</is-visible>
+        <name>仕入先C</name>
+        <is-visible>false</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
         <length>0</length>
@@ -113,7 +113,7 @@
       <io-item>
         <io-code>BF022_1</io-code>
         <code>TXSIIRESAKI</code>
-        <name>仕入先名</name>
+        <name>標準仕入先</name>
         <is-visible>true</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
@@ -129,22 +129,7 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-09 19:50:54.0</create-time>
-        <io-item-prop-list>
-          <io-item-prop>
-            <io-code>BF022_1</io-code>
-            <io-item-code>TXSIIRESAKI</io-item-code>
-            <key>labelAvailable</key>
-            <value>FALSE</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>BF022_1</io-code>
-            <io-item-code>TXSIIRESAKI</io-item-code>
-            <key>layout</key>
-            <value>X_AXIS</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-        </io-item-prop-list>
+        <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -618,8 +603,8 @@
       </io-item>
       <io-item>
         <io-code>BF022_1</io-code>
-        <code>A_DETAIL</code>
-        <name>編集 [F9]</name>
+        <code>A_EDIT</code>
+        <name>編集「F5」</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>
@@ -638,21 +623,21 @@
         <io-item-prop-list>
           <io-item-prop>
             <io-code>BF022_1</io-code>
-            <io-item-code>A_DETAIL</io-item-code>
+            <io-item-code>A_EDIT</io-item-code>
             <key>labelWidth</key>
             <value>75</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
             <io-code>BF022_1</io-code>
-            <io-item-code>A_DETAIL</io-item-code>
+            <io-item-code>A_EDIT</io-item-code>
             <key>functionKey</key>
-            <value>F9</value>
+            <value>F5</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
             <io-code>BF022_1</io-code>
-            <io-item-code>A_DETAIL</io-item-code>
+            <io-item-code>A_EDIT</io-item-code>
             <key>partitionType</key>
             <value>NONE</value>
             <is-disable>false</is-disable>
@@ -669,6 +654,9 @@
     </sec-io>
     <sec-menu>
       <io-code>BF022_1</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-11 21:12:56.0</create-time>
     </sec-menu>
   </io>

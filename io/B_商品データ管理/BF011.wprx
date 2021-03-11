@@ -61,7 +61,7 @@
       <io-item>
         <io-code>BF011</io-code>
         <code>TXSYOHIN</code>
-        <name>商品名</name>
+        <name>商品名*</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
         <is-require>true</is-require>
@@ -188,10 +188,10 @@
       <io-item>
         <io-code>BF011</io-code>
         <code>PRHANBAI</code>
-        <name>標準売価 *</name>
+        <name>標準売価</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -205,25 +205,17 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-06 13:49:29.0</create-time>
-        <io-item-prop-list>
-          <io-item-prop>
-            <io-code>BF011</io-code>
-            <io-item-code>PRHANBAI</io-item-code>
-            <key>tooltip</key>
-            <value>標準売価を必ず入力してください。</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-        </io-item-prop-list>
+        <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
         <io-code>BF011</io-code>
         <code>PRGENKA</code>
-        <name>標準原価 *</name>
+        <name>標準原価</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -245,13 +237,6 @@
             <value>X_AXIS</value>
             <is-disable>false</is-disable>
           </io-item-prop>
-          <io-item-prop>
-            <io-code>BF011</io-code>
-            <io-item-code>PRGENKA</io-item-code>
-            <key>tooltip</key>
-            <value>標準原価を必ず入力してください。</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
         </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -259,7 +244,7 @@
       <io-item>
         <io-code>BF011</io-code>
         <code>TXIMAGE</code>
-        <name>外観 *</name>
+        <name>外観</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
         <is-require>false</is-require>
@@ -297,10 +282,10 @@
       <io-item>
         <io-code>BF011</io-code>
         <code>TXTEKIYO1</code>
-        <name>商品摘要 *</name>
+        <name>商品摘要</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -333,13 +318,6 @@
             <io-item-code>TXTEKIYO1</io-item-code>
             <key>textareaWrap</key>
             <value>SOFT</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>BF011</io-code>
-            <io-item-code>TXTEKIYO1</io-item-code>
-            <key>tooltip</key>
-            <value>商品摘要を必ず入力してください。</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
@@ -394,21 +372,38 @@
             <value>SOFT</value>
             <is-disable>false</is-disable>
           </io-item-prop>
-          <io-item-prop>
-            <io-code>BF011</io-code>
-            <io-item-code>TXTEKIYO2</io-item-code>
-            <key>tooltip</key>
-            <value>必要に応じて結束摘要を入力してください。</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
         </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
         <io-code>BF011</io-code>
+        <code>CHK_TXSYOHIN</code>
+        <name>商品名チャック</name>
+        <is-visible>false</is-visible>
+        <item-type>C</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <msg-code-ng>ERR_REQUIRED</msg-code-ng>
+        <msg-param-ng>'商品名'</msg-param-ng>
+        <condition>TXSYOHIN &lt;&gt; @NULL</condition>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-06 13:49:29.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>BF011</io-code>
         <code>A_INSERT</code>
-        <name>F12 登録</name>
+        <name>登録[F12]</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>
@@ -447,101 +442,6 @@
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
-      <io-item>
-        <io-code>BF011</io-code>
-        <code>CHK_TXIMAGE</code>
-        <name>外観チャック</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_IMAGE</msg-code-ng>
-        <condition>TXIMAGE &lt;&gt; @NULL</condition>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-06 13:49:29.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>BF011</io-code>
-        <code>CHK_PRHANBAI</code>
-        <name>標準売価チャック</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_COMPARE01</msg-code-ng>
-        <msg-param-ng>'標準売価',0</msg-param-ng>
-        <condition>PRHANBAI &gt; 0</condition>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-06 13:49:29.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>BF011</io-code>
-        <code>CHK_PRGENKA</code>
-        <name>標準原価チャック</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_COMPARE01</msg-code-ng>
-        <msg-param-ng>'標準原価',0</msg-param-ng>
-        <condition>PRGENKA &gt; 0</condition>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-06 13:49:29.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>BF011</io-code>
-        <code>CHK_PRICE_COMP</code>
-        <name>Price compare check</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_COMPARE01</msg-code-ng>
-        <msg-param-ng>'標準売価','標準原価'</msg-param-ng>
-        <condition>PRHANBAI &gt; PRGENKA</condition>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-06 13:49:29.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
     </io-item-list>
     <io-prop-list/>
     <sec-io>
@@ -550,6 +450,9 @@
     </sec-io>
     <sec-menu>
       <io-code>BF011</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-11 21:12:02.0</create-time>
     </sec-menu>
   </io>

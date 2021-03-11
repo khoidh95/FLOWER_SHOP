@@ -599,8 +599,8 @@
       </io-item>
       <io-item>
         <io-code>BF022_2</io-code>
-        <code>A_DETAIL</code>
-        <name>編集 [F9]</name>
+        <code>A_EDIT</code>
+        <name>編集[F5]</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>
@@ -615,20 +615,27 @@
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-09 21:27:04.0</create-time>
+        <create-time>2021-03-11 15:29:36.0</create-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>BF022_2</io-code>
-            <io-item-code>A_DETAIL</io-item-code>
+            <io-item-code>A_EDIT</io-item-code>
             <key>labelWidth</key>
             <value>75</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
             <io-code>BF022_2</io-code>
-            <io-item-code>A_DETAIL</io-item-code>
+            <io-item-code>A_EDIT</io-item-code>
             <key>functionKey</key>
-            <value>F9</value>
+            <value>F5</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>BF022_2</io-code>
+            <io-item-code>A_EDIT</io-item-code>
+            <key>partitionType</key>
+            <value>NONE</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -643,6 +650,9 @@
     </sec-io>
     <sec-menu>
       <io-code>BF022_2</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-11 21:13:03.0</create-time>
     </sec-menu>
   </io>

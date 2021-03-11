@@ -433,6 +433,37 @@
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
+      <io-item>
+        <io-code>BF012_2</io-code>
+        <code>A_EDIT</code>
+        <name>編集「F5 」</name>
+        <is-visible>true</is-visible>
+        <item-type>A</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <next-io-code>BF013</next-io-code>
+        <next-io-param>NRSYOHIN</next-io-param>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-11 14:45:54.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>BF012_2</io-code>
+            <io-item-code>A_EDIT</io-item-code>
+            <key>functionKey</key>
+            <value>F5</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
     </io-item-list>
     <io-prop-list/>
     <sec-io>
@@ -441,6 +472,9 @@
     </sec-io>
     <sec-menu>
       <io-code>BF012_2</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-11 21:12:16.0</create-time>
     </sec-menu>
   </io>

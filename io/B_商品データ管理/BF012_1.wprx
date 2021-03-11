@@ -664,7 +664,7 @@
       <io-item>
         <io-code>BF012_1</io-code>
         <code>A_EDIT</code>
-        <name>F5 編集</name>
+        <name>編集[F5]</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>
@@ -695,7 +695,7 @@
       <io-item>
         <io-code>BF012_1</io-code>
         <code>A_INFO</code>
-        <name>F8 商品情報</name>
+        <name>商品情報[F8]</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>
@@ -726,7 +726,7 @@
       <io-item>
         <io-code>BF012_1</io-code>
         <code>A_EXPORT</code>
-        <name>F12 出力</name>
+        <name>出力[F12]</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>
@@ -761,6 +761,9 @@
     </sec-io>
     <sec-menu>
       <io-code>BF012_1</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-11 21:12:10.0</create-time>
     </sec-menu>
   </io>

@@ -147,7 +147,7 @@ AND KBSYOHIN EQ CODE(@3) AND KBSEASON EQ CODE(@4)</condition>
       <io-item>
         <io-code>BF010</io-code>
         <code>A_SEARCH</code>
-        <name>検索</name>
+        <name>検索[F3]</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>
@@ -168,6 +168,13 @@ AND KBSYOHIN EQ CODE(@3) AND KBSEASON EQ CODE(@4)</condition>
             <io-item-code>A_SEARCH</io-item-code>
             <key>labelWidth</key>
             <value>95px</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>BF010</io-code>
+            <io-item-code>A_SEARCH</io-item-code>
+            <key>functionKey</key>
+            <value>F3</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -424,7 +431,7 @@ AND KBSYOHIN EQ CODE(@3) AND KBSEASON EQ CODE(@4)</condition>
       <io-item>
         <io-code>BF010</io-code>
         <code>A_ADD</code>
-        <name>F6 追加</name>
+        <name>追加[F6]</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>
@@ -469,7 +476,7 @@ AND KBSYOHIN EQ CODE(@3) AND KBSEASON EQ CODE(@4)</condition>
       <io-item>
         <io-code>BF010</io-code>
         <code>A_EXPORT</code>
-        <name>F12 出力</name>
+        <name>出力[F12]</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>
@@ -478,7 +485,6 @@ AND KBSYOHIN EQ CODE(@3) AND KBSEASON EQ CODE(@4)</condition>
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <statement>@UPDATE</statement>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
@@ -518,6 +524,9 @@ AND KBSYOHIN EQ CODE(@3) AND KBSEASON EQ CODE(@4)</condition>
     </sec-io>
     <sec-menu>
       <io-code>BF010</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-11 14:30:56.0</create-time>
     </sec-menu>
   </io>

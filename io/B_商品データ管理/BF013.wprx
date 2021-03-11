@@ -117,10 +117,10 @@
       <io-item>
         <io-code>BF013</io-code>
         <code>PRHANBAI</code>
-        <name>標準売価 *</name>
+        <name>標準売価</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -140,10 +140,10 @@
       <io-item>
         <io-code>BF013</io-code>
         <code>PRGENKA</code>
-        <name>標準原価 *</name>
+        <name>標準原価</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -261,7 +261,7 @@
       <io-item>
         <io-code>BF013</io-code>
         <code>TXIMAGE</code>
-        <name>外観 *</name>
+        <name>外観</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
         <is-require>false</is-require>
@@ -379,10 +379,10 @@
       <io-item>
         <io-code>BF013</io-code>
         <code>SQLIST</code>
-        <name>順序 *</name>
+        <name>順序</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -563,10 +563,10 @@
       <io-item>
         <io-code>BF013</io-code>
         <code>G_QTKOUSEI</code>
-        <name>標準構成数 *</name>
+        <name>標準構成数</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -587,10 +587,10 @@
       <io-item>
         <io-code>BF013</io-code>
         <code>G_QTHISSU</code>
-        <name>必須構成数 *</name>
+        <name>必須構成数</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -687,8 +687,8 @@
       </io-item>
       <io-item>
         <io-code>BF013</io-code>
-        <code>CHK_G_QTKOUSEI</code>
-        <name>標準構成数チャック</name>
+        <code>CHK_TXSYOHIN</code>
+        <name>商品名チャック</name>
         <is-visible>false</is-visible>
         <item-type>C</item-type>
         <is-require>false</is-require>
@@ -697,62 +697,14 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_COMPARE01</msg-code-ng>
-        <msg-param-ng>'標準構成数',0</msg-param-ng>
-        <condition>G_QTKOUSEI &gt; 0</condition>
-        <level>2</level>
+        <msg-code-ng>ERR_REQUIRED</msg-code-ng>
+        <msg-param-ng>'商品名'</msg-param-ng>
+        <condition>TXSYOHIN &lt;&gt; @NULL</condition>
+        <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-07 14:57:58.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>BF013</io-code>
-        <code>CHK_G_QTHISSU</code>
-        <name>必須構成数チャック</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_COMPARE01</msg-code-ng>
-        <msg-param-ng>'必須構成数',0</msg-param-ng>
-        <condition>G_QTHISSU &gt; 0</condition>
-        <level>2</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-07 14:57:58.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>BF013</io-code>
-        <code>CHK_QTY</code>
-        <name>Quantity Check</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_COMPARE02</msg-code-ng>
-        <msg-param-ng>'標準構成数','必須構成数'</msg-param-ng>
-        <condition>G_QTKOUSEI &gt;= G_QTHISSU</condition>
-        <level>2</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-07 14:57:58.0</create-time>
+        <create-time>2021-03-11 15:14:17.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
@@ -760,7 +712,7 @@
       <io-item>
         <io-code>BF013</io-code>
         <code>A_UPDATE</code>
-        <name>F8 更新</name>
+        <name>更新「F8」</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>
@@ -805,101 +757,6 @@
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
-      <io-item>
-        <io-code>BF013</io-code>
-        <code>CHK_PRHANBAI</code>
-        <name>標準売価チャック</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_COMPARE01</msg-code-ng>
-        <msg-param-ng>'標準売価',0</msg-param-ng>
-        <condition>PRHANBAI &gt; 0</condition>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-07 14:57:58.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>BF013</io-code>
-        <code>CHK_PRGENKA</code>
-        <name>標準原価チャック</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_COMPARE01</msg-code-ng>
-        <msg-param-ng>'標準原価',0</msg-param-ng>
-        <condition>PRGENKA &gt; 0</condition>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-07 14:57:58.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>BF013</io-code>
-        <code>CHK_PRICE</code>
-        <name>Price Check</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_COMPARE02</msg-code-ng>
-        <msg-param-ng>'標準売価','標準原価'</msg-param-ng>
-        <condition>PRHANBAI &gt; PRGENKA</condition>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-07 14:57:58.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>BF013</io-code>
-        <code>CHK_TXIMAGE</code>
-        <name>外観チャック</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_IMAGE</msg-code-ng>
-        <condition>TXIMAGE &lt;&gt; @NULL</condition>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-07 14:57:58.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
     </io-item-list>
     <io-prop-list/>
     <sec-io>
@@ -908,6 +765,9 @@
     </sec-io>
     <sec-menu>
       <io-code>BF013</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-11 21:12:24.0</create-time>
     </sec-menu>
   </io>

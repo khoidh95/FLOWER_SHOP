@@ -2,12 +2,23 @@
   <io>
     <tool-version>2.4.1.0</tool-version>
     <code>BF022_3</code>
-    <name>単品と関連情報の確認</name>
+    <name>単品と関連情報の確認＿組込先商品</name>
     <io-type>IO</io-type>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
-    <create-time>2021-03-09 04:32:29.881</create-time>
+    <create-time>2021-03-09 04:32:29.0</create-time>
     <io-parts-list/>
     <io-item-list/>
     <io-prop-list/>
+    <sec-io>
+      <io-code>BF022_3</io-code>
+      <is-disable>false</is-disable>
+    </sec-io>
+    <sec-menu>
+      <io-code>BF022_3</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-11 21:13:13.0</create-time>
+    </sec-menu>
   </io>

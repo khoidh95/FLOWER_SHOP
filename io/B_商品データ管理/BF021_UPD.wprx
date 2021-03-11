@@ -91,10 +91,10 @@
       <io-item>
         <io-code>BF021_UPD</io-code>
         <code>PRKOUNYU</code>
-        <name>標準買価 *</name>
+        <name>標準買価</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -114,10 +114,10 @@
       <io-item>
         <io-code>BF021_UPD</io-code>
         <code>KBUNIT</code>
-        <name>購入単位 *</name>
+        <name>購入単位</name>
         <is-visible>true</is-visible>
         <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -232,42 +232,94 @@
       </io-item>
       <io-item>
         <io-code>BF021_UPD</io-code>
-        <code>UPDATE_A</code>
-        <name>更新 [F8]</name>
-        <is-visible>true</is-visible>
-        <item-type>A</item-type>
+        <code>QTZAIKO</code>
+        <name>現在庫数</name>
+        <is-visible>false</is-visible>
+        <item-type>IO</item-type>
         <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <statement>BF021_UPDATE</statement>
-        <next-io-code>BF022_1</next-io-code>
-        <next-io-param>NRTANPIN</next-io-param>
-        <msg-code-pre>MSG_PRE_UPDATE</msg-code-pre>
-        <msg-code-ok>MSG_AFT_UPDATE</msg-code-ok>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>BT020</dm-code>
+        <dm-item-code>QTZAIKO</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-11 20:58:29.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>BF021_UPD</io-code>
+        <code>QTHAIKI</code>
+        <name>廃棄見込数</name>
+        <is-visible>false</is-visible>
+        <item-type>IO</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>BT020</dm-code>
+        <dm-item-code>QTHAIKI</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-11 20:58:29.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>BF021_UPD</io-code>
+        <code>QTHUSOKU</code>
+        <name>引当不足数</name>
+        <is-visible>false</is-visible>
+        <item-type>IO</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>BT020</dm-code>
+        <dm-item-code>QTHUSOKU</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-11 20:58:29.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>BF021_UPD</io-code>
+        <code>CHK_TXTANPIN</code>
+        <name>単品名チャック</name>
+        <is-visible>false</is-visible>
+        <item-type>C</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <msg-code-ng>ERR_REQUIRED</msg-code-ng>
+        <msg-param-ng>'単品名'</msg-param-ng>
+        <condition>TXTANPIN &lt;&gt; @NULL</condition>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-09 19:57:55.0</create-time>
-        <io-item-prop-list>
-          <io-item-prop>
-            <io-code>BF021_UPD</io-code>
-            <io-item-code>UPDATE_A</io-item-code>
-            <key>labelWidth</key>
-            <value>75</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>BF021_UPD</io-code>
-            <io-item-code>UPDATE_A</io-item-code>
-            <key>functionKey</key>
-            <value>F8</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-        </io-item-prop-list>
+        <create-time>2021-03-11 15:26:38.0</create-time>
+        <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -320,8 +372,8 @@
       </io-item>
       <io-item>
         <io-code>BF021_UPD</io-code>
-        <code>CHK_PRKOUNYU</code>
-        <name>単位入り数チャック</name>
+        <code>CHK_VLHAIKI</code>
+        <name>標準廃棄日数チャック</name>
         <is-visible>false</is-visible>
         <item-type>C</item-type>
         <is-require>false</is-require>
@@ -331,8 +383,8 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <msg-code-ng>ERR_COMPARE01</msg-code-ng>
-        <msg-param-ng>'標準買価',0</msg-param-ng>
-        <condition>PRKOUNYU &gt; 0</condition>
+        <msg-param-ng>'標準廃棄日数',0</msg-param-ng>
+        <condition>VLHAIKI &gt; 2</condition>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
@@ -344,25 +396,42 @@
       </io-item>
       <io-item>
         <io-code>BF021_UPD</io-code>
-        <code>CHK_VLHAIKI</code>
-        <name>単位入り数チャック</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
+        <code>A_UPDATE</code>
+        <name>更新 [F8]</name>
+        <is-visible>true</is-visible>
+        <item-type>A</item-type>
         <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_COMPARE01</msg-code-ng>
-        <msg-param-ng>'標準廃棄日数',0</msg-param-ng>
-        <condition>VLHAIKI &gt; 0</condition>
+        <statement>BF021_UPDATE</statement>
+        <next-io-code>BF022_1</next-io-code>
+        <next-io-param>NRTANPIN</next-io-param>
+        <msg-code-pre>MSG_PRE_UPDATE</msg-code-pre>
+        <msg-code-ok>MSG_AFT_UPDATE</msg-code-ok>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-09 19:57:55.0</create-time>
-        <io-item-prop-list/>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>BF021_UPD</io-code>
+            <io-item-code>A_UPDATE</io-item-code>
+            <key>labelWidth</key>
+            <value>75</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>BF021_UPD</io-code>
+            <io-item-code>A_UPDATE</io-item-code>
+            <key>functionKey</key>
+            <value>F8</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -374,6 +443,9 @@
     </sec-io>
     <sec-menu>
       <io-code>BF021_UPD</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-11 21:12:48.0</create-time>
     </sec-menu>
   </io>
