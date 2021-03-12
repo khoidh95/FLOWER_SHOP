@@ -1,22 +1,114 @@
 <?xml version = "1.0"  encoding = "UTF-8" ?>
   <io>
     <tool-version>2.4.1.0</tool-version>
-    <code>DF011_REG</code>
-    <name>仕入先の登録</name>
+    <code>EF010</code>
+    <name>単品ロットと関連情報の確認</name>
     <io-type>IO</io-type>
-    <dm-code>DT010</dm-code>
+    <dm-code>ET010</dm-code>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
-    <create-time>2021-03-03 15:21:48.0</create-time>
+    <create-time>2021-03-11 20:58:51.0</create-time>
     <io-parts-list/>
     <io-item-list>
       <io-item>
-        <io-code>DF011_REG</io-code>
-        <code>TXSIIRESAKI</code>
+        <io-code>EF010</io-code>
+        <code>NRTANPIN</code>
+        <name>単品NO</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>ET010</dm-code>
+        <dm-item-code>NRTANPIN</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-11 20:58:51.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>EF010</io-code>
+        <code>TXTANPIN</code>
+        <name>単品名</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>BT020</dm-code>
+        <dm-item-code>TXTANPIN</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-11 21:00:36.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>EF010</io-code>
+        <code>SQLOT</code>
+        <name>ロットNO</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>ET010</dm-code>
+        <dm-item-code>SQLOT</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-11 20:58:51.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>EF010</io-code>
+        <code>CDSIIRESAKI</code>
+        <name>仕入先C</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>ET010</dm-code>
+        <dm-item-code>CDSIIRESAKI</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-11 20:58:51.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>EF010</io-code>
+        <code>TXXSIIRESAKI</code>
         <name>仕入先名</name>
         <is-visible>true</is-visible>
-        <item-type>IO</item-type>
-        <is-require>true</is-require>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
@@ -28,17 +120,17 @@
         <dm-item-code>TXSIIRESAKI</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-03 15:21:48.0</create-time>
+        <create-time>2021-03-11 21:03:58.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011_REG</io-code>
-        <code>CDSIIRESAKI</code>
-        <name>仕入先CODE</name>
+        <io-code>EF010</io-code>
+        <code>DTNYUKA</code>
+        <name>入荷日</name>
         <is-visible>true</is-visible>
-        <item-type>IO</item-type>
+        <item-type>O</item-type>
         <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
@@ -47,67 +139,21 @@
         <max-ByteSize>0</max-ByteSize>
         <level>1</level>
         <sort-key>0</sort-key>
-        <dm-code>DT010</dm-code>
-        <dm-item-code>CDSIIRESAKI</dm-item-code>
+        <dm-code>ET010</dm-code>
+        <dm-item-code>DTNYUKA</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-03 15:21:48.0</create-time>
+        <create-time>2021-03-11 20:58:51.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011_REG</io-code>
-        <code>NRYUBIN</code>
-        <name>郵便番号</name>
+        <io-code>EF010</io-code>
+        <code>PRZAIKO</code>
+        <name>在庫単価</name>
         <is-visible>true</is-visible>
-        <item-type>IO</item-type>
-        <is-require>true</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>DT010</dm-code>
-        <dm-item-code>NRYUBIN</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-03 15:21:48.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>DF011_REG</io-code>
-        <code>TXJYUSYO1</code>
-        <name>住所１</name>
-        <is-visible>true</is-visible>
-        <item-type>IO</item-type>
-        <is-require>true</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>DT010</dm-code>
-        <dm-item-code>TXJYUSYO1</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-03 15:21:48.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>DF011_REG</io-code>
-        <code>TXJYUSYO2</code>
-        <name>ビル名</name>
-        <is-visible>true</is-visible>
-        <item-type>IO</item-type>
+        <item-type>O</item-type>
         <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
@@ -116,67 +162,21 @@
         <max-ByteSize>0</max-ByteSize>
         <level>1</level>
         <sort-key>0</sort-key>
-        <dm-code>DT010</dm-code>
-        <dm-item-code>TXJYUSYO1</dm-item-code>
+        <dm-code>ET010</dm-code>
+        <dm-item-code>PRZAIKO</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-03 15:21:48.0</create-time>
+        <create-time>2021-03-11 20:58:51.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011_REG</io-code>
-        <code>TXEMAIL</code>
-        <name>Email</name>
+        <io-code>EF010</io-code>
+        <code>QTNYUKO</code>
+        <name>入庫数</name>
         <is-visible>true</is-visible>
-        <item-type>IO</item-type>
-        <is-require>true</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>DT010</dm-code>
-        <dm-item-code>TXEMAIL</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-03 15:21:48.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>DF011_REG</io-code>
-        <code>NRPHONE</code>
-        <name>電話番号</name>
-        <is-visible>true</is-visible>
-        <item-type>IO</item-type>
-        <is-require>true</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>DT010</dm-code>
-        <dm-item-code>NRPHONE</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-03 15:21:48.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>DF011_REG</io-code>
-        <code>NRFAX</code>
-        <name>FAX番号</name>
-        <is-visible>true</is-visible>
-        <item-type>IO</item-type>
+        <item-type>O</item-type>
         <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
@@ -185,52 +185,21 @@
         <max-ByteSize>0</max-ByteSize>
         <level>1</level>
         <sort-key>0</sort-key>
-        <dm-code>DT010</dm-code>
-        <dm-item-code>NRFAX</dm-item-code>
+        <dm-code>ET010</dm-code>
+        <dm-item-code>QTNYUKO</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-03 15:21:48.0</create-time>
-        <io-item-prop-list>
-          <io-item-prop>
-            <io-code>DF011_REG</io-code>
-            <io-item-code>NRFAX</io-item-code>
-            <key>layout</key>
-            <value>X_AXIS</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-        </io-item-prop-list>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>DF011_REG</io-code>
-        <code>TXFURIKOMI</code>
-        <name>振込先口座</name>
-        <is-visible>true</is-visible>
-        <item-type>IO</item-type>
-        <is-require>true</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>DT010</dm-code>
-        <dm-item-code>TXFURIKOMI</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-03 15:21:48.0</create-time>
+        <create-time>2021-03-11 20:58:51.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011_REG</io-code>
-        <code>AMKAIKAKEZAN</code>
-        <name>現買掛残高</name>
+        <io-code>EF010</io-code>
+        <code>QTSYUKKO</code>
+        <name>出庫数</name>
         <is-visible>true</is-visible>
-        <item-type>IO</item-type>
+        <item-type>O</item-type>
         <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
@@ -239,58 +208,132 @@
         <max-ByteSize>0</max-ByteSize>
         <level>1</level>
         <sort-key>0</sort-key>
-        <dm-code>DT010</dm-code>
-        <dm-item-code>AMKAIKAKEZAN</dm-item-code>
+        <dm-code>ET010</dm-code>
+        <dm-item-code>QTSYUKKO</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-03 15:21:48.0</create-time>
+        <create-time>2021-03-11 20:58:51.0</create-time>
         <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011_REG</io-code>
-        <code>INSERT_A</code>
-        <name>登録 [F12]</name>
+        <io-code>EF010</io-code>
+        <code>QTZAIKO</code>
+        <name>現在庫数</name>
         <is-visible>true</is-visible>
-        <item-type>A</item-type>
+        <item-type>O</item-type>
         <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <statement>DF011_INSERT</statement>
-        <next-io-code>DF012</next-io-code>
-        <next-io-param>_RESULT_.CDSIIRESAKI</next-io-param>
-        <msg-code-pre>MSG_PRE_REGIST</msg-code-pre>
-        <msg-code-ok>MSG_AFT_REGIST</msg-code-ok>
         <level>1</level>
         <sort-key>0</sort-key>
+        <dm-code>ET010</dm-code>
+        <dm-item-code>QTZAIKO</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-10 12:52:59.0</create-time>
-        <io-item-prop-list>
-          <io-item-prop>
-            <io-code>DF011_REG</io-code>
-            <io-item-code>INSERT_A</io-item-code>
-            <key>labelWidth</key>
-            <value>75</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>DF011_REG</io-code>
-            <io-item-code>INSERT_A</io-item-code>
-            <key>functionKey</key>
-            <value>F12</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-        </io-item-prop-list>
+        <create-time>2021-03-11 20:58:51.0</create-time>
+        <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
-        <io-code>DF011_REG</io-code>
+        <io-code>EF010</io-code>
+        <code>DTNYUKAYOTEI</code>
+        <name>入荷予定日</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>ET010</dm-code>
+        <dm-item-code>DTNYUKAYOTEI</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-11 20:58:51.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>EF010</io-code>
+        <code>QTNYUKAYOTEI</code>
+        <name>入荷予定数</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>ET010</dm-code>
+        <dm-item-code>QTNYUKAYOTEI</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-11 20:58:51.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>EF010</io-code>
+        <code>DTHAIKIYOTEI</code>
+        <name>廃棄予定日</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>ET010</dm-code>
+        <dm-item-code>DTHAIKIYOTEI</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-11 20:58:51.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>EF010</io-code>
+        <code>QTHAIKIYOTEI</code>
+        <name>廃棄予定数</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>ET010</dm-code>
+        <dm-item-code>QTHAIKIYOTEI</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-11 20:58:51.0</create-time>
+        <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>EF010</io-code>
         <code>B</code>
         <name>戻る [F1]</name>
         <is-visible>true</is-visible>
@@ -301,18 +344,25 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <next-io-code>@BACK</next-io-code>
+        <statement>@BACK</statement>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-03 15:21:48.0</create-time>
+        <create-time>2021-03-04 17:25:30.0</create-time>
         <io-item-prop-list>
           <io-item-prop>
-            <io-code>DF011_REG</io-code>
+            <io-code>EF010</io-code>
             <io-item-code>B</io-item-code>
-            <key>layout</key>
-            <value>X_AXIS</value>
+            <key>labelWidth</key>
+            <value>75</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>EF010</io-code>
+            <io-item-code>B</io-item-code>
+            <key>functionKey</key>
+            <value>F1</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -322,11 +372,11 @@
     </io-item-list>
     <io-prop-list/>
     <sec-io>
-      <io-code>DF011_REG</io-code>
+      <io-code>EF010</io-code>
       <is-disable>false</is-disable>
     </sec-io>
     <sec-menu>
-      <io-code>DF011_REG</io-code>
+      <io-code>EF010</io-code>
       <is-disable>false</is-disable>
     </sec-menu>
   </io>

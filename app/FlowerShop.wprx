@@ -317,5 +317,26 @@
         <creator>eclipse</creator>
         <create-time>2021-03-11 14:31:14.0</create-time>
       </app-io>
+      <app-io>
+        <app-code>FlowerShop</app-code>
+        <io-code>EF010</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-12 09:42:35.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>FlowerShop</app-code>
+        <io-code>EF012</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-12 09:42:35.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>FlowerShop</app-code>
+        <io-code>EF100</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-12 09:42:35.0</create-time>
+      </app-io>
     </app-io-list>
   </app>
