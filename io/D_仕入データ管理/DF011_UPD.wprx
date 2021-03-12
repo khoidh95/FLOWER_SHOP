@@ -262,6 +262,7 @@
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
         <statement>DF011_UPDATE</statement>
+        <next-io-code>DF012</next-io-code>
         <next-io-param>_RESULT_.CDSIIRESAKI</next-io-param>
         <level>1</level>
         <sort-key>0</sort-key>

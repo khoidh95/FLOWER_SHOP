@@ -682,6 +682,7 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
+        <next-io-code>DF011_UPD</next-io-code>
         <next-io-param>CDSIIRESAKI</next-io-param>
         <level>1</level>
         <sort-key>0</sort-key>
