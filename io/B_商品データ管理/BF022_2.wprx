@@ -425,6 +425,37 @@
       </io-item>
       <io-item>
         <io-code>BF022_2</io-code>
+        <code>A_LINK</code>
+        <name>情報</name>
+        <is-visible>false</is-visible>
+        <item-type>A</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <next-io-code>EF100</next-io-code>
+        <next-io-param>NRTANPIN,G_SQLOT,G_DTYOTEI</next-io-param>
+        <level>2</level>
+        <sort-key>0</sort-key>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-14 16:35:22.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>BF022_2</io-code>
+            <io-item-code>A_LINK</io-item-code>
+            <key>fieldType</key>
+            <value>LINK</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>BF022_2</io-code>
         <code>LINENO</code>
         <name>No.</name>
         <is-visible>true</is-visible>
@@ -524,7 +555,22 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-09 21:27:04.0</create-time>
-        <io-item-prop-list/>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>BF022_2</io-code>
+            <io-item-code>G_SQLOT</io-item-code>
+            <key>fieldType</key>
+            <value>LINK</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>BF022_2</io-code>
+            <io-item-code>G_SQLOT</io-item-code>
+            <key>fieldAction</key>
+            <value>A_LINK</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>

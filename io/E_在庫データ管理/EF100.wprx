@@ -5,6 +5,7 @@
     <name>受払予定の詳細確認</name>
     <io-type>IO</io-type>
     <dm-code>ET100</dm-code>
+    <condition>NRTANPIN = CODE(@1) AND SQLOT = CODE(@2) AND DTYOTEI = DATE(@3)</condition>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
     <create-time>2021-03-11 21:16:18.0</create-time>
@@ -45,14 +46,30 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
+        <statement>#GET_TXTANPIN('NRTANPIN')</statement>
         <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>BT020</dm-code>
-        <dm-item-code>TXTANPIN</dm-item-code>
+        <sort-key>1</sort-key>
+        <sort-type>A</sort-type>
+        <dm-item-code>@TEXT</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-11 21:00:36.0</create-time>
-        <io-item-prop-list/>
+        <create-time>2021-03-14 15:41:25.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>EF100</io-code>
+            <io-item-code>TXTANPIN</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>EF100</io-code>
+            <io-item-code>TXTANPIN</io-item-code>
+            <key>labelAvailable</key>
+            <value>FALSE</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -82,7 +99,7 @@
       <io-item>
         <io-code>EF100</io-code>
         <code>KBYOTEI</code>
-        <name>受払予定区分</name>
+        <name>受払予定</name>
         <is-visible>true</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
@@ -98,30 +115,15 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-11 21:16:18.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>EF100</io-code>
-        <code>NRSANSYO</code>
-        <name>参照No.</name>
-        <is-visible>true</is-visible>
-        <item-type>O</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>ET100</dm-code>
-        <dm-item-code>NRSANSYO</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-11 21:16:18.0</create-time>
-        <io-item-prop-list/>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>EF100</io-code>
+            <io-item-code>KBYOTEI</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -150,6 +152,37 @@
       </io-item>
       <io-item>
         <io-code>EF100</io-code>
+        <code>NRSANSYO</code>
+        <name>参照No.</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>ET100</dm-code>
+        <dm-item-code>NRSANSYO</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-11 21:16:18.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>EF100</io-code>
+            <io-item-code>NRSANSYO</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>EF100</io-code>
         <code>NRTORIHIKI</code>
         <name>取引管理No.</name>
         <is-visible>true</is-visible>
@@ -167,41 +200,12 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-11 21:16:18.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>EF100</io-code>
-        <code>B</code>
-        <name>戻る [F1]</name>
-        <is-visible>true</is-visible>
-        <item-type>A</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <statement>@BACK</statement>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-04 17:25:30.0</create-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>EF100</io-code>
-            <io-item-code>B</io-item-code>
-            <key>labelWidth</key>
-            <value>75</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>EF100</io-code>
-            <io-item-code>B</io-item-code>
-            <key>functionKey</key>
-            <value>F1</value>
+            <io-item-code>NRTORIHIKI</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -216,6 +220,9 @@
     </sec-io>
     <sec-menu>
       <io-code>EF100</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-14 21:07:13.0</create-time>
     </sec-menu>
   </io>

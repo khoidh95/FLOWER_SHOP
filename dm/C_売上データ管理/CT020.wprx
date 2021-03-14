@@ -47,7 +47,7 @@
         <byteSize>0</byteSize>
         <scale>0</scale>
         <is-nullable>false</is-nullable>
-        <key-group>3</key-group>
+        <key-group>0</key-group>
         <data-type>CODE</data-type>
         <ref-dm-code>BT010</ref-dm-code>
         <ref-dm-item-code>NRSYOHIN</ref-dm-item-code>
@@ -289,8 +289,8 @@
         <length>7</length>
         <byteSize>0</byteSize>
         <scale>0</scale>
-        <is-nullable>false</is-nullable>
-        <key-group>2</key-group>
+        <is-nullable>true</is-nullable>
+        <key-group>0</key-group>
         <data-type>CODE</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
@@ -1215,6 +1215,302 @@
         <creator>eclipse</creator>
         <create-time>2021-03-10 19:44:28.0</create-time>
         <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>LOCK</code>
+        <dm-code>CT020</dm-code>
+        <name>Lock</name>
+        <type>LOCK</type>
+        <condition>NRJYUTYU = CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-14 02:47:12.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>UPDATE</code>
+        <dm-code>CT020</dm-code>
+        <name>Update</name>
+        <type>UPDATE</type>
+        <condition>NRJYUTYU = CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-14 02:47:12.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>UPDATE</dm-ope-code>
+            <dm-item-code>AMHANBAI</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 02:47:12.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>UPDATE</dm-ope-code>
+            <dm-item-code>DTUKETORIYOTEI</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 02:47:12.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>UPDATE</dm-ope-code>
+            <dm-item-code>DTSYUKKAYOTEI</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 02:47:12.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>ERASE</code>
+        <dm-code>CT020</dm-code>
+        <name>Erase</name>
+        <type>ERASE</type>
+        <condition>NRJYUTYU = CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-14 03:27:06.0</create-time>
+        <dm-ope-logic-list/>
+      </dm-ope>
+      <dm-ope>
+        <code>INSERT</code>
+        <dm-code>CT020</dm-code>
+        <name>Insert</name>
+        <type>INSERT</type>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-14 04:02:11.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>NRJYUTYU</dm-item-code>
+            <statement>CODE(@1)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>IDKOKYAKU</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>NRSYOHIN</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>AMHANBAI</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>AMTAX</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>TXAITESAKI</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>NRAITEYUBIN</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>TXAITEJYUSYO</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>NRAITEPHONE</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>TXMESSAGE</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>DTJYUTYU</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>DTSYUKKAYOTEI</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>DTUKETORIYOTEI</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>DTJYURYO</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>DTHAKKOU</dm-item-code>
+            <statement>@NOW</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>DTSYUKKA</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>DTCANCEL</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>DTHENKIN</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>NRTORIHIKI</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>STALLOC</dm-item-code>
+            <statement>CODE(0)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>STSYUKKA</dm-item-code>
+            <statement>CODE(0)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>INSERT</dm-ope-code>
+            <dm-item-code>FGCOPYJYUSYO</dm-item-code>
+            <statement>_IN_._ITEM_</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 04:02:11.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
+      </dm-ope>
+      <dm-ope>
+        <code>UPDATE_DTSYUKKA</code>
+        <dm-code>CT020</dm-code>
+        <name>Update 実際出荷日</name>
+        <type>UPDATE</type>
+        <condition>NRJYUTYU = CODE(@1)</condition>
+        <is-commit>false</is-commit>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-14 23:26:48.0</create-time>
+        <dm-ope-logic-list>
+          <dm-ope-logic>
+            <dm-code>CT020</dm-code>
+            <dm-ope-code>UPDATE_DTSYUKKA</dm-ope-code>
+            <dm-item-code>DTSYUKKA</dm-item-code>
+            <statement>DATE(@2)</statement>
+            <is-disable>false</is-disable>
+            <creator>eclipse</creator>
+            <create-time>2021-03-14 23:26:48.0</create-time>
+          </dm-ope-logic>
+        </dm-ope-logic-list>
       </dm-ope>
     </dm-ope-list>
     <dm-prop-list/>

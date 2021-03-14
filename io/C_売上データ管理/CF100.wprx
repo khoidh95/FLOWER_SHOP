@@ -5,6 +5,7 @@
     <name>売上実績の詳細確認</name>
     <io-type>IO</io-type>
     <dm-code>CT100</dm-code>
+    <condition>NRURIAGE = CODE(@1)</condition>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
     <create-time>2021-03-10 23:51:29.0</create-time>
@@ -35,8 +36,8 @@
       </io-item>
       <io-item>
         <io-code>CF100</io-code>
-        <code>KBDENPYO</code>
-        <name>伝票区分</name>
+        <code>DTTORIHIKI</code>
+        <name>取引日</name>
         <is-visible>true</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
@@ -48,80 +49,19 @@
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>CT100</dm-code>
-        <dm-item-code>KBDENPYO</dm-item-code>
+        <dm-item-code>DTTORIHIKI</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-10 23:51:29.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF100</io-code>
-        <code>FGVALID</code>
-        <name>有効区分</name>
-        <is-visible>true</is-visible>
-        <item-type>O</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>CT100</dm-code>
-        <dm-item-code>FGVALID</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-10 23:51:29.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF100</io-code>
-        <code>KBURITORI</code>
-        <name>取引区分</name>
-        <is-visible>true</is-visible>
-        <item-type>O</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>CT100</dm-code>
-        <dm-item-code>KBURITORI</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-10 23:51:29.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF100</io-code>
-        <code>IDKOKYAKU</code>
-        <name>顧客ID</name>
-        <is-visible>true</is-visible>
-        <item-type>O</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>CT100</dm-code>
-        <dm-item-code>IDKOKYAKU</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-10 23:51:29.0</create-time>
-        <io-item-prop-list/>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>CF100</io-code>
+            <io-item-code>DTTORIHIKI</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -173,8 +113,8 @@
       </io-item>
       <io-item>
         <io-code>CF100</io-code>
-        <code>DTTORIHIKI</code>
-        <name>取引日</name>
+        <code>KBURITORI</code>
+        <name>取引区分</name>
         <is-visible>true</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
@@ -186,7 +126,10 @@
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>CT100</dm-code>
-        <dm-item-code>DTTORIHIKI</dm-item-code>
+        <dm-item-code>KBURITORI</dm-item-code>
+        <choice-list>
+          <fixed>0:前受計上|1:売上計上</fixed>
+        </choice-list>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-10 23:51:29.0</create-time>
@@ -213,7 +156,15 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-10 23:51:29.0</create-time>
-        <io-item-prop-list/>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>CF100</io-code>
+            <io-item-code>AMTORIHIKI</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -236,30 +187,15 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-10 23:51:29.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF100</io-code>
-        <code>NRTORIHIKI</code>
-        <name>取引管理No.</name>
-        <is-visible>true</is-visible>
-        <item-type>O</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>CT100</dm-code>
-        <dm-item-code>NRTORIHIKI</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-10 23:51:29.0</create-time>
-        <io-item-prop-list/>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>CF100</io-code>
+            <io-item-code>AMTAX</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -288,8 +224,8 @@
       </io-item>
       <io-item>
         <io-code>CF100</io-code>
-        <code>DTFYEAR</code>
-        <name>取引年度</name>
+        <code>FGVALID</code>
+        <name>有効区分</name>
         <is-visible>true</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
@@ -301,18 +237,29 @@
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>CT100</dm-code>
-        <dm-item-code>DTFYEAR</dm-item-code>
+        <dm-item-code>FGVALID</dm-item-code>
+        <choice-list>
+          <fixed>0:無効|1:有効</fixed>
+        </choice-list>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-10 23:51:29.0</create-time>
-        <io-item-prop-list/>
+        <create-time>2021-03-13 23:41:34.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>CF100</io-code>
+            <io-item-code>FGVALID</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
         <io-code>CF100</io-code>
-        <code>DTMSEG</code>
-        <name>取引月度</name>
+        <code>KBDENPYO</code>
+        <name>伝票区分</name>
         <is-visible>true</is-visible>
         <item-type>O</item-type>
         <is-require>false</is-require>
@@ -324,11 +271,22 @@
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-code>CT100</dm-code>
-        <dm-item-code>DTMSEG</dm-item-code>
+        <dm-item-code>KBDENPYO</dm-item-code>
+        <choice-list>
+          <fixed>0:黒伝|1:赤伝</fixed>
+        </choice-list>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-10 23:51:29.0</create-time>
-        <io-item-prop-list/>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>CF100</io-code>
+            <io-item-code>KBDENPYO</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -340,6 +298,9 @@
     </sec-io>
     <sec-menu>
       <io-code>CF100</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-14 21:10:57.0</create-time>
     </sec-menu>
   </io>

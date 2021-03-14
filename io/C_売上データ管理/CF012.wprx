@@ -213,7 +213,7 @@
       <io-item>
         <io-code>CF012</io-code>
         <code>G</code>
-        <name>受注見出し</name>
+        <name>受注履歴</name>
         <is-visible>true</is-visible>
         <item-type>G</item-type>
         <is-require>false</is-require>
@@ -253,7 +253,7 @@
             <io-code>CF012</io-code>
             <io-item-code>G</io-item-code>
             <key>partitionLabel</key>
-            <value>受注見出し一覧</value>
+            <value>受注履歴</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -302,7 +302,7 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <next-io-code>CF021_UPD</next-io-code>
+        <next-io-code>CF022_1</next-io-code>
         <next-io-param>G_NRJYUTYU</next-io-param>
         <level>2</level>
         <sort-key>0</sort-key>
@@ -336,7 +336,7 @@
         <level>2</level>
         <sort-key>1</sort-key>
         <sort-type>A</sort-type>
-        <dm-code>CT020</dm-code>
+        <dm-code>CT020_Q</dm-code>
         <dm-item-code>DTJYUTYU</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
@@ -360,7 +360,7 @@
         <level>2</level>
         <sort-key>2</sort-key>
         <sort-type>A</sort-type>
-        <dm-code>CT020</dm-code>
+        <dm-code>CT020_Q</dm-code>
         <dm-item-code>NRJYUTYU</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
@@ -398,7 +398,7 @@
         <max-ByteSize>0</max-ByteSize>
         <level>2</level>
         <sort-key>0</sort-key>
-        <dm-code>CT020</dm-code>
+        <dm-code>CT020_Q</dm-code>
         <dm-item-code>IDKOKYAKU</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
@@ -421,7 +421,7 @@
         <max-ByteSize>0</max-ByteSize>
         <level>2</level>
         <sort-key>0</sort-key>
-        <dm-code>CT020</dm-code>
+        <dm-code>CT020_Q</dm-code>
         <dm-item-code>NRSYOHIN</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
@@ -467,7 +467,7 @@
         <max-ByteSize>0</max-ByteSize>
         <level>2</level>
         <sort-key>0</sort-key>
-        <dm-code>CT020</dm-code>
+        <dm-code>CT020_Q</dm-code>
         <dm-item-code>DTSYUKKA</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
@@ -490,7 +490,7 @@
         <max-ByteSize>0</max-ByteSize>
         <level>2</level>
         <sort-key>0</sort-key>
-        <dm-code>CT020</dm-code>
+        <dm-code>CT020_Q</dm-code>
         <dm-item-code>AMHANBAI</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
@@ -513,7 +513,7 @@
         <max-ByteSize>0</max-ByteSize>
         <level>2</level>
         <sort-key>0</sort-key>
-        <dm-code>CT020</dm-code>
+        <dm-code>CT020_Q</dm-code>
         <dm-item-code>STSYUKKA</dm-item-code>
         <choice-list>
           <fixed>:|0:未受領|1:受領済|2:出荷済</fixed>
@@ -595,7 +595,7 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <next-io-code>CF021_UPD</next-io-code>
+        <next-io-code>CF011_UPD</next-io-code>
         <next-io-param>IDKOKYAKU</next-io-param>
         <level>1</level>
         <sort-key>0</sort-key>
@@ -629,6 +629,9 @@
     </sec-io>
     <sec-menu>
       <io-code>CF012</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-14 21:09:35.0</create-time>
     </sec-menu>
   </io>

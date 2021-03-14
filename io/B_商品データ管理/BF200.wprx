@@ -5,6 +5,8 @@
     <name>商品の検索</name>
     <io-type>DIALOG</io-type>
     <dm-code>BT010</dm-code>
+    <condition>NRSYOHIN CT CODE(@1) AND TXSYOHIN CT @2 
+AND KBSYOHIN EQ CODE(@3) AND KBSEASON EQ CODE(@4)</condition>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
     <create-time>2021-03-10 18:40:24.0</create-time>

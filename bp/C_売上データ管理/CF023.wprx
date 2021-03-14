@@ -1,45 +1,45 @@
 <?xml version = "1.0"  encoding = "UTF-8" ?>
   <bp>
     <tool-version>2.4.1.0</tool-version>
-    <code>CF029</code>
-    <name>出荷完了エントリー</name>
+    <code>CF023</code>
+    <name>受注単品構成の保守</name>
     <is-commit>false</is-commit>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
-    <create-time>2021-03-10 23:25:12.0</create-time>
+    <create-time>2021-03-14 02:40:13.0</create-time>
     <bp-logic-list>
       <bp-logic>
-        <bp-code>CF029</bp-code>
+        <bp-code>CF023</bp-code>
         <level>0</level>
         <ctrl-code>ARG</ctrl-code>
         <func-code>CODE</func-code>
         <work-code>NRJYUTYU</work-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-10 23:25:24.0</create-time>
+        <create-time>2021-03-14 22:59:51.0</create-time>
       </bp-logic>
       <bp-logic>
-        <bp-code>CF029</bp-code>
+        <bp-code>CF023</bp-code>
         <level>0</level>
-        <ctrl-code>ARG</ctrl-code>
-        <func-code>DATE</func-code>
-        <work-code>DTSYUKKA</work-code>
+        <ctrl-code>IN</ctrl-code>
+        <dm-code>CT020</dm-code>
+        <work-code>WK1</work-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-10 23:25:24.0</create-time>
+        <create-time>2021-03-14 22:09:44.0</create-time>
       </bp-logic>
       <bp-logic>
-        <bp-code>CF029</bp-code>
+        <bp-code>CF023</bp-code>
         <level>0</level>
         <ctrl-code>IN</ctrl-code>
         <dm-code>CT021</dm-code>
         <work-code>WK2</work-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-14 23:32:59.0</create-time>
+        <create-time>2021-03-14 22:29:43.0</create-time>
       </bp-logic>
       <bp-logic>
-        <bp-code>CF029</bp-code>
+        <bp-code>CF023</bp-code>
         <level>0</level>
         <ctrl-code>CALL</ctrl-code>
         <dm-code>CT020</dm-code>
@@ -47,21 +47,21 @@
         <param>_ARG_.NRJYUTYU</param>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-14 23:32:59.0</create-time>
+        <create-time>2021-03-14 22:09:44.0</create-time>
       </bp-logic>
       <bp-logic>
-        <bp-code>CF029</bp-code>
+        <bp-code>CF023</bp-code>
         <level>0</level>
         <ctrl-code>CALL</ctrl-code>
         <dm-code>CT020</dm-code>
-        <func-code>UPDATE_DTSYUKKA</func-code>
-        <param>_ARG_.NRJYUTYU,_ARG_.DTSYUKKA</param>
+        <func-code>UPDATE</func-code>
+        <param>WK1,_ARG_.NRJYUTYU</param>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-14 23:32:59.0</create-time>
+        <create-time>2021-03-14 22:09:44.0</create-time>
       </bp-logic>
       <bp-logic>
-        <bp-code>CF029</bp-code>
+        <bp-code>CF023</bp-code>
         <level>0</level>
         <ctrl-code>CALL</ctrl-code>
         <dm-code>CT021</dm-code>
@@ -69,68 +69,68 @@
         <param>_ARG_.NRJYUTYU</param>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-14 23:32:59.0</create-time>
+        <create-time>2021-03-14 22:29:43.0</create-time>
       </bp-logic>
       <bp-logic>
-        <bp-code>CF029</bp-code>
+        <bp-code>CF023</bp-code>
         <level>0</level>
         <ctrl-code>FOREACH</ctrl-code>
         <param>WK2</param>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-14 23:32:59.0</create-time>
+        <create-time>2021-03-14 22:29:43.0</create-time>
       </bp-logic>
       <bp-logic>
-        <bp-code>CF029</bp-code>
+        <bp-code>CF023</bp-code>
         <level>1</level>
         <ctrl-code>IF</ctrl-code>
         <param>WK2._RECORD_STATUS_= @INSERT</param>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-14 23:32:59.0</create-time>
+        <create-time>2021-03-14 22:29:43.0</create-time>
       </bp-logic>
       <bp-logic>
-        <bp-code>CF029</bp-code>
+        <bp-code>CF023</bp-code>
         <level>2</level>
         <ctrl-code>CALL</ctrl-code>
         <dm-code>CT021</dm-code>
-        <func-code>INSERT_SYUKKA</func-code>
+        <func-code>INSERT</func-code>
         <param>WK2,_ARG_.NRJYUTYU</param>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-14 23:32:59.0</create-time>
+        <create-time>2021-03-14 22:29:43.0</create-time>
       </bp-logic>
       <bp-logic>
-        <bp-code>CF029</bp-code>
+        <bp-code>CF023</bp-code>
         <level>1</level>
         <ctrl-code>ELSEIF</ctrl-code>
         <param>WK2._RECORD_STATUS_= @UPDATE</param>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-14 23:32:59.0</create-time>
+        <create-time>2021-03-14 22:29:43.0</create-time>
       </bp-logic>
       <bp-logic>
-        <bp-code>CF029</bp-code>
+        <bp-code>CF023</bp-code>
         <level>2</level>
         <ctrl-code>CALL</ctrl-code>
         <dm-code>CT021</dm-code>
-        <func-code>UPDATE_SYUKKA</func-code>
+        <func-code>UPDATE</func-code>
         <param>WK2,_ARG_.NRJYUTYU,WK2.NRTANPIN</param>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-14 23:32:59.0</create-time>
+        <create-time>2021-03-14 22:29:43.0</create-time>
       </bp-logic>
       <bp-logic>
-        <bp-code>CF029</bp-code>
+        <bp-code>CF023</bp-code>
         <level>1</level>
         <ctrl-code>ELSEIF</ctrl-code>
         <param>WK2._RECORD_STATUS_= @DELETE</param>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-14 23:32:59.0</create-time>
+        <create-time>2021-03-14 22:29:43.0</create-time>
       </bp-logic>
       <bp-logic>
-        <bp-code>CF029</bp-code>
+        <bp-code>CF023</bp-code>
         <level>2</level>
         <ctrl-code>CALL</ctrl-code>
         <dm-code>CT021</dm-code>
@@ -138,23 +138,23 @@
         <param>_ARG_.NRJYUTYU,WK2.NRTANPIN</param>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-14 23:32:59.0</create-time>
+        <create-time>2021-03-14 22:29:43.0</create-time>
       </bp-logic>
       <bp-logic>
-        <bp-code>CF029</bp-code>
+        <bp-code>CF023</bp-code>
         <level>1</level>
         <ctrl-code>END</ctrl-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-14 23:32:59.0</create-time>
+        <create-time>2021-03-14 22:29:43.0</create-time>
       </bp-logic>
       <bp-logic>
-        <bp-code>CF029</bp-code>
+        <bp-code>CF023</bp-code>
         <level>0</level>
         <ctrl-code>END</ctrl-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-14 23:32:59.0</create-time>
+        <create-time>2021-03-14 22:29:43.0</create-time>
       </bp-logic>
     </bp-logic-list>
   </bp>

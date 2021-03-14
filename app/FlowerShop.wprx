@@ -319,13 +319,6 @@
       </app-io>
       <app-io>
         <app-code>FlowerShop</app-code>
-        <io-code>EF010</io-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-12 09:42:35.0</create-time>
-      </app-io>
-      <app-io>
-        <app-code>FlowerShop</app-code>
         <io-code>EF012</io-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
@@ -337,6 +330,34 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-12 09:42:35.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>FlowerShop</app-code>
+        <io-code>CF026</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-14 14:40:54.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>FlowerShop</app-code>
+        <io-code>EF010_1</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-14 15:58:26.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>FlowerShop</app-code>
+        <io-code>EF200</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-14 15:58:26.0</create-time>
+      </app-io>
+      <app-io>
+        <app-code>FlowerShop</app-code>
+        <io-code>EF010_2</io-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-14 15:58:26.0</create-time>
       </app-io>
     </app-io-list>
   </app>

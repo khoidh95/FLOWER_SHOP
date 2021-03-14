@@ -58,6 +58,14 @@
     </macro>
     <macro>
       <tool-version>2.4.1.0</tool-version>
+      <code>GET_NRSYOHIN</code>
+      <statement>NAVAL(CT020{NRJYUTYU = CODE(@1)}.NRSYOHIN,@NULL)</statement>
+      <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-13 23:16:43.0</create-time>
+    </macro>
+    <macro>
+      <tool-version>2.4.1.0</tool-version>
       <code>GET_TXKOKYAKU</code>
       <statement>NAVAL(CT010{IDKOKYAKU = CODE(@1)}.TXKOKYAKU,@NULL)</statement>
       <is-disable>false</is-disable>

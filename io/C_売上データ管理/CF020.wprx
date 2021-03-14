@@ -5,6 +5,10 @@
     <name>受注の一覧・保守</name>
     <io-type>IO</io-type>
     <dm-code>CT020</dm-code>
+    <condition>DTSYUKKAYOTEI EQ DATE(@1) 
+AND IDKOKYAKU CT CODE(@2)
+AND STALLOC  EQ CODE(@3)
+AND STSYUKKA EQ CODE(@4)</condition>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
     <create-time>2021-03-02 18:19:35.0</create-time>
@@ -367,7 +371,7 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <next-io-code>CF021_UPD</next-io-code>
+        <next-io-code>CF022_1</next-io-code>
         <next-io-param>NRJYUTYU</next-io-param>
         <level>2</level>
         <sort-key>0</sort-key>
@@ -640,6 +644,9 @@
     </sec-io>
     <sec-menu>
       <io-code>CF020</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-14 21:09:45.0</create-time>
     </sec-menu>
   </io>

@@ -5,6 +5,7 @@
     <name>単品ロットの保守</name>
     <io-type>IO</io-type>
     <dm-code>ET010</dm-code>
+    <condition>NRTANPIN = CODE(@1) AND SQLOT = CODE(@2)</condition>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
     <create-time>2021-03-11 21:11:43.0</create-time>
@@ -45,14 +46,30 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
+        <statement>#GET_TXTANPIN('NRTANPIN')</statement>
         <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>BT020</dm-code>
-        <dm-item-code>TXTANPIN</dm-item-code>
+        <sort-key>1</sort-key>
+        <sort-type>A</sort-type>
+        <dm-item-code>@TEXT</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-11 21:00:36.0</create-time>
-        <io-item-prop-list/>
+        <create-time>2021-03-14 19:22:39.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>EF012</io-code>
+            <io-item-code>TXTANPIN</io-item-code>
+            <key>labelAvailable</key>
+            <value>FALSE</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>EF012</io-code>
+            <io-item-code>TXTANPIN</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -75,7 +92,15 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-11 21:11:43.0</create-time>
-        <io-item-prop-list/>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>EF012</io-code>
+            <io-item-code>SQLOT</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -107,7 +132,7 @@
         <code>DTHAIKIYOTEI</code>
         <name>廃棄予定日</name>
         <is-visible>true</is-visible>
-        <item-type>O</item-type>
+        <item-type>IO</item-type>
         <is-require>false</is-require>
         <length>0</length>
         <scale>-1</scale>
@@ -121,7 +146,15 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-11 21:11:43.0</create-time>
-        <io-item-prop-list/>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>EF012</io-code>
+            <io-item-code>DTHAIKIYOTEI</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -144,7 +177,15 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-11 21:11:43.0</create-time>
-        <io-item-prop-list/>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>EF012</io-code>
+            <io-item-code>PRZAIKO</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -190,7 +231,15 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-11 21:11:43.0</create-time>
-        <io-item-prop-list/>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>EF012</io-code>
+            <io-item-code>QTSYUKKO</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -213,14 +262,22 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-11 21:11:43.0</create-time>
-        <io-item-prop-list/>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>EF012</io-code>
+            <io-item-code>QTZAIKO</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
       <io-item>
         <io-code>EF012</io-code>
-        <code>B</code>
-        <name>戻る [F1]</name>
+        <code>A_UPDATE</code>
+        <name>更新 [F8]</name>
         <is-visible>true</is-visible>
         <item-type>A</item-type>
         <is-require>false</is-require>
@@ -229,25 +286,29 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <statement>@BACK</statement>
+        <statement>EF012:NRTANPIN,SQLOT,DTHAIKIYOTEI</statement>
+        <next-io-code>EF010_1</next-io-code>
+        <next-io-param>NRTANPIN,SQLOT</next-io-param>
+        <msg-code-pre>MSG_PRE_REGIST</msg-code-pre>
+        <msg-code-ok>MSG_AFT_REGIST</msg-code-ok>
         <level>1</level>
         <sort-key>0</sort-key>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-04 17:25:30.0</create-time>
+        <create-time>2021-03-14 19:28:19.0</create-time>
         <io-item-prop-list>
           <io-item-prop>
             <io-code>EF012</io-code>
-            <io-item-code>B</io-item-code>
+            <io-item-code>A_UPDATE</io-item-code>
             <key>labelWidth</key>
             <value>75</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
             <io-code>EF012</io-code>
-            <io-item-code>B</io-item-code>
+            <io-item-code>A_UPDATE</io-item-code>
             <key>functionKey</key>
-            <value>F1</value>
+            <value>F8</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -262,6 +323,9 @@
     </sec-io>
     <sec-menu>
       <io-code>EF012</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-14 21:07:04.0</create-time>
     </sec-menu>
   </io>

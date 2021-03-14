@@ -5,6 +5,7 @@
     <name>顧客の一覧・保守</name>
     <io-type>IO</io-type>
     <dm-code>CT010</dm-code>
+    <condition>IDKOKYAKU CT CODE(@1) AND TXKOKYAKU CT @2 AND TXEMAIL CT @3</condition>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
     <create-time>2021-03-02 18:19:06.0</create-time>
@@ -429,6 +430,9 @@
     </sec-io>
     <sec-menu>
       <io-code>CF010</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-14 21:09:03.0</create-time>
     </sec-menu>
   </io>

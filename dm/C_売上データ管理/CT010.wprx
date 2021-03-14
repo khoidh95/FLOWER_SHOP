@@ -136,7 +136,7 @@
         <scale>0</scale>
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
-        <data-type>CURRENCY</data-type>
+        <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-09 21:57:47.0</create-time>
@@ -151,7 +151,7 @@
         <scale>0</scale>
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
-        <data-type>CURRENCY</data-type>
+        <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-09 21:57:47.0</create-time>
@@ -166,7 +166,7 @@
         <scale>0</scale>
         <is-nullable>true</is-nullable>
         <key-group>0</key-group>
-        <data-type>CURRENCY</data-type>
+        <data-type>NUM</data-type>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-09 21:57:47.0</create-time>
@@ -275,7 +275,7 @@
             <dm-code>CT010</dm-code>
             <dm-ope-code>INSERT</dm-ope-code>
             <dm-item-code>AMKISYUZAN</dm-item-code>
-            <statement>#CURRENCY_INIT('_IN_._ITEM_')</statement>
+            <statement>#NUM_INIT('_IN_._ITEM_')</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
             <create-time>2021-03-09 21:58:37.0</create-time>
@@ -284,7 +284,7 @@
             <dm-code>CT010</dm-code>
             <dm-ope-code>INSERT</dm-ope-code>
             <dm-item-code>AMMAEUKE</dm-item-code>
-            <statement>#CURRENCY_INIT('_IN_._ITEM_')</statement>
+            <statement>#NUM_INIT('_IN_._ITEM_')</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
             <create-time>2021-03-09 21:58:37.0</create-time>
@@ -293,7 +293,7 @@
             <dm-code>CT010</dm-code>
             <dm-ope-code>INSERT</dm-ope-code>
             <dm-item-code>AMURIAGE</dm-item-code>
-            <statement>#CURRENCY_INIT('_IN_._ITEM_')</statement>
+            <statement>#NUM_INIT('_IN_._ITEM_')</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
             <create-time>2021-03-09 21:58:37.0</create-time>
@@ -399,7 +399,7 @@
             <dm-code>CT010</dm-code>
             <dm-ope-code>UPDATE</dm-ope-code>
             <dm-item-code>AMKISYUZAN</dm-item-code>
-            <statement>#CURRENCY_INIT('_IN_._ITEM_')</statement>
+            <statement>#NUM_INIT('_IN_._ITEM_')</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
             <create-time>2021-03-09 21:58:37.0</create-time>
@@ -408,7 +408,7 @@
             <dm-code>CT010</dm-code>
             <dm-ope-code>UPDATE</dm-ope-code>
             <dm-item-code>AMMAEUKE</dm-item-code>
-            <statement>#CURRENCY_INIT('_IN_._ITEM_')</statement>
+            <statement>#NUM_INIT('_IN_._ITEM_')</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
             <create-time>2021-03-09 21:58:37.0</create-time>
@@ -417,7 +417,7 @@
             <dm-code>CT010</dm-code>
             <dm-ope-code>UPDATE</dm-ope-code>
             <dm-item-code>AMURIAGE</dm-item-code>
-            <statement>#CURRENCY_INIT('_IN_._ITEM_')</statement>
+            <statement>#NUM_INIT('_IN_._ITEM_')</statement>
             <is-disable>false</is-disable>
             <creator>eclipse</creator>
             <create-time>2021-03-09 21:58:37.0</create-time>

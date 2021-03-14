@@ -665,15 +665,7 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-10 18:38:37.0</create-time>
-        <io-item-prop-list>
-          <io-item-prop>
-            <io-code>CF021_REG</io-code>
-            <io-item-code>DTSYUKKA</io-item-code>
-            <key>layout</key>
-            <value>X_AXIS</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-        </io-item-prop-list>
+        <io-item-prop-list/>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -702,13 +694,6 @@
             <io-item-code>TXAITESAKI</io-item-code>
             <key>partitionType</key>
             <value>NONE</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF021_REG</io-code>
-            <io-item-code>TXAITESAKI</io-item-code>
-            <key>labelWidth</key>
-            <value>80px</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
@@ -766,7 +751,7 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
-        <default-value>'顧客と同じ住所を設定する場合はチェックしてください。'</default-value>
+        <default-value>'顧客TEL等を送付先に設定する'</default-value>
         <level>1</level>
         <sort-key>0</sort-key>
         <dm-item-code>@TEXT</dm-item-code>
@@ -819,15 +804,57 @@ NAVAL(CT010{IDKOKYAKU}.NRPHONE,@NULL),
           <io-item-prop>
             <io-code>CF021_REG</io-code>
             <io-item-code>NRAITEPHONE</io-item-code>
-            <key>fieldStyle</key>
-            <value>IF(FGCOPYJYUSYO=@TRUE,'@NONEDITABLE BGCOLOR04','@EDITABLE')</value>
+            <key>tooltip</key>
+            <value>相手先の電話番号を入力してください。</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>CF021_REG</io-code>
+        <code>NRAITEYUBIN</code>
+        <name>相手先〒 *</name>
+        <is-visible>true</is-visible>
+        <item-type>IO</item-type>
+        <is-require>true</is-require>
+        <length>0</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <default-value>IF(FGCOPYJYUSYO=@TRUE,
+NAVAL(CT010{IDKOKYAKU}.NRYUBIN,@NULL),
+NRAITEYUBIN_SUGGEST)</default-value>
+        <condition>FGCOPYJYUSYO=@TRUE</condition>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-code>CT020</dm-code>
+        <dm-item-code>NRAITEYUBIN</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-10 18:38:37.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>CF021_REG</io-code>
+            <io-item-code>NRAITEYUBIN</io-item-code>
+            <key>tooltip</key>
+            <value>相手先の郵便番号を入力してください。</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
             <io-code>CF021_REG</io-code>
-            <io-item-code>NRAITEPHONE</io-item-code>
-            <key>tooltip</key>
-            <value>相手先の電話番号を入力してください。</value>
+            <io-item-code>NRAITEYUBIN</io-item-code>
+            <key>labelWidth</key>
+            <value>80px</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>CF021_REG</io-code>
+            <io-item-code>NRAITEYUBIN</io-item-code>
+            <key>allLeft</key>
+            <value>-8px</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -868,13 +895,6 @@ NAVAL(CT010{IDKOKYAKU}.NRYUBIN,@NULL),
           <io-item-prop>
             <io-code>CF021_REG</io-code>
             <io-item-code>NRAITEYUBIN_SUGGEST</io-item-code>
-            <key>fieldStyle</key>
-            <value>IF(FGCOPYJYUSYO=@TRUE,'@NONEDITABLE BGCOLOR04','@EDITABLE')</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF021_REG</io-code>
-            <io-item-code>NRAITEYUBIN_SUGGEST</io-item-code>
             <key>fieldType</key>
             <value>SUGGEST</value>
             <is-disable>false</is-disable>
@@ -889,78 +909,8 @@ NAVAL(CT010{IDKOKYAKU}.NRYUBIN,@NULL),
           <io-item-prop>
             <io-code>CF021_REG</io-code>
             <io-item-code>NRAITEYUBIN_SUGGEST</io-item-code>
-            <key>partitionType</key>
-            <value>NONE</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF021_REG</io-code>
-            <io-item-code>NRAITEYUBIN_SUGGEST</io-item-code>
             <key>labelWidth</key>
             <value>80px</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-        </io-item-prop-list>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF021_REG</io-code>
-        <code>NRAITEYUBIN</code>
-        <name>相手先〒 *</name>
-        <is-visible>true</is-visible>
-        <item-type>IO</item-type>
-        <is-require>true</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <default-value>IF(FGCOPYJYUSYO=@TRUE,
-NAVAL(CT010{IDKOKYAKU}.NRYUBIN,@NULL),
-NRAITEYUBIN_SUGGEST)</default-value>
-        <condition>FGCOPYJYUSYO=@TRUE</condition>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <dm-code>CT020</dm-code>
-        <dm-item-code>NRAITEYUBIN</dm-item-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-10 18:38:37.0</create-time>
-        <io-item-prop-list>
-          <io-item-prop>
-            <io-code>CF021_REG</io-code>
-            <io-item-code>NRAITEYUBIN</io-item-code>
-            <key>fieldStyle</key>
-            <value>IF(FGCOPYJYUSYO=@TRUE,'@NONEDITABLE BGCOLOR04','@EDITABLE')</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF021_REG</io-code>
-            <io-item-code>NRAITEYUBIN</io-item-code>
-            <key>tooltip</key>
-            <value>相手先の郵便番号を入力してください。</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF021_REG</io-code>
-            <io-item-code>NRAITEYUBIN</io-item-code>
-            <key>layout</key>
-            <value>X_AXIS</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF021_REG</io-code>
-            <io-item-code>NRAITEYUBIN</io-item-code>
-            <key>labelWidth</key>
-            <value>80px</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF021_REG</io-code>
-            <io-item-code>NRAITEYUBIN</io-item-code>
-            <key>allLeft</key>
-            <value>-8px</value>
             <is-disable>false</is-disable>
           </io-item-prop>
         </io-item-prop-list>
@@ -996,22 +946,8 @@ NAVAL(CT010{IDKOKYAKU}.TXJYUSYO1 &amp; ' ' &amp; CT010{IDKOKYAKU}.TXJYUSYO2,@NUL
           <io-item-prop>
             <io-code>CF021_REG</io-code>
             <io-item-code>TXAITEJYUSYO</io-item-code>
-            <key>fieldStyle</key>
-            <value>IF(FGCOPYJYUSYO=@TRUE,'@NONEDITABLE BGCOLOR04','@EDITABLE')</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF021_REG</io-code>
-            <io-item-code>TXAITEJYUSYO</io-item-code>
             <key>tooltip</key>
             <value>相手先の住所を入力してください。</value>
-            <is-disable>false</is-disable>
-          </io-item-prop>
-          <io-item-prop>
-            <io-code>CF021_REG</io-code>
-            <io-item-code>TXAITEJYUSYO</io-item-code>
-            <key>partitionType</key>
-            <value>NONE</value>
             <is-disable>false</is-disable>
           </io-item-prop>
           <io-item-prop>
@@ -1281,7 +1217,7 @@ NAVAL(CT010{IDKOKYAKU}.TXJYUSYO1 &amp; ' ' &amp; CT010{IDKOKYAKU}.TXJYUSYO2,@NUL
         <max-ByteSize>0</max-ByteSize>
         <statement>CF021_INSERT</statement>
         <next-io-code>CF012</next-io-code>
-        <next-io-param>_RESULT_.NRJYUTYU</next-io-param>
+        <next-io-param>_RESULT_.IDKOKYAKU</next-io-param>
         <msg-code-pre>MSG_PRE_REGIST</msg-code-pre>
         <msg-code-ok>MSG_AFT_REGIST</msg-code-ok>
         <level>1</level>
@@ -1308,174 +1244,6 @@ NAVAL(CT010{IDKOKYAKU}.TXJYUSYO1 &amp; ' ' &amp; CT010{IDKOKYAKU}.TXJYUSYO2,@NUL
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
-      <io-item>
-        <io-code>CF021_REG</io-code>
-        <code>CHK_NRSYOHIN</code>
-        <name>商品NOチェック</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_EXISTANCE</msg-code-ng>
-        <msg-param-ng>'商品NO'</msg-param-ng>
-        <condition>NAVAL(BT010{NRSYOHIN = NRSYOHIN}.NRSYOHIN,@NULL) &lt;&gt; @NULL</condition>
-        <level>2</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-10 18:38:37.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF021_REG</io-code>
-        <code>CHK_IDKOKYAKU</code>
-        <name>顧客IDチェック</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_EXISTANCE</msg-code-ng>
-        <msg-param-ng>'顧客ID'</msg-param-ng>
-        <condition>NAVAL(CT010{IDKOKYAKU =IDKOKYAKU}.IDKOKYAKU,@NULL) &lt;&gt; @NULL</condition>
-        <level>2</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-10 18:38:37.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF021_REG</io-code>
-        <code>CHK_DTJYUTYU</code>
-        <name>受注日チャック</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_COMPARE02</msg-code-ng>
-        <msg-param-ng>'受注日','本日'</msg-param-ng>
-        <condition>DTJYUTYU &gt;= @TODAY</condition>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-10 18:38:37.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF021_REG</io-code>
-        <code>CHK_DTCANCEL</code>
-        <name>取消日チャック</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_COMPARE01</msg-code-ng>
-        <msg-param-ng>'取消日','受取予定日'</msg-param-ng>
-        <condition>IF(DTCANCEL &lt;&gt; @NULL, IF(DTCANCEL &gt; DTUKETORIYOTEI, @FALSE, @TRUE), @TRUE)</condition>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-10 18:38:37.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF021_REG</io-code>
-        <code>CHK_DTHENKIN</code>
-        <name>返金日チャック</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_COMPARE02</msg-code-ng>
-        <msg-param-ng>'返金日','取消日'</msg-param-ng>
-        <condition>IF(DTCANCEL &lt;&gt; @NULL, IF(DTHENKIN &gt;= DTCANCEL, @FALSE, @TRUE), @TRUE)</condition>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-10 18:38:37.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF021_REG</io-code>
-        <code>CHK_DTSYUKKAYOTEI</code>
-        <name>出荷予定日チャック</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_COMPARE02</msg-code-ng>
-        <msg-param-ng>'出荷予定日','DTJYUTYU'</msg-param-ng>
-        <condition>DTSYUKKAYOTEI &gt;= DTJYUTYU</condition>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-10 18:38:37.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
-      <io-item>
-        <io-code>CF021_REG</io-code>
-        <code>CHK_DTUKETORIYOTEI</code>
-        <name>受取予定日チャック</name>
-        <is-visible>false</is-visible>
-        <item-type>C</item-type>
-        <is-require>false</is-require>
-        <length>0</length>
-        <scale>-1</scale>
-        <min-length>0</min-length>
-        <max-length>0</max-length>
-        <max-ByteSize>0</max-ByteSize>
-        <msg-code-ng>ERR_COMPARE02</msg-code-ng>
-        <msg-param-ng>'受取予定日','出荷予定日'</msg-param-ng>
-        <condition>DTUKETORIYOTEI &gt;= DTSYUKKAYOTEI</condition>
-        <level>1</level>
-        <sort-key>0</sort-key>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-10 18:38:37.0</create-time>
-        <io-item-prop-list/>
-        <io-item-ext-prop-list/>
-        <io-item-next-io-logic-list/>
-      </io-item>
     </io-item-list>
     <io-prop-list/>
     <sec-io>
@@ -1484,6 +1252,9 @@ NAVAL(CT010{IDKOKYAKU}.TXJYUSYO1 &amp; ' ' &amp; CT010{IDKOKYAKU}.TXJYUSYO2,@NUL
     </sec-io>
     <sec-menu>
       <io-code>CF021_REG</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-14 21:09:54.0</create-time>
     </sec-menu>
   </io>

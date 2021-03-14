@@ -5,7 +5,7 @@
     <name>受注明細と関連情報の確認</name>
     <io-type>IO</io-type>
     <dm-code>CT021</dm-code>
-    <condition>NRJYUTYU = CODE(@1) AND NRTANPIN EQ CODE(@2)</condition>
+    <condition>NRJYUTYU = CODE(@1) AND NRTANPIN = CODE(@2)</condition>
     <is-disable>false</is-disable>
     <creator>eclipse</creator>
     <create-time>2021-03-10 22:47:30.0</create-time>
@@ -61,14 +61,52 @@
         <min-length>0</min-length>
         <max-length>0</max-length>
         <max-ByteSize>0</max-ByteSize>
+        <statement>#GET_NRSYOHIN('NRJYUTYU')</statement>
         <level>1</level>
         <sort-key>0</sort-key>
-        <dm-code>CT020</dm-code>
-        <dm-item-code>NRSYOHIN</dm-item-code>
+        <dm-item-code>@CODE</dm-item-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-10 22:51:52.0</create-time>
         <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>CF028</io-code>
+        <code>TXSYOHIN</code>
+        <name>商品名</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>20</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <statement>#GET_TXSYOHIN('NRSYOHIN')</statement>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-item-code>@TEXT</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-13 23:02:07.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>CF028</io-code>
+            <io-item-code>TXSYOHIN</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>CF028</io-code>
+            <io-item-code>TXSYOHIN</io-item-code>
+            <key>labelAvailable</key>
+            <value>FALSE</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -92,6 +130,44 @@
         <creator>eclipse</creator>
         <create-time>2021-03-10 22:51:52.0</create-time>
         <io-item-prop-list/>
+        <io-item-ext-prop-list/>
+        <io-item-next-io-logic-list/>
+      </io-item>
+      <io-item>
+        <io-code>CF028</io-code>
+        <code>TXTANPIN</code>
+        <name>単品名</name>
+        <is-visible>true</is-visible>
+        <item-type>O</item-type>
+        <is-require>false</is-require>
+        <length>20</length>
+        <scale>-1</scale>
+        <min-length>0</min-length>
+        <max-length>0</max-length>
+        <max-ByteSize>0</max-ByteSize>
+        <statement>#GET_TXTANPIN('NRTANPIN')</statement>
+        <level>1</level>
+        <sort-key>0</sort-key>
+        <dm-item-code>@TEXT</dm-item-code>
+        <is-disable>false</is-disable>
+        <creator>eclipse</creator>
+        <create-time>2021-03-13 23:02:07.0</create-time>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>CF028</io-code>
+            <io-item-code>TXTANPIN</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+          <io-item-prop>
+            <io-code>CF028</io-code>
+            <io-item-code>TXTANPIN</io-item-code>
+            <key>labelAvailable</key>
+            <value>FALSE</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -137,7 +213,15 @@
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
         <create-time>2021-03-10 22:53:03.0</create-time>
-        <io-item-prop-list/>
+        <io-item-prop-list>
+          <io-item-prop>
+            <io-code>CF028</io-code>
+            <io-item-code>QTZANSU</io-item-code>
+            <key>layout</key>
+            <value>X_AXIS</value>
+            <is-disable>false</is-disable>
+          </io-item-prop>
+        </io-item-prop-list>
         <io-item-ext-prop-list/>
         <io-item-next-io-logic-list/>
       </io-item>
@@ -276,6 +360,9 @@
     </sec-io>
     <sec-menu>
       <io-code>CF028</io-code>
+      <role-menu>*:MENU_TOP</role-menu>
       <is-disable>false</is-disable>
+      <creator>eclipse</creator>
+      <create-time>2021-03-14 21:10:40.0</create-time>
     </sec-menu>
   </io>

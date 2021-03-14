@@ -45,78 +45,13 @@
       <bp-logic>
         <bp-code>CF021_INSERT</bp-code>
         <level>0</level>
-        <ctrl-code>IF</ctrl-code>
-        <param>WK1.FGCOPYJYUSYO = @FALSE</param>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-11 15:50:26.0</create-time>
-      </bp-logic>
-      <bp-logic>
-        <bp-code>CF021_INSERT</bp-code>
-        <level>1</level>
-        <ctrl-code>IF</ctrl-code>
-        <param>WK1.NRAITEYUBIN = @NULL OR WK1.TXAITEJYUSYO = @NULL OR WK1.NRAITEPHONE = @NULL</param>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-11 15:50:26.0</create-time>
-      </bp-logic>
-      <bp-logic>
-        <bp-code>CF021_INSERT</bp-code>
-        <level>2</level>
         <ctrl-code>CALL</ctrl-code>
         <dm-code>CT020</dm-code>
-        <func-code>AITE_ERR</func-code>
-        <param>'相手先'</param>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-11 15:50:26.0</create-time>
-      </bp-logic>
-      <bp-logic>
-        <bp-code>CF021_INSERT</bp-code>
-        <level>1</level>
-        <ctrl-code>END</ctrl-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-11 15:50:26.0</create-time>
-      </bp-logic>
-      <bp-logic>
-        <bp-code>CF021_INSERT</bp-code>
-        <level>1</level>
-        <ctrl-code>CALL</ctrl-code>
-        <dm-code>CT020</dm-code>
-        <func-code>INSERT_01</func-code>
+        <func-code>INSERT</func-code>
         <param>WK1,SEQ_AFT.VALUESET</param>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-11 15:50:26.0</create-time>
-      </bp-logic>
-      <bp-logic>
-        <bp-code>CF021_INSERT</bp-code>
-        <level>0</level>
-        <ctrl-code>ELSEIF</ctrl-code>
-        <param>WK1.FGCOPYJYUSYO = @TRUE</param>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-11 15:50:26.0</create-time>
-      </bp-logic>
-      <bp-logic>
-        <bp-code>CF021_INSERT</bp-code>
-        <level>1</level>
-        <ctrl-code>CALL</ctrl-code>
-        <dm-code>CT020</dm-code>
-        <func-code>INSERT_02</func-code>
-        <param>WK1,SEQ_AFT.VALUESET</param>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-11 15:50:26.0</create-time>
-      </bp-logic>
-      <bp-logic>
-        <bp-code>CF021_INSERT</bp-code>
-        <level>0</level>
-        <ctrl-code>END</ctrl-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-11 15:50:26.0</create-time>
+        <create-time>2021-03-14 04:02:31.0</create-time>
       </bp-logic>
       <bp-logic>
         <bp-code>CF021_INSERT</bp-code>
@@ -128,47 +63,7 @@
         <work-code>RES</work-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-11 15:50:26.0</create-time>
-      </bp-logic>
-      <bp-logic>
-        <bp-code>CF021_INSERT</bp-code>
-        <level>0</level>
-        <ctrl-code>CALL</ctrl-code>
-        <dm-code>BT011</dm-code>
-        <func-code>SELECT</func-code>
-        <param>WK1.NRSYOHIN</param>
-        <work-code>WK2</work-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-11 15:50:26.0</create-time>
-      </bp-logic>
-      <bp-logic>
-        <bp-code>CF021_INSERT</bp-code>
-        <level>0</level>
-        <ctrl-code>FOREACH</ctrl-code>
-        <param>WK2</param>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-11 15:50:26.0</create-time>
-      </bp-logic>
-      <bp-logic>
-        <bp-code>CF021_INSERT</bp-code>
-        <level>1</level>
-        <ctrl-code>CALL</ctrl-code>
-        <dm-code>CT021</dm-code>
-        <func-code>INSERT</func-code>
-        <param>RES.NRJYUTYU,WK2.NRTANPIN,WK2.QTKOUSEI,WK1.DTSYUKKAYOTEI</param>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-11 15:50:26.0</create-time>
-      </bp-logic>
-      <bp-logic>
-        <bp-code>CF021_INSERT</bp-code>
-        <level>0</level>
-        <ctrl-code>END</ctrl-code>
-        <is-disable>false</is-disable>
-        <creator>eclipse</creator>
-        <create-time>2021-03-11 15:50:26.0</create-time>
+        <create-time>2021-03-14 04:07:43.0</create-time>
       </bp-logic>
       <bp-logic>
         <bp-code>CF021_INSERT</bp-code>
@@ -178,7 +73,7 @@
         <work-code>RES</work-code>
         <is-disable>false</is-disable>
         <creator>eclipse</creator>
-        <create-time>2021-03-11 15:50:26.0</create-time>
+        <create-time>2021-03-14 04:07:43.0</create-time>
       </bp-logic>
     </bp-logic-list>
   </bp>
